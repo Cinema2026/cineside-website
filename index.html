@@ -14,7 +14,6 @@
 <!-- ========================================================================
      CINEside &mdash; cineside.app
      Production <head> with SEO, OpenGraph, Twitter Card, JSON-LD
-     (Without personal-identity linkage &mdash; decoupled from DP work)
      ======================================================================== -->
 
 <meta charset="utf-8">
@@ -54,19 +53,6 @@
 <meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
 <meta name="twitter:image:alt" content="CINEside &mdash; shot planning for cinematographers">
 
-<!-- ── Structured data: CINEside brand as Organization ───────────────────── -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://cineside.app/#organization",
-  "name": "CINEside",
-  "url": "https://cineside.app/",
-  "logo": "https://cineside.app/resources/CINEside_logo_text.png",
-  "email": "info@cineside.app"
-}
-</script>
-
 <!-- ── Structured data: CINEside as a SoftwareApplication ────────────────── -->
 <script type="application/ld+json">
 {
@@ -78,7 +64,73 @@
   "description": "A Mac app for cinematographers preparing narrative work. Keeps your shot list, script, references, and department notes in one place. Imports Final Draft PDFs, detects scenes automatically, and lets you anchor shots to specific script passages. Works completely offline.",
   "url": "https://cineside.app/",
   "image": "https://cineside.app/resources/CINEside_logo_text.png",
-  "applicationCategory": "
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "macOS 10.13 or newer",
+  "processorRequirements": "Intel or Apple Silicon (Universal)",
+  "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
+  "softwareVersion": "0.1.2",
+  "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
+  "inLanguage": "en",
+  "featureList": [
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists with size, angle, lens, camera move, POV/OS",
+    "Anchor shots to specific passages in the script",
+    "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
+    "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
+    "Flag VFX and SFX shots and export separate shot lists for post production",
+    "Drag and drop into Shooting Order for daily schedules",
+    "Export facing-pages PDF, shot list only, or notes sheet",
+    "Collaborate with your director via CINEside CONNECT",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "79.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://cineside.gumroad.com/l/nvasfa"
+  }
+}
+</script>
+
+<!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-connect",
+  "name": "CINEside CONNECT",
+  "description": "A free companion Mac app for directors and collaborators. Opens shooting scripts sent from CINEside, lets directors add notes to shots, script passages, and reference images, and export the notes back. Read-only, works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_CONNECT_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "macOS 10.13 or newer",
+  "processorRequirements": "Intel or Apple Silicon (Universal)",
+  "downloadUrl": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest",
+  "softwareVersion": "0.1.2",
+  "releaseNotes": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases",
+  "inLanguage": "en",
+  "featureList": [
+    "Opens shooting scripts sent from CINEside",
+    "Add notes to shots, script passages, and images",
+    "Export notes as JSON for re-import into CINEside",
+    "Read-only &mdash; cannot modify the shooting script itself",
+    "Works completely offline"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest"
+  },
+  "isAccessoryOrSparePartFor": {
+    "@id": "https://cineside.app/#cineside"
+  }
+}
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="description" content="A shot planning tool built by a cinematographer, for cinematographers.
 
