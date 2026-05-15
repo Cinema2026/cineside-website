@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Specifications — CINEside</title>
+<meta name="description" content="System requirements, file formats, and technical specifications for CINEside shot planning software for cinematographers and directors.">
+<link rel="canonical" href="https://cineside.app/tech-specs.html">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --off-white: #ebe8e3;
+    --border: #c5c0b8;
+    --text: #1a1a18;
+    --text2: #555550;
+    --text3: #888880;
+    --accent: #b87c1a;
+  }
+
+  body {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    background: var(--off-white);
+    border-bottom: 1px solid var(--border);
+    padding: 40px 48px 32px;
+  }
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 6px;
+  }
+  .page-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text);
+  }
+  .page-subtitle {
+    font-size: 13px;
+    color: var(--text2);
+    margin-top: 6px;
+  }
+  .version-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: var(--text);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+  .site-logo {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.88;
+  }
+
+  /* ── Main layout ── */
+  .page-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 48px 80px;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 52px;
+  }
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Spec rows ── */
+  .spec-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .spec-table tr {
+    border-bottom: 0.5px solid var(--border);
+  }
+  .spec-table tr:last-child {
+    border-bottom: none;
+  }
+  .spec-table td {
+    padding: 11px 0;
+    vertical-align: top;
+  }
+  .spec-table td:first-child {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text3);
+    padding-right: 24px;
+    white-space: nowrap;
+  }
+  .spec-table td:last-child {
+    font-size: 14px;
+    color: var(--text);
+  }
+  .note {
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 3px;
+  }
+
+  /* ── File format grid ── */
+  .format-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .format-card {
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+  }
+  .format-ext {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    color: var(--text);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+  }
+  .format-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text2);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .format-desc {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.45;
+  }
+  .format-tag {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background: var(--off-white);
+    color: var(--text3);
+    border: 0.5px solid var(--border);
+  }
+  .format-tag.connect {
+    background: #eaf5f0;
+    color: #1a6644;
+    border-color: #b0d9c6;
+  }
+
+  /* ── Import formats ── */
+  .import-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 0.5px solid var(--border);
+    font-size: 14px;
+  }
+  .import-row:last-child { border-bottom: none; }
+  .import-ext {
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+    min-width: 120px;
+  }
+  .import-desc {
+    color: var(--text2);
+  }
+
+  /* ── License block ── */
+  .license-block {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 28px;
+  }
+  .license-block h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .license-block .price {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 12px 0 4px;
+  }
+  .license-block .price-note {
+    font-size: 12px;
+    color: var(--text3);
+    margin-bottom: 16px;
+  }
+  .feature-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+  }
+  .feature-list li {
+    font-size: 13px;
+    color: var(--text2);
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+  }
+  .feature-list li::before {
+    content: '✓';
+    font-weight: 700;
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+  .demo-note {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 0.5px solid var(--border);
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.5;
+  }
+
+  /* ── CONNECT block ── */
+  .connect-block {
+    border: 0.5px solid #b0d9c6;
+    border-radius: 8px;
+    padding: 20px 24px;
+    background: #f4fbf8;
+  }
+  .connect-block h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a6644;
+    margin-bottom: 6px;
+  }
+  .connect-block p {
+    font-size: 13px;
+    color: #2a7a54;
+    line-height: 1.5;
+  }
+  .connect-block .free-badge {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    background: #1a6644;
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  /* ── Footer ── */
+  .page-footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--text3);
+    max-width: 100%;
+  }
+  .page-footer a {
+    color: var(--text3);
+    text-decoration: none;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { font-size: 12px; }
+    .page-header { padding: 24px 32px 20px; }
+    .page-body { padding: 32px 32px 40px; }
+    .format-grid { grid-template-columns: 1fr 1fr; }
+    .section { margin-bottom: 36px; }
+  }
+
+  @media (max-width: 640px) {
+    .page-header { padding: 28px 24px 22px; }
+    .page-body { padding: 32px 24px 60px; }
+    .format-grid { grid-template-columns: 1fr; }
+    .feature-list { grid-template-columns: 1fr; }
+    .spec-table td:first-child { width: 140px; }
+    .page-footer { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="header-inner">
+    <div>
+      <a href="https://cineside.app"><img src="https://cineside.app/resources/picturep.png" alt="CINEside" class="site-logo"></a>
+      <p class="brand">CINEside</p>
+      <h1 class="page-title">Technical Specifications</h1>
+      <p class="page-subtitle">System requirements, file formats, and licensing information</p>
+    </div>
+    <span class="version-badge">v0.3 — May 2026</span>
+  </div>
+</header>
+
+<main class="page-body">
+
+  <!-- System Requirements -->
+  <section class="section">
+    <h2 class="section-label">System Requirements</h2>
+    <table class="spec-table">
+      <tr>
+        <td>Operating System</td>
+        <td>
+          macOS 10.13 High Sierra or newer
+          <p class="note">Recommended: macOS 13 Ventura or newer for best performance.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Processor</td>
+        <td>
+          Universal binary — runs natively on Apple Silicon (M1/M2/M3/M4) and Intel
+          <p class="note">No Rosetta translation layer required on Apple Silicon Macs.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Storage</td>
+        <td>
+          ~25 MB for the application
+          <p class="note">Project files vary by size of imported photos, scripts, and floorplans.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Internet</td>
+        <td>
+          Not required — CINEside is fully offline
+          <p class="note">Internet is only used once for license activation. All data stays on your machine.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Display</td>
+        <td>1280 × 800 minimum, Retina recommended</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Native File Formats -->
+  <section class="section">
+    <h2 class="section-label">Native File Formats</h2>
+    <div class="format-grid">
+
+      <div class="format-card">
+        <div class="format-ext">.cnsd</div>
+        <div class="format-name">CINEside Project</div>
+        <div class="format-desc">Main project file. Stored as a folder containing the project data and all associated photos. Open by double-click or drag onto the app.</div>
+        <span class="format-tag">CINEside</span>
+      </div>
+
+      <div class="format-card">
+        <div class="format-ext">.cnsf</div>
+        <div class="format-name">Share Package</div>
+        <div class="format-desc">Role-based export for collaborators. Export for Director or Export for Cinematographer — strips fields not relevant to the recipient. Fully editable by the receiver.</div>
+        <span class="format-tag">CINEside</span>
+      </div>
+
+      <div class="format-card">
+        <div class="format-ext">.cnct</div>
+        <div class="format-name">CONNECT Package</div>
+        <div class="format-desc">Read-only export for CINEside CONNECT. Allows collaborators to annotate and leave notes without access to the full project data.</div>
+        <span class="format-tag connect">CONNECT</span>
+      </div>
+
+      <div class="format-card">
+        <div class="format-ext">.cnsn</div>
+        <div class="format-name">CONNECT Notes</div>
+        <div class="format-desc">Notes package returned from a CONNECT collaborator back to CINEside. Imports directly into the corresponding project on double-click.</div>
+        <span class="format-tag connect">CONNECT</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Import Formats -->
+  <section class="section">
+    <h2 class="section-label">Import Formats</h2>
+    <div class="import-row">
+      <span class="import-ext">PDF</span>
+      <span class="import-desc">Screenplay import (text extraction, scene detection, block-level anchoring). Also supported as photos and floorplans — each PDF page is converted to a JPEG automatically.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">JPEG · PNG · TIFF · HEIC</span>
+      <span class="import-desc">Reference photos, storyboard frames, floorplans, lighting plans, sun position screenshots. Compressed and stored locally in the project folder.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">WebP · GIF</span>
+      <span class="import-desc">Supported as reference images. Converted to JPEG on import.</span>
+    </div>
+  </section>
+
+  <!-- Export Formats -->
+  <section class="section">
+    <h2 class="section-label">Export Formats</h2>
+    <div class="import-row">
+      <span class="import-ext">PDF</span>
+      <span class="import-desc">Shot list with optional script, photos, floorplans, lighting plans, scene tags, and links. A4 or US Letter. Generated entirely on-device — no upload required.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Notes Sheet</span>
+      <span class="import-desc">Scene-level notes, CONNECT annotations, and lighting notes compiled into a separate document.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — VFX / SFX Sheet</span>
+      <span class="import-desc">Extracted list of all VFX and SFX-flagged shots across the project.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Shooting Order</span>
+      <span class="import-desc">Custom-ordered shot list for production scheduling, with per-shot checkboxes.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">.cnct · .cnsf</span>
+      <span class="import-desc">Collaboration packages for CONNECT and role-based sharing (see above).</span>
+    </div>
+  </section>
+
+  <!-- Licensing -->
+  <section class="section">
+    <h2 class="section-label">Licensing &amp; Purchase</h2>
+    <div class="license-block">
+      <h3>CINEside for Mac — Early Access</h3>
+      <div class="price">€79 <span style="font-size:16px;font-weight:400;color:var(--text3);">excl. VAT</span></div>
+      <p class="price-note">Regular price €129 from v1.0 · Sold via Gumroad · License key delivered by email</p>
+      <ul class="feature-list">
+        <li>One-time purchase</li>
+        <li>Free updates — no subscription</li>
+        <li>Full offline use</li>
+        <li>Saving &amp; auto-backup</li>
+        <li>Unlimited PDF exports</li>
+        <li>CONNECT export enabled</li>
+        <li>No watermarks</li>
+        <li>Early Access pricing locked in</li>
+      </ul>
+      <p class="demo-note">Without a license key, CINEside runs in demo mode: the app is fully functional for evaluation, but saving, CONNECT export, and PDF export are restricted (PDFs are watermarked). No account or login required for activation — a license key is entered once in the app.</p>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section class="section">
+    <h2 class="section-label">CINEside CONNECT</h2>
+    <div class="connect-block">
+      <h3>Free companion app for collaborators</h3>
+      <p>Directors, script supervisors, and other collaborators use CINEside CONNECT to receive a read-only view of the shot plan, leave annotations and notes, and send them back to the cinematographer — without needing a CINEside license.</p>
+      <span class="free-badge">Free — no license required</span>
+    </div>
+  </section>
+
+  <!-- Data & Privacy -->
+  <section class="section">
+    <h2 class="section-label">Data &amp; Privacy</h2>
+    <table class="spec-table">
+      <tr>
+        <td>Data storage</td>
+        <td>All project data is stored locally on your Mac. Nothing is uploaded to any server.</td>
+      </tr>
+      <tr>
+        <td>Cloud sync</td>
+        <td>
+          Not built in — project folders can be placed in iCloud Drive, Dropbox, or any sync service of your choice.
+          <p class="note">Avoid opening the same project simultaneously from two machines.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>Backups</td>
+        <td>CINEside creates automatic rolling backups in a hidden <code style="font-size:12px;">.backups/</code> folder inside each project folder.</td>
+      </tr>
+      <tr>
+        <td>License activation</td>
+        <td>Requires a one-time internet connection to validate the Gumroad license key. No account is created.</td>
+      </tr>
+      <tr>
+        <td>Analytics / Telemetry</td>
+        <td>None. CINEside does not collect usage data.</td>
+      </tr>
+    </table>
+  </section>
+  <p style="text-align:center; margin-top:40px;">
+  <a href="/" style="color:#c27118; text-decoration:none;">← Back to CINEside</a>
+</p>
+ 
+
+</main>
+
+<footer class="page-footer">
+ 
+  <span>© 2026 Matthias Grunsky · <a href="https://cineside.app">cineside.app</a></span>
+  <span>Questions: <a href="mailto:info@cineside.app">info@cineside.app</a></span>
+</footer>
+
+</body>
+</html>
