@@ -200,7 +200,7 @@
     font-size: 12px;
     font-weight: 700;
     color: var(--text);
-    min-width: 120px;
+    min-width: 200px;
   }
   .import-desc {
     color: var(--text2);
@@ -434,12 +434,20 @@
   <section class="section">
     <h2 class="section-label">Export Formats</h2>
     <div class="import-row">
-      <span class="import-ext">PDF</span>
-      <span class="import-desc">Shot list with optional script, photos, floorplans, lighting plans, scene tags, and links. A4 or US Letter. Generated entirely on-device — no upload required.</span>
+      <span class="import-ext">PDF — Shots &amp; Script</span>
+      <span class="import-desc">Facing-pages layout — shots on the left, script on the right. A4 or US Letter. Optionally includes scene photos, shot photos, floorplans, lighting plans, scene tags, and links. Generated entirely on-device.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Shot List only</span>
+      <span class="import-desc">Shots without script pages. A4 or US Letter. Same include options as above.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — iPad / Tablet</span>
+      <span class="import-desc">Same facing-pages layout as Shots &amp; Script, with larger text and a wider margin on script pages for Apple Pencil annotations. Designed for reading in landscape on a large tablet — shots on the left, script on the right. CINEside is a Mac app; this is a considered response to on-set tablet use, not a native iPad app.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Notes Sheet</span>
-      <span class="import-desc">Scene-level notes, CONNECT annotations, and lighting notes compiled into a separate document.</span>
+      <span class="import-desc">Scene-level notes, CONNECT annotations, and lighting notes compiled into a separate document, sorted by scene and recipient.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — VFX / SFX Sheet</span>
@@ -447,7 +455,15 @@
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Shooting Order</span>
-      <span class="import-desc">Custom-ordered shot list for production scheduling, with per-shot checkboxes.</span>
+      <span class="import-desc">Custom-ordered shot list for production scheduling. Optionally includes a scene overview section before the shots — with flags, crew, equipment, scene photos, floorplan, and lighting — so the crew has location context alongside the planned shot sequence for the day.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Location Dossier</span>
+      <span class="import-desc">Per-location document for tech scouts and reccies. Covers notes, reference photos, floorplan, and lighting plan for the location, followed by all scenes and shots at that location. Multiple locations can be exported in a single document. Designed to be handed to crew at a location walkthrough.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Addt'l Equipment</span>
+      <span class="import-desc">All additional equipment entries across the project, filterable by category: Camera, Camera Support, G&amp;E, and Specials. Useful for sending category-specific lists to individual departments.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">.cnct · .cnsf</span>
