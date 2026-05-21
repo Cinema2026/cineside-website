@@ -6,6 +6,69 @@
 <title>Technical Specifications — CINEside</title>
 <meta name="description" content="System requirements, file formats, and technical specifications for CINEside shot planning software for cinematographers and directors.">
 <link rel="canonical" href="https://cineside.app/tech-specs.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cineside.app/tech-specs.html">
+<meta property="og:title" content="Technical Specifications — CINEside">
+<meta property="og:description" content="System requirements, file formats, and licensing information for CINEside — shot planning software for cinematographers and directors.">
+<meta property="og:image" content="https://cineside.app/resources/picturep.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Technical Specifications — CINEside">
+<meta name="twitter:description" content="System requirements, file formats, and licensing information for CINEside.">
+
+<!-- SoftwareApplication Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CINEside",
+  "url": "https://cineside.app",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Shot Planning",
+  "operatingSystem": "macOS 10.13 or newer",
+  "processorRequirements": "Apple Silicon or Intel — Universal Binary",
+  "storageRequirements": "25 MB",
+  "offers": {
+    "@type": "Offer",
+    "price": "79",
+    "priceCurrency": "EUR",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "79",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": false
+    }
+  },
+  "description": "CINEside is a Mac app for shot planning built around the screenplay. Import your script as PDF, plan shots scene by scene, attach reference photos, and export a complete shooting script as a facing-pages PDF.",
+  "softwareVersion": "0.3",
+  "releaseNotes": "https://cineside.app/getting-started.html",
+  "screenshot": "https://cineside.app/resources/picturep.png",
+  "author": {
+    "@type": "Person",
+    "name": "Matthias Grunsky",
+    "url": "https://cineside.app"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Matthias Grunsky"
+  },
+  "featureList": [
+    "PDF screenplay import with automatic scene detection",
+    "Shot list planning with size, angle, lens, camera support",
+    "Script anchoring — link shots to specific passages",
+    "Reference photos, floorplans, lighting plans per scene",
+    "Shooting Order with drag-and-drop and CSV export",
+    "Location Dossier PDF for tech scouts",
+    "iPad/Tablet optimised PDF export",
+    "Additional Equipment PDF by category",
+    "Additional Crew PDF by role",
+    "CINEside CONNECT collaboration workflow",
+    "Fully offline — no cloud required"
+  ]
+}
+</script>
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -463,7 +526,11 @@
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Addt'l Equipment</span>
-      <span class="import-desc">All additional equipment entries across the project, filterable by category: Camera, Camera Support, G&amp;E, and Specials. Useful for sending category-specific lists to individual departments.</span>
+      <span class="import-desc">All additional equipment entries across the project, filterable by category: Camera, Cam Support / Dolly, Lighting, and Grip. Useful for sending category-specific lists to individual departments.</span>
+    </div>
+    <div class="import-row">
+      <span class="import-ext">PDF — Addt'l Crew</span>
+      <span class="import-desc">All additional crew entries across the project, grouped by role — each role listing the scenes it applies to. Useful for generating a crew overview per department or role.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">.cnct · .cnsf</span>
