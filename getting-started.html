@@ -68,7 +68,7 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
-  "softwareVersion": "0.4.7",
+  "softwareVersion": "0.4.9",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
   "inLanguage": "en",
   "featureList": [
@@ -200,7 +200,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 22.05.26 -->
+	<!-- 23.05.26 -->
 </head>
 
 <body class="antialiased">
@@ -377,11 +377,12 @@ DEFAULT PROJECTS FOLDER: Change where CINEside saves new projects.</p>
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_434 solid   ">   </div> 
  <h5 class='       '   >11. Schedule</h5> 
- <p class='       '   >Click Schedule in the toolbar. The flow has two steps.<br>
-First, a scene selection window lets you choose which scenes to include — and assign each scene to a named shoot day. Create as many days as you need (e.g. "Day 1 — Mon 19.05", "Day 2 — Tue 20.05") and distribute your scenes across them. You can rename days inline by double-clicking.<br>
-Then, continue to the shot ordering view. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence. Enter an estimated time in minutes per shot — the running total for that day updates live. If a scene needs to be split across two days, use the day selector on any shot card to move individual shots to a different day.<br>
-Export as PDF — This Day for a single day's call sheet, or PDF — All Days for the full schedule with a day header before each group of shots. The CSV export covers all days and is designed for the AD — importable into Excel, Numbers, or any scheduling software. The schedule is saved with the project and restored when you reopen the modal.<br>
-When planning a shoot day, you can include scene information alongside your shots. Enable the Scene toggles in the export panel — Flags, Crew & Equipment, Scene Photos, Floorplan, and Lighting — to add a scene overview for each location, followed by the shots in your planned order. This gives the crew a single document with location context, technical requirements, and the shot sequence for the day.</p> 
+ <p class='       '   >Click Schedule in the toolbar. The workflow has two phases.<br>
+Phase 1 — Assign scenes to shoot days. A full-screen kanban view opens with all your scenes in a pool on the left. Enter the number of shoot days and click Create Days — or add individual days with + Day. Drag scenes from the pool onto any day column. A scene can be assigned to multiple days (it will appear in each column marked as a split). To move a scene between days, drag its chip directly from one column to another. You can rename a day by clicking its label, reorder days by dragging the column header, and swap adjacent days using the ← → arrows. Each day column shows the total number of scenes and shots at a glance. Days can be typed as Pre-Shoot, Splinter Unit, 2nd Unit, or Post-Shoot using the badge on the left of each column header — these are numbered independently from regular shoot days..<br>.<br>
+Phase 2 — Order the shots. Click Shot Ordering → to continue. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence — a line indicator shows exactly where the shot will land. Enter an estimated time in minutes per shot; the running total for that day updates live in the tab header. If a scene is split across days, use the day selector on any shot card to assign individual shots to their specific day..<br>.<br>
+Export. Use PDF — This Day for a single day's shooting order, or PDF — All Days for the complete schedule — each day opens with a header showing the shot count and estimated total time for that day. The CSV export covers all days and is designed for the AD — importable into Excel, Numbers, or any scheduling software. Enable the Scene and Shottoggles in the export panel to include flags, crew & equipment, scene photos, floorplan, lighting, shot photos, notes, and reference links alongside the shot sequence..<br>
+The schedule is saved with the project and restored when you reopen the modal.
+</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
