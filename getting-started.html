@@ -336,7 +336,7 @@ Note: Scenes are grouped by location name exactly as entered. Make sure the name
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_410 solid   ">   </div> 
  <h5 class='       '   >7. Scene Tags</h5> 
  <p class='       '   >Use Scene Tags to group scenes by storyline, time period, dream sequence, flashback, or any recurring theme across your film.<br>
-Click + Add next to Tags underneath the Location/Motif field. A modal lets you create a new tag with a custom colour, or assign existing tags to this scene.<br>
+Click Add / Edit next to Tags underneath the Location/Motif field. A modal lets you create a new tag with a custom colour, assign existing tags to this scene, or edit a tag you've already made. Renaming a tag or changing its colour updates it everywhere it's used — across every scene, in CINEside CONNECT, and in PDF exports. You can also delete a tag, which removes it from all scenes at once.<br>
 Assigned tags appear as coloured stripes along the left edge of each scene — in CINEside, in CINEside CONNECT, and in exported PDFs (enable the Tags toggle in the export panel).<br>
 Typical uses:<br>
 
@@ -422,9 +422,9 @@ In Shot List only mode, the panel also offers a CSV export — the full shot lis
 MyFilm/<br>
 	•	 MyFilm.cnsd — your project file<br>
 	•	photos/ — all reference images<br>
-	•	backups/ — automatic backups (hidden)<br><br>
+	• .backups/ — automatic backups (hidden)<br><br>
 By default, CINEside saves all projects into ~/Movies/CINEside Projects. You can change this location in the Save dialog by clicking Change… — CINEside remembers your choice for future projects.<br><br>
-CINEside keeps the three most recent backups automatically. To see them in Finder, press Cmd+Shift+. to show hidden files.<br><br>
+Saving is atomic — a crash or power loss mid-save can never corrupt your project. CINEside keeps the three most recent backups automatically in a hidden .backups/ folder, and if a project file is ever unreadable, it opens the most recent backup automatically. To see the backups in Finder, press Cmd+Shift+. to show hidden files.<br><br>
 After the first save, Cmd+S saves directly without any dialog. Double-click the .cnsd file inside your project folder to reopen the project.</p> 
 <br> 
  </div> </div> 
@@ -457,8 +457,7 @@ The recipient opens the .cnsf file in CINEside. A dialog asks for a project name
 <div style="display:flex; align-items:flex-start; gap:14px; margin:18px 0;">
   <img src="https://cineside.app/resources/cnsd.png" style="width:30px; height:30px; flex-shrink:0; margin-top:2px;">
   <div>
-    <strong>.cnsd</strong> — your CINEside project file. Lives inside a project folder together with a photos/ folder (reference images) and a backups/ folder (automatic backups). The project folder is the single source of truth — keep all three together when moving or archiving.
-  </div>
+    <strong>.cnsd</strong>— your CINEside project file. Lives inside a project folder together with a photos/ folder (reference images) and a .backups/ folder (automatic backups). The project folder is the single source of truth — keep all three together when moving or archiving.  </div>
 </div>
 
 <div style="display:flex; align-items:flex-start; gap:14px; margin:18px 0;">

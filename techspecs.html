@@ -41,7 +41,7 @@
     }
   },
   "description": "CINEside is a Mac app for shot planning built around the screenplay. Import your script as PDF, plan shots scene by scene, attach reference photos, and export a complete shooting script as a facing-pages PDF.",
-  "softwareVersion": "0.4",
+  "softwareVersion": "0.8",
   "releaseNotes": "https://cineside.app/getting-started.html",
   "screenshot": "https://cineside.app/resources/picturep.png",
   "author": {
@@ -395,7 +395,7 @@
       <h1 class="page-title">Technical Specifications</h1>
       <p class="page-subtitle">System requirements, file formats, and licensing information</p>
     </div>
-    <span class="version-badge">v0.7 — May 2026</span>
+    <span class="version-badge">v0.8 — May 2026</span>
   </div>
 </header>
 
@@ -549,7 +549,7 @@
         <li>One-time purchase</li>
         <li>Free updates — no subscription</li>
         <li>Full offline use</li>
-        <li>Saving &amp; auto-backup</li>
+        <li>Atomic saving &amp; rolling backups</li>
         <li>Unlimited PDF exports</li>
         <li>CONNECT export enabled</li>
         <li>No watermarks</li>
@@ -586,7 +586,9 @@
       </tr>
       <tr>
         <td>Backups</td>
-        <td>CINEside creates automatic rolling backups in a hidden <code style="font-size:12px;">.backups/</code> folder inside each project folder.</td>
+        <td>
+          Project files are written atomically — a crash or power loss during a save can never leave a half-written file. CINEside also keeps automatic rolling backups in a hidden <code style="font-size:12px;">.backups/</code> folder inside each project folder, and opens the most recent good backup automatically if a project file is ever unreadable.
+        </td>
       </tr>
       <tr>
         <td>License activation</td>
