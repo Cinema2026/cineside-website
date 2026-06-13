@@ -23,8 +23,8 @@ stacks.stacks_in_21 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;
 
 return stack;})(stacks.stacks_in_21);
-stacks.stacks_in_737 = {};
-stacks.stacks_in_737 = (function(stack) {
+stacks.stacks_in_739 = {};
+stacks.stacks_in_739 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;
 $(function(){var $doc=$(document),scrollBtn=$('#ncd-sp-arrow'),lastScrollTop=0,scrollTransition=scrollBtn.data('trans'),pauseFadeDuration=scrollBtn.data('pause'),pageDownTrigger=scrollBtn.data('down-trigger'),pageDownPx=scrollBtn.data('amount-down');containerOffset=scrollBtn.data('container-offset');scrollBtn.prependTo('body').addClass('ready');if(scrollBtn.hasClass('bc')||scrollBtn.hasClass('tc')){var fontSize=scrollBtn.find('i').css('font-size');var parsefontSize=parseInt(fontSize)
 scrollBtn.css({'margin-left':"-"+(parsefontSize/2)+"px","margin-right":'0'});}
@@ -37,4 +37,4 @@ if(scrollBtn.hasClass('up')){$doc.scroll(function(){upOnDown();});}
 if(scrollBtn.hasClass('upDown')){$doc.scroll(function(){upOnUp();});}
 scrollBtn.click(function(){if(scrollBtn.hasClass('down-amount')&&$doc.scrollTop()<=pageDownTrigger){$('html, body').animate({scrollTop:pageDownPx},scrollTransition,'easeInOutQuart');}else if(scrollBtn.hasClass('down-container')){$('html, body').animate({scrollTop:$('#ncd-scroll-page').offset().top-containerOffset},scrollTransition,'easeInOutQuart');setTimeout(function(){scrollBtn.removeClass('show')},scrollTransition);}else{$('html, body').animate({scrollTop:0},scrollTransition,'easeInOutQuart');setTimeout(function(){scrollBtn.removeClass('show')},scrollTransition);}});});
 
-return stack;})(stacks.stacks_in_737);
+return stack;})(stacks.stacks_in_739);
