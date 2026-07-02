@@ -219,7 +219,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 01.07.26 -->
+	<!-- 03.07.26 -->
 </head>
 
 <body class="antialiased">
@@ -266,7 +266,7 @@
 <div class="lines-wrapper "> <hr class="lines stacks_in_636 solid   ">   </div> 
  <h5 class='       '   >Demo mode and full version</h5> 
  <p class='       '   >CINEside starts in Demo Mode. You can import your screenplay, plan shots, add references, write notes, and see how everything comes together — with your own script.<br>
-Two things are disabled in Demo Mode: saving your project as a .cnsd file, and exporting to CONNECT for your director. PDF exports work, but are watermarked.<br>
+Two things are disabled in Demo Mode: saving your project as a .cnsd file, exporting to CONNECT for your director, and the Schedule feature. PDF exports work, but are watermarked.<br>
 When you're ready: buy a license at cineside.app, then click Activate License → in the toolbar, or launch CINEside and enter your key on the license screen. The app switches to the full version immediately — saving, CONNECT export, and clean PDFs unlock.<br>
 One license stays with you. Updates are free.</p> 
 <br> 
@@ -324,6 +324,8 @@ Each shot has:<br>
 
 	•	Size — ECU, CU, MCU, Medium, Two Shot, Group, M Wide, Wide, other<br>
 	•	Focal length in mm (with Zoom toggle for descriptive ranges)<br>
+	•	Cam Move — free-text field for camera movement (e.g. "Push in", "Arc right")<br>
+	•	Shot Title — optional name for this shot
 	•	Angle — Eye level, High angle, Low angle, Dutch, Bird's eye, other<br>
 	•	Cam Support — Tripod, Dolly, Handheld, Steadicam, Gimbal, Camera Car, Crane, Drone, other<br>
 	•	POV / O/S toggles<br>
@@ -333,7 +335,10 @@ Each shot has:<br>
 	•	Description<br>
 	•	Notes<br>
 	•	VFX / SFX flags<br>
-	•	Photos — attach reference images directly to the shot<br></p> 
+	•	Photos — attach reference images directly to the shot<br>
+</p> 
+ <p class='       '   >
+Shot Variants — A shot can have multiple variants: alternative framings, lenses, or approaches for the same shot. Click + Variant on any shot to add a variant, labeled A, B, C in sequence. Variants inherit the parent shot's anchor, with their own Size, mm, Angle, Cam Support, Cam Move, and Cam Specials.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -353,7 +358,7 @@ You can also work the other way around: click any script block and assign it to 
 	•	Scene number, INT/EXT, Day/Night, Dawn, Dusk..., Page numbers of the original script<br>
 	•	Location / Motif — the actual shooting location or set description
 Each location automatically gets its own notes field and photo gallery, shared across all scenes at that location. Click in the Location / Motif field to confirm or edit the name — once set, the Location panel below expands to show notes, reference photos, floorplan, and a "To Check at Location" checklist. Everything in this blue panel is shared across every scene at the same location.<br>You can also add a sub-location to any scene — useful when multiple rooms or areas belong to the same building or set. For example: "Apartment Building" as the location, with "Bedroom", "Living Room" or "Hallway" as sub-locations. The Location Dossier reflects that structure automatically.<br>
-Note: Scenes are grouped by location name exactly as entered. Make sure the name is identical across all scenes at the same location — CINEside suggests the scene slug when you click an empty field, which is a good starting point for consistency.<br>
+Note: Scenes are grouped by location name exactly as entered. Make sure the name is identical across all scenes at the same location — CINEside suggests the scene slug when you click an empty field, which is a good starting point for consistency. When you rename a location, CINEside asks you to confirm: a simple rename applies to every scene using that name and keeps all notes and photos attached. If the new name matches another existing location that already has its own data, CINEside warns you before merging the two.<br>
 	•	Day for Night, Atmosphere (haze, fog, rain), Mood / Season — each with a color flag and notes field<br>
 	•	Additional Crew — extra crew members specific to this scene<br>
 	•	Additional Equipment — special equipment requirements<br>• To Check at Location — a shared checklist per location for things to verify on site (check angles, ceiling heights, take specific stills…). Items appear in every scene at the same location. Check items off as you confirm them; checked items are hidden from the Location Dossier PDF. Toggle "To Check" in the Dossier export panel to include open items.<br>
@@ -362,7 +367,7 @@ Note: Scenes are grouped by location name exactly as entered. Make sure the name
  </div> </div> 
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_410 solid   ">   </div> 
- <h5 class='       '   >7. Scene Tags</h5> 
+ <h5 class='       '   >7. Scene Tags & References</h5> 
  <p class='       '   >Use Scene Tags to group scenes by storyline, time period, dream sequence, flashback, or any recurring theme across your film.<br>
 Click Add / Edit next to Tags underneath the Location/Motif field. A modal lets you create a new tag with a custom colour, assign existing tags to this scene, or edit a tag you've already made. Renaming a tag or changing its colour updates it everywhere it's used — across every scene, in CINEside CONNECT, and in PDF exports. You can also delete a tag, which removes it from all scenes at once.<br>
 Assigned tags appear as coloured stripes along the left edge of each scene — in CINEside, in CINEside CONNECT, and in exported PDFs (enable the Tags toggle in the export panel).<br>
@@ -370,7 +375,10 @@ Typical uses:<br>
 
 	•	Storylines in parallel narratives ("Anne", "Peter", "Both")<br>
 	•	Time periods in historical or time-jumping films ("1890", "Present day")<br>
-	•	Dream sequences or flashbacks<br></p> 
+	•	Dream sequences or flashbacks<br><br>
+
+References — link test shoots, reference films, or location websites to a scene. Click + Add to attach a link.
+</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -397,7 +405,7 @@ MY NOTES: Every scene has a private Notes field. Use this for personal reminders
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_644 solid   ">   </div> 
  <h5 class='       '   >10. Preferences and working mode</h5> 
  <p class='       '   >Click ⚙ in the top right of the toolbar to open Preferences.<br><br>
-WORKING MODE: CINEside adapts to how you work on a project. In Cinematographer mode (the default), the interface shows elements as lighting plans, sun position, crew and equipment notes, and department discussions addressed to Director, Gaffer, Camera Department, Key Grip, and Dolly Grip. In Director mode, those fields give way to a different set: discussion notes for Screenwriter, Casting, Actor, Editor, and Composer. Switch modes anytime — your data is never deleted, just shown or hidden depending on your role.<br><br>
+WORKING MODE: CINEside adapts to how you work on a project. In Cinematographer mode (the default), the interface shows lighting plans, sun position, crew and equipment notes, and department discussions addressed to Director, 1st AD, Production, Gaffer, Camera Department, Key Grip, Dolly Grip, Costume, Make Up/Hair, and Art Department. In Director mode, those fields give way to a different set: discussion notes for Screenwriter, Casting, Actor, Editor, and Composer. Switch modes anytime — your data is never deleted, just shown or hidden depending on your role.<br><br>
 
 SHOT LABELS: Choose whether shots within a scene are labeled numerically (1, 2, 3 …) or alphabetically (A, B, C …). This affects how shots appear in the editor, in exports, and in the Shooting Order.<br><br>
 
@@ -436,7 +444,7 @@ Choose your layout:<br>
 	•	Format: A4, US Letter, iPad / Tablet — the same layout with larger text and a wider margin on script pages for Apple Pencil annotations. Export the PDF and open it in any PDF app on your tablet. CINEside is a Mac app and remains one; this export is a considered response to the practical reality of working with an iPad on set or in prep — not a native app, but a layout designed to be genuinely useful on large-screen tablets.
 <br><br>
 
-Under Include, select what gets added to the export: Scene Photos, Shot Photos, Floorplan, Lighting, Script Notes, My Notes, Tags, and Links. All are off by default — click individual toggles to turn them on, or use Full to enable all and None to reset.<br><br>
+Under Include, select what gets added to the export: Scene Photos, Shot Photos, Floorplan, Location, Lighting, Script Notes, My Notes, Tags, and Links. All are off by default — click individual toggles to turn them on, or use Full to enable all and None to reset.<br><br>
 Under Scenes, choose which scenes to include — all are selected by default, but you can deselect individual scenes for a partial export.<br><br>
 Add an optional Note that appears on the title page — useful for version notes or a message to collaborators.<br><br>
 From the export panel you can also generate Reference Sheets:<br>
@@ -492,7 +500,8 @@ The Director leads. Plan the project from a director's perspective — scene by 
 For either direction, use the Share button in the toolbar.
 Share → Director creates a .cnsf package with the full project and all reference photos, stripped of your private DP notes (lighting plans, sun position, crew, equipment).<br><br>
 Share → Cinematographer creates a .cnsf package stripped of your private director notes (screenwriter, casting, actor, editor, composer discussions).
-The recipient opens the .cnsf file in CINEside. A dialog asks for a project name and save location — after that, it becomes a normal editable CINEside project. All reference photos are included and work immediately, no setup required.</p> 
+The recipient opens the .cnsf file in CINEside. A dialog asks for a project name and save location — after that, it becomes a normal editable CINEside project. All reference photos are included and work immediately, no setup required.<br><br>
+Although technically possible, it is not recommended for two people to both work in CINEside individually and send .cnsf packages back and forth — each export is a full project snapshot with no merge capability. The app works best if one person is the author of the file and the other collaborates via CONNECT.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -533,7 +542,7 @@ The recipient opens the .cnsf file in CINEside. A dialog asks for a project name
  <h5 class='       '   >Tips</h5> 
  <p class='       '   >	•	Scene Manager — merge scenes that were incorrectly split, or remove false positives from the PDF import<br>
 	•	Part Divide — split a long scene into parts without creating separate scenes. Select text in the script and click ✂ Divide<br>
-	•	Script Search — type in the search field to find any line of dialogue or action. Use p42 to jump directly to script page 42. Press Enter to step through multiple results.<br>
+	• 	Search — type in the search field to find any line of dialogue or action, or search across your shot and scene data — matches stay highlighted as you navigate. Use p42 to jump directly to script page 42. Press Enter to step through multiple results.<br>
 	•	Undo — the ↩ Undo button undoes your last change (up to 40 steps)<br>
 	•	Edit Screenplay Text — Click any line in the script — in the dialog that appears, click ✎ Edit to place the cursor and correct OCR errors or typos directly<br>
 	•	Keyboard shortcuts — Cmd+S (save), Cmd+O (open), Cmd+N (new), Cmd+Z (undo), ← → arrows (navigate scenes), Cmd+F (focus script search)<br>
