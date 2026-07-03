@@ -283,9 +283,9 @@ Updates are digitally signed. Only updates signed by the official CINEside signi
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_338 solid   ">   </div> 
  <h5 class='       '   >1. Import your screenplay</h5> 
  <p class='       '   >Click Import PDF in the toolbar. CINEside accepts PDFs exported from Final Draft or any other screenwriting application.<br>
-After import, CINEside automatically detects all scene headings (INT./EXT.) and creates a scene for each one. The script text appears on the right side of each scene.<br>
-If a scene is missing: use Scene Manager to merge or split scenes, or select a heading in the script and click New Scene in the toolbar that appears.<br>
-Script version: enter the version in the Version field (e.g. "v3 / 2025-04-01") — this appears in your exported PDFs.</p> 
+After import, CINEside automatically detects all scene headings (INT./EXT.) and creates a scene for each one. The script text appears on the right side of each scene. Once detection finishes, the Scene Manager opens automatically so you can review, reorder, or adjust scene boundaries before continuing.<br>
+If a scene is missing: use Scene Manager to merge or split scenes, or select a heading in the script and click New Scene in the toolbar that appears..<br>
+Script version: enter the version in the Version field (e.g. "v3 / 2025-04-01") — this appears in your exported PDFs.<br></p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -296,7 +296,7 @@ Use Full Script when you receive a new draft — CINEside updates the script tex
 In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches appear in a Review modal where you confirm each one manually.<br><br>
 
 If CINEside cannot reliably detect scene boundaries in the imported PDF — for example with non-standard formats — the button Mark scenes manually appears automatically next to the import status. Click any line to mark it as a scene heading; click again to unmark it. This is a fallback for unusual formats and does not affect standard screenplays.<br><br>
-If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "orphaned anchor" badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored.</p> 
+If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "orphaned anchor" badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored.<br><br>In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches appear in a Review modal where you confirm each one manually. After confirming matches, the Scene Manager opens once more so you can review the merged result before continuing.</p> 
 <br> 
 <div id='stacks_out_674' class='stacks_out'><div id='stacks_in_674' class='stacks_in html_stack'><div style="max-width: 900px; margin: 0 auto;">
   <div style="position: relative; padding-bottom: 56.25%; height: 0;">
@@ -354,13 +354,13 @@ You can also work the other way around: click any script block and assign it to 
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_398 solid   ">   </div> 
  <h5 class='       '   >6. Scene information</h5> 
  <p class='       '   >Each scene has a detail panel with two kinds of information: a shared Location panel that connects every scene shot at the same place, and fields specific to that one scene.<br><br>
-Shared across every scene at the same location:<br><br>
+<strong>Shared across every scene at the same location:</strong><br><br>
 Location / Motif — the actual shooting location or set description. Click in the field to confirm or edit the name — once set, the blue Location panel below expands to show notes, reference photos, floorplan, and a "To Check at Location" checklist. Everything in this panel is shared: edit it once, and it updates on every scene shot there.<br><br>
 You can also add a sub-location to any scene — useful when multiple rooms or areas belong to the same building or set. For example: "Apartment Building" as the location, with "Bedroom", "Living Room" or "Hallway" as sub-locations. The Location Dossier reflects that structure automatically. As you type, CINEside suggests existing sub-locations already used within that same location — keeping room names consistent without pulling in unrelated suggestions from other locations.<br><br>
 Note: Scenes are grouped by location name exactly as entered. Make sure the name is identical across all scenes at the same location — CINEside suggests the scene slug when you click an empty field, which is a good starting point for consistency. As you type, the Location / Motif field also suggests matching names already used elsewhere in your project — helpful for avoiding accidental near-duplicates from typos or incomplete entries (it matches by substring, so typing part of an existing name will surface it).
 When you rename a location, CINEside asks you to confirm: a simple rename applies to every scene using that name and keeps all notes and photos attached. If the new name matches another existing location that already has its own data, CINEside warns you before merging the two.<br><br>
 To Check at Location — a shared checklist per location for things to verify on site (check angles, ceiling heights, take specific stills…). Items appear in every scene at the same location. Check items off as you confirm them; checked items are hidden from the Location Dossier PDF. Toggle "To Check" in the Dossier export panel to include open items.<br><br>
-Specific to this scene:<br><br>
+<strong>Specific to this scene:</strong><br><br>
 
 • Scene number, INT/EXT, Day/Night, Dawn, Dusk..., <br>• Page numbers of the original script<br>
 • Day for Night, Atmosphere (haze, fog, rain), Mood / Season — each with a color flag and notes field<br>
@@ -388,12 +388,12 @@ References — link test shoots, reference films, or location websites to a scen
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_564 solid   ">   </div> 
  <h5 class='       '   >8. Visual references</h5> 
+ <p class='       '   >Visual references live at two levels. Reference Photos, Sun Position, Lighting Plan, and Floorplan — Scene  belong to this one scene. <br>Location Photos and the location's Floorplan live in the blue Location panel instead (see Scene information above) and are shared across every scene at that location.</p> 
  <p class='       '   >	•	Reference Photos — locations, mood images, color references. Each photo can have a caption.<br>
 	•	Sun Position — screenshots from Helios, PhotoPills or similar apps<br>
 	•	Floorplan — storyboards, set diagrams, or hand-drawn plans. Click any image to rotate in lightbox.<br>
 	•	Lighting Plan — a dedicated image plus notes field for your lighting setup. Appears in the facing-pages PDF export if the Lighting toggle is selected.<br>
-	•	Scene Board — click <strong>Scene Board</strong> in the toolbar to open a dedicated second window showing all visual references for the current scene: floorplan, location photos, lighting plan, sketches, and reference photos. The board updates automatically as you navigate between scenes. Move it to a second monitor or use it on an iPad via Sidecar — your references stay visible while you work on the shot list.
-</p> 
+	•	Scene Board — click <strong>Scene Board</strong> in the toolbar to open a dedicated second window showing all visual references for the current scene: floorplan, location photos, lighting plan, Floorplan — Scene, and reference photos.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -445,11 +445,11 @@ Choose your layout:<br>
 	•	Shots & Script: facing pages, shots on the left, script on the right.<br>
 	•	Shot List only: just the shots, no script pages.<br>
 
-	•	Format: A4, US Letter, iPad / Tablet — the same layout with larger text and a wider margin on script pages for Apple Pencil annotations. Export the PDF and open it in any PDF app on your tablet. CINEside is a Mac app and remains one; this export is a considered response to the practical reality of working with an iPad on set or in prep — not a native app, but a layout designed to be genuinely useful on large-screen tablets.
+	•	Format: A4, US Letter, iPad / Tablet — the same layout with larger text. In iPad / Tablet mode, a labeled "NOTES" box with a fine dot grid is added after each shot — space to write directly on the PDF with an Apple Pencil. CINEside is a Mac app; this export is a considered response to the practical reality of working with an iPad on set or in prep — not a native app, but a layout designed to be genuinely useful on large-screen tablets.
 <br><br>
 
 Under Include, select what gets added to the export: Scene Photos, Shot Photos, Floorplan, Location, Lighting, Script Notes, My Notes, Tags, and Links. All are off by default — click individual toggles to turn them on, or use Full to enable all and None to reset.<br><br>
-Under Scenes, choose which scenes to include — all are selected by default, but you can deselect individual scenes for a partial export.<br><br>
+Under Scenes, choose which scenes to include — use All / None to select or clear every scene at once, all are selected by default, but you can deselect individual scenes for a partial export.<br><br>
 Add an optional Note that appears on the title page — useful for version notes or a message to collaborators.<br><br>
 From the export panel you can also generate Reference Sheets:<br>
 
@@ -548,7 +548,7 @@ Although technically possible, it is not recommended for two people to both work
 	•	Part Divide — split a long scene into parts without creating separate scenes. Select text in the script and click ✂ Divide<br>
 	• 	Search — type in the search field to find any line of dialogue or action, or search across your shot and scene data — matches stay highlighted as you navigate. Use p42 to jump directly to script page 42. Press Enter to step through multiple results.<br>
 	•	Undo — the ↩ Undo button undoes your last change (up to 40 steps)<br>
-	•	Edit Screenplay Text — Click any line in the script — in the dialog that appears, click ✎ Edit to place the cursor and correct OCR errors or typos directly<br>
+	•	Edit Screenplay Text — Select text in the script — the Attach bar appears below. Click ✎ Edit to place the cursor and correct OCR errors or typos directly.<br>
 	•	Keyboard shortcuts — Cmd+S (save), Cmd+O (open), Cmd+N (new), Cmd+Z (undo), ← → arrows (navigate scenes), Cmd+F (focus script search)<br>
 	•	On set with iPad — Use the iPad / Tablet pdf export for the best on-set experience: larger text and a wider margin on script pages leave room for Apple Pencil annotations.</p> 
 <br> 
