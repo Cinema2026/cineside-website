@@ -218,7 +218,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 04.07.26 -->
+	<!-- 05.07.26 -->
 </head>
 
 <body class="antialiased">
@@ -417,7 +417,16 @@ When you're ready to share, export a share package with one click. The other per
   color: #333;
   background: #fafafa;
 ">
-<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | July 2026</p></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.13</h4>
+<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | July 2026</p></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.14</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Fixed: Part boundaries (splitting a scene into parts) could silently drift out of place after a script re-import. They're now automatically re-anchored where possible, or clearly flagged with a one-click fix if the surrounding text changed too much.</li>
+<li>Improved: Shot anchors, camera moves, notes, and part boundaries left "out of sync" by a re-import are now tracked together, with a single clear way to jump to and fix each one in turn.</li>
+<li>Added: Two new automatic safety backups — one per day, and one right before every script re-import — independent of the existing rotating backups.</li>
+<li>Fixed: Manual corrections to a scene's heading (location, INT/EXT, DAY/NIGHT) made in Scene Manager could be silently overwritten by the next re-import. They're now protected.</li>
+<li>Added: Scenes can now be deleted completely from within Scene Manager, not just merged into the previous scene.</li>
+<li>Fixed: Undo (Cmd+Z) now works correctly while Scene Manager is open, with a visible Undo button there too.</li>
+<li>Improved: The "scenes changed by last import" navigation now also works from inside Scene Manager, showing the actual script diff instead of just the plain scene text.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.13</h4>
 <ul style="margin:4px 0 0 16px;padding:0;color:#555;">
 <li>Added: Scene-import review now shows uncertain candidates one at a time, with instant feedback and the ability to revisit and change any decision afterward.</li>
 <li>Added: Side-by-side PDF page comparison for duplicate scene checks, with independent page navigation and automatic highlighting of the relevant line.</li>
