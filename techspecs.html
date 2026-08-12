@@ -4,21 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Technical Specifications — CINEside</title>
-<meta name="description" content="System requirements, file formats, and technical specifications for CINEside shot planning software for cinematographers and directors.">
-<link rel="canonical" href="https://cineside.app/tech-specs.html">
+<meta name="description" content="System requirements, file formats, and technical specifications for CINEside shot planning software for cinematographers and directors — for Mac and iPad.">
+<link rel="canonical" href="https://cineside.app/techspecs.html">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://cineside.app/tech-specs.html">
+<meta property="og:url" content="https://cineside.app/techspecs.html">
 <meta property="og:title" content="Technical Specifications — CINEside">
-<meta property="og:description" content="System requirements, file formats, and licensing information for CINEside — shot planning software for cinematographers and directors.">
+<meta property="og:description" content="System requirements, file formats, and licensing information for CINEside — shot planning software for cinematographers and directors, for Mac and iPad.">
 <meta property="og:image" content="https://cineside.app/resources/picturep.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Technical Specifications — CINEside">
 <meta name="twitter:description" content="System requirements, file formats, and licensing information for CINEside.">
 
-<!-- SoftwareApplication Schema -->
+<!-- SoftwareApplication Schema — Mac + iPad -->
 <script type="application/ld+json">
+[
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -41,7 +42,6 @@
     }
   },
   "description": "CINEside is a Mac app for shot planning built around the screenplay. Import your script as PDF, plan shots scene by scene, attach reference photos, and export a complete shooting script as a facing-pages PDF.",
-  "softwareVersion": "1.0",
   "releaseNotes": "https://cineside.app/getting-started.html",
   "screenshot": "https://cineside.app/resources/picturep.png",
   "author": {
@@ -66,7 +66,39 @@
     "CINEside CONNECT collaboration workflow",
     "Fully offline — no cloud required"
   ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CINEside for iPad",
+  "url": "https://cineside.app",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Shot Planning",
+  "operatingSystem": "iPadOS 15 or newer",
+  "offers": {
+    "@type": "Offer",
+    "price": "149",
+    "priceCurrency": "EUR",
+    "description": "Free to download. Full version as a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license.",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "149",
+      "priceCurrency": "EUR",
+      "valueAddedTaxIncluded": true
+    }
+  },
+  "description": "CINEside for iPad is the native iPad version of CINEside — the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app.",
+  "author": {
+    "@type": "Person",
+    "name": "Matthias Grunsky",
+    "url": "https://cineside.app"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Matthias Grunsky"
+  }
 }
+]
 </script>
 
 <style>
@@ -291,6 +323,9 @@
     color: var(--text3);
     margin-bottom: 16px;
   }
+  .license-block + .license-block {
+    margin-top: 16px;
+  }
   .feature-list {
     list-style: none;
     display: grid;
@@ -393,9 +428,9 @@
       <a href="https://cineside.app"><img src="https://cineside.app/resources/picturep.png" alt="CINEside" class="site-logo"></a>
       <p class="brand">CINEside</p>
       <h1 class="page-title">Technical Specifications</h1>
-      <p class="page-subtitle">System requirements, file formats, and licensing information</p>
+      <p class="page-subtitle">System requirements, file formats, and licensing information — Mac &amp; iPad</p>
     </div>
-    <span class="version-badge">v1.1 — June 2026</span>
+    <span class="version-badge">Updated August 2026</span>
   </div>
 </header>
 
@@ -406,17 +441,17 @@
     <h2 class="section-label">System Requirements</h2>
     <table class="spec-table">
       <tr>
-        <td>Operating System</td>
+        <td>Mac</td>
         <td>
           macOS 10.13 High Sierra or newer
-          <p class="note">Recommended: macOS 13 Ventura or newer for best performance.</p>
+          <p class="note">Recommended: macOS 13 Ventura or newer for best performance. Universal binary — runs natively on Apple Silicon (M1/M2/M3/M4) and Intel, no Rosetta required.</p>
         </td>
       </tr>
       <tr>
-        <td>Processor</td>
+        <td>iPad</td>
         <td>
-          Universal binary — runs natively on Apple Silicon (M1/M2/M3/M4) and Intel
-          <p class="note">No Rosetta translation layer required on Apple Silicon Macs.</p>
+          iPadOS 15 or newer — native iPad app, free on the App Store
+          <p class="note">Same project format as the Mac version. Open a project started on your Mac right on your iPad, or vice versa.</p>
         </td>
       </tr>
       <tr>
@@ -430,11 +465,11 @@
         <td>Internet</td>
         <td>
           Not required — CINEside is fully offline
-          <p class="note">Internet is only used for software download, license activation, and software updates. All data stays on your machine</p>
+          <p class="note">Internet is only used for software download, license activation, and software updates. All data stays on your device.</p>
         </td>
       </tr>
       <tr>
-        <td>Display</td>
+        <td>Display (Mac)</td>
         <td>1280 × 800 minimum, Retina recommended</td>
       </tr>
     </table>
@@ -448,7 +483,7 @@
       <div class="format-card">
         <div class="format-ext">.cnsd</div>
         <div class="format-name">CINEside Project</div>
-        <div class="format-desc">Main project file. Stored as a folder containing the project data and all associated photos. Open by double-click or drag onto the app.</div>
+        <div class="format-desc">Main project file. Stored as a folder containing the project data and all associated photos. Open by double-click or drag onto the app. Shared between the Mac and iPad versions.</div>
         <span class="format-tag">CINEside</span>
       </div>
 
@@ -502,7 +537,7 @@
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — iPad / Tablet</span>
-      <span class="import-desc">Same facing-pages layout as Shots &amp; Script, with larger text and a wider margin on script pages for Apple Pencil annotations. Designed for reading in landscape on a large tablet — shots on the left, script on the right. CINEside is a Mac app; this is a considered response to on-set tablet use, not a native iPad app.</span>
+      <span class="import-desc">Same facing-pages layout as Shots &amp; Script, with larger text and a wider margin on script pages for Apple Pencil annotations. Useful alongside the native iPad app — when you want a fixed PDF to mark up, or to hand to someone who doesn't use CINEside.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Notes Sheet</span>
@@ -534,17 +569,18 @@
     </div>
     <div class="import-row">
       <span class="import-ext">CSV</span>
-      <span class="import-desc">Shot List and Schedule export as comma-separated spreadsheet — importable into Excel, Numbers, Google Sheets, or any scheduling software. Includes all shot data: scene, size, angle, movement, anchor, VFX/SFX flags, notes, and estimated time per shot.</span>
+      <span class="import-desc">Shot List and Schedule export as comma-separated spreadsheets — importable into Excel, Numbers, Google Sheets, or any scheduling software. The Shot List CSV covers all shot data: scene, size, angle, movement, anchor, VFX/SFX flags, and notes. The Schedule CSV adds the day-by-day shooting order with estimated time per shot — designed for the AD.</span>
     </div>
   </section>
 
   <!-- Licensing -->
   <section class="section">
     <h2 class="section-label">Licensing &amp; Purchase</h2>
+
     <div class="license-block">
-      <h3>CINEside for Mac</h3>
+      <h3>CINEside for Mac &amp; iPad — one license</h3>
       <div class="price">€129 <span style="font-size:16px;font-weight:400;color:var(--text3);">excl. VAT</span></div>
-      <p class="price-note">Sold via Gumroad · License key delivered by email</p>
+      <p class="price-note">Sold via Gumroad · Covers Mac and iPad · On iPad, sign in with your account</p>
       <ul class="feature-list">
         <li>One-time purchase</li>
         <li>Free updates — no subscription</li>
@@ -553,10 +589,29 @@
         <li>Unlimited PDF exports</li>
         <li>CONNECT export enabled</li>
         <li>No watermarks</li>
-        <li>Up to 3 device activations</li>
+        <li>Up to 3 device activations — Mac and iPad</li>
       </ul>
-      <p class="demo-note">Without a license key, CINEside runs in demo mode: the app is fully functional for evaluation, but saving, CONNECT export, and PDF export are restricted (PDFs are watermarked). A license key is entered once in the app — a brief internet connection is required for activation, after which the app runs fully offline. No account or login required. One license key can be active on up to 3 devices at once. Replacing a device? Preferences → Deactivate This Device frees up a slot instantly.</p>
+      <p class="demo-note">Without a license, CINEside runs in demo mode: the app is fully functional for evaluation — including the Schedule — but saving, sharing (.cnsf), and CONNECT export are disabled. PDF exports work, but are watermarked. On the Mac, enter your license key once — a brief internet connection is required for activation, after which the app runs fully offline. On the iPad, sign in once with the account from your purchase. One license can be active on up to 3 devices at once. Replacing a device? Preferences → Deactivate This Device frees up a slot instantly.</p>
     </div>
+
+    <div class="license-block">
+      <h3>CINEside for iPad — App Store purchase</h3>
+      <div class="price">€149 <span style="font-size:16px;font-weight:400;color:var(--text3);">incl. VAT (EU price)</span></div>
+      <p class="price-note">One-time in-app purchase · Unlocks the iPad app only</p>
+      <ul class="feature-list">
+        <li>One-time purchase</li>
+        <li>Free updates — no subscription</li>
+        <li>Full offline use</li>
+        <li>Atomic saving &amp; rolling backups</li>
+        <li>Unlimited PDF exports</li>
+        <li>CONNECT export enabled</li>
+        <li>No watermarks</li>
+        <li>Restore anytime via your Apple ID</li>
+      </ul>
+      <p class="demo-note">The iPad app is a free download from the App Store and starts in the same demo mode as the Mac version. If you work on iPad only, unlock the full version directly in the app with a one-time in-app purchase. Already own CINEside for Mac? Sign in with your existing account instead — no extra cost.</p>
+    </div>
+
+    <p class="note" style="margin-top:14px;">The €129 license is billed in euros, with VAT added only where it applies. The App Store shows final pricing in your local currency; €149 is the EU price incl. VAT. Depending on your region, both routes come to a similar amount.</p>
   </section>
 
   <!-- CONNECT -->
@@ -564,7 +619,7 @@
     <h2 class="section-label">CINEside CONNECT</h2>
     <div class="connect-block">
       <h3>Free companion app for collaborators</h3>
-      <p>Collaborators — directors, script supervisors, or anyone reviewing the shot plan — use CINEside CONNECT to receive a read-only view, leave annotations and notes, and send them back. No CINEside license required.</p>
+      <p>Collaborators — directors, script supervisors, or anyone reviewing the shot plan — use CINEside CONNECT to receive a read-only view, leave annotations and notes, and send them back. No CINEside license required. CONNECT is currently available for Mac.</p>
       <span class="free-badge">Free — no license required</span>
     </div>
   </section>
@@ -575,7 +630,7 @@
     <table class="spec-table">
       <tr>
         <td>Data storage</td>
-        <td>All project data is stored locally on your Mac. Nothing is uploaded to any server.</td>
+        <td>All project data is stored locally on your device. Nothing is uploaded to any server.</td>
       </tr>
       <tr>
         <td>Cloud sync</td>
@@ -592,7 +647,7 @@
       </tr>
       <tr>
         <td>License activation</td>
-        <td>Requires a one-time internet connection to validate the Gumroad license key. No account is created.</td>
+        <td>Mac: a one-time internet connection to validate the license key. iPad: sign in once with the account from your purchase, or buy the full version in the app via the App Store.</td>
       </tr>
       <tr>
         <td>Analytics / Telemetry</td>
@@ -609,7 +664,7 @@
 </footer>
 
 <p style="text-align:center; margin-top:40px;">
-  <a href="/" style="color:#c27118; text-decoration:none;">← Back to CINEside</a>
+  <a href="/" style="color:#b87c1a; text-decoration:none;">← Back to CINEside</a>
 </p>
 <br><br>
 

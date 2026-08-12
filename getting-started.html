@@ -22,6 +22,8 @@
 <!-- ========================================================================
      CINEside &mdash; cineside.app
      Production <head> with SEO, OpenGraph, Twitter Card, JSON-LD
+     iPad-READY VERSION &mdash; publish only after App Store approval.
+     TODO before publish: replace APP_STORE_LINK_HIER_EINSETZEN (2&times;).
      ======================================================================== -->
 
 <meta charset="utf-8">
@@ -29,36 +31,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
-<title>CINEside &mdash; Film prep for cinematographers &amp; directors | Mac app</title>
-<meta name="description" content="CINEside is a Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
-<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, offline, CINEside, CINEside CONNECT">
+<!-- <title> wird pro Seite in RapidWeaver gesetzt (Seiteninspektor &rarr; Browser-Titel),
+     NICHT hier &mdash; sonst doppelte Title-Tags. Startseite am Freigabetag:
+     "CINEside &mdash; Shot planning for cinematographers & directors | Mac & iPad".
+     Meta description sitzt im seitenspezifischen Head-Code jeder Seite. -->
+<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, iPad app, iPad shot list, offline, CINEside, CINEside CONNECT">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <!-- ── Favicon & App icons ───────────────────────────────────────────────── -->
 <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
-<meta name="theme-color" content="#c27118">
+<meta name="theme-color" content="#b87c1a">
 
 <!-- ── Open Graph (Facebook, LinkedIn, Slack, Messaging apps) ────────────── -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta property="og:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta property="og:title" content="CINEside &mdash; Find the film on paper">
+<meta property="og:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta property="og:image" content="https://cineside.app/resources/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta property="og:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CINEside">
 
 <!-- ── Twitter / X Card ──────────────────────────────────────────────────── -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta name="twitter:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta name="twitter:title" content="CINEside &mdash; Find the film on paper">
+<meta name="twitter:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
-<meta name="twitter:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta name="twitter:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 
-<!-- ── Structured data: CINEside as a SoftwareApplication ────────────────── -->
+<!-- ── Structured data: CINEside for Mac ─────────────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,13 +78,13 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
-  "softwareVersion": "1.7",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
   "inLanguage": "en",
   "featureList": [
     "Import screenplays as PDF with automatic scene detection",
     "Build shot lists with size, angle, lens, camera move, POV/OS",
     "Anchor shots to specific passages in the script",
+    "Re-import revised drafts &mdash; shots, notes, and anchors stay attached",
     "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
     "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
     "Flag VFX and SFX shots and export separate shot lists for post production",
@@ -109,6 +113,41 @@
 }
 </script>
 
+<!-- ── Structured data: CINEside for iPad ────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-ipad",
+  "name": "CINEside for iPad",
+  "description": "The native iPad version of CINEside &mdash; the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app. Free to download; the full version is a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "iPadOS 15 or newer",
+  "downloadUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "installUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "inLanguage": "en",
+  "featureList": [
+    "Same project format as CINEside for Mac &mdash; open projects on either device",
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists and anchor shots to script passages",
+    "Place camera, character, light, and grip anchors on floorplans",
+    "Export facing-pages PDF, shot list, schedule, and reference sheets on device",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "149.00",
+    "priceCurrency": "EUR",
+    "description": "Free to download. Full version as a one-time in-app purchase (EU price incl. VAT; local pricing on the App Store), or unlocked at no extra cost with an existing CINEside license.",
+    "availability": "https://schema.org/InStock",
+    "url": "APP_STORE_LINK_HIER_EINSETZEN"
+  }
+}
+</script>
+
 <!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
 <script type="application/ld+json">
 {
@@ -124,7 +163,6 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest",
-  "softwareVersion": "0.3.0",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases",
   "inLanguage": "en",
   "featureList": [
@@ -144,13 +182,9 @@
   "isAccessoryOrSparePartFor": {
     "@id": "https://cineside.app/#cineside"
   }
-},
-
+}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="
-
-" />
 		<link rel="apple-touch-icon" sizes="167x167" href="https://cineside.app/resources/medium.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://cineside.app/resources/picturep.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="https://cineside.app/resources/small.png" />
@@ -219,7 +253,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 04.08.26 -->
+	<!-- 12.08.26 -->
 </head>
 
 <body class="antialiased">
@@ -269,10 +303,8 @@
 </div></div></div><div class="lines-wrapper "> <hr class="lines stacks_in_636 solid   ">   </div> 
  <h5 class='       '   >Demo mode and full version</h5> 
  <p class='       '   >CINEside starts in Demo Mode. You can import your screenplay, plan shots, add references, write notes, and see how everything comes together — with your own script.<br>
-Four things are disabled in Demo Mode: saving your project as a .cnsd file,
-exporting to CONNECT for your collaborator, sharing a project as .cnsf, and
-the Schedule feature. PDF exports work, but are watermarked.<br>
-When you're ready: buy a license at cineside.app, then click Activate License → in the toolbar, or launch CINEside and enter your key on the license screen. The app switches to the full version immediately — saving, CONNECT export, and clean PDFs unlock.<br>
+Three things are disabled in Demo Mode: saving your project as a .cnsd file, exporting to CONNECT for your collaborator, and sharing a project as .cnsf. Everything else works — including the Schedule. PDF exports are watermarked.<br>
+When you're ready: buy a license at cineside.app, then click Activate License → in the toolbar, or launch CINEside and enter your key on the license screen. The app switches to the full version immediately — saving, sharing, CONNECT export, and clean PDFs unlock..<br>
 One license stays with you. Updates are free.</p> 
 <br> 
  </div> </div> 
@@ -303,7 +335,7 @@ light positions.
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_609 solid   ">   </div> 
  <h5 class='       '   >2. Re-importing a revised screenplay</h5> 
- <p class='       '   >When a new draft arrives, click Import PDF again. CINEside offers two modes: Use Full Script when you receive a new draft — CINEside updates the script text throughout while keeping your shots, notes, and anchors intact. Use Revisions Only for partial updates, when only receive specific revised pages. In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches go through the same review step described above before anything is changed. If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "orphaned anchor" badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored. After confirming matches, the Scene Manager opens once more so you can review the merged result before continuing.</p> 
+ <p class='       '   >When a new draft arrives, click Import new version — the Import PDF button changes its label once a script is loaded. CINEside offers two modes: Use Full Script when you receive a new draft — CINEside updates the script text throughout while keeping your shots, notes, and anchors intact. Use Revisions Only for partial updates, when you only receive specific revised pages. In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches go through the same review step described above before anything is changed. If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "out of sync." badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored. After confirming matches, the Scene Manager opens once more so you can review the merged result before continuing.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -419,8 +451,8 @@ DEFAULT PROJECTS FOLDER: Change where CINEside saves new projects.</p>
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_434 solid   ">   </div> 
  <h5 class='       '   >11. Schedule</h5> 
  <p class='       '   >Click Schedule in the toolbar. The workflow has two phases.<br>
-Phase 1 — Assign scenes to shoot days. A full-screen kanban view opens with all your scenes in a pool on the left. Enter the number of shoot days and click Create Days — or add individual days with + Day. Drag scenes from the pool onto any day box. A scene can be assigned to multiple days (it will appear in each box marked as a split). To move a scene between days, drag its chip directly from one box to another. You can rename a day by clicking its label, reorder days by dragging the box header, and swap adjacent days using the ← → arrows. Each day box shows the total number of scenes and shots at a glance. Days can be marked as Pre-Shoot, Splinter Unit, 2nd Unit, or Post-Shoot using the badge on the left of each column header — these are numbered independently from regular shoot days..<br>.<br>
-Phase 2 — Order the shots. Click Shot Ordering → to continue. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence — a line indicator shows exactly where the shot will land. Enter an estimated time in minutes per shot; the running total for that day updates live in the tab header. If a scene is split across days, use the day selector on any shot card to assign individual shots to their specific day..<br>.<br>
+Phase 1 — Assign scenes to shoot days. A full-screen kanban view opens with all your scenes in a pool on the left. Enter the number of shoot days and click Create Days — or add individual days with + Day. Drag scenes from the pool onto any day box. A scene can be assigned to multiple days (it will appear in each box marked as a split). To move a scene between days, drag its chip directly from one box to another. You can rename a day by clicking its label, reorder days by dragging the box header, and swap adjacent days using the ← → arrows. Each day box shows the total number of scenes and shots at a glance. Days can be marked as Pre-Shoot, Splinter Unit, 2nd Unit, or Post-Shoot using the badge on the left of each column header — these are numbered independently from regular shoot days.<br><br>
+Phase 2 — Order the shots. Click Shot Ordering → to continue. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence — a line indicator shows exactly where the shot will land. Enter an estimated time in minutes per shot; the running total for that day updates live in the tab header. If a scene is split across days, use the day selector on any shot card to assign individual shots to their specific day.<br><br>
 Export. Use PDF — This Day for a single day's shooting order, or PDF — All Days for the complete schedule — each day opens with a header showing the shot count and estimated total time for that day. The CSV export covers all days and is designed for the AD — importable into Excel, Numbers, or a scheduling software. Enable the Scene and Shot toggles in the export panel to include additional crew & equipment, scene photos, floorplan, lighting, shot photos, notes, and reference links alongside the shot sequence.<br>
 The schedule is saved with the project and restored when you reopen the modal.
 </p> 
@@ -438,13 +470,13 @@ The schedule is saved with the project and restored when you reopen the modal.
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_446 solid   ">   </div> 
  <h5 class='       '   >12. Export PDF</h5> 
- <p class='       '   >click Export ↗ in the toolbar on top<br><br>
+ <p class='       '   >Click Export ↗ in the toolbar on top<br><br>
 Choose your layout:<br>
 
 	•	Shots & Script: facing pages, shots on the left, script on the right.<br>
 	•	Shot List only: just the shots, no script pages.<br>
 
-	•	Format: A4, US Letter, iPad / Tablet — the same layout with larger text. In iPad / Tablet mode, a labeled "NOTES" box with a fine dot grid is added after each shot — space to write directly on the PDF with an Apple Pencil. CINEside is a Mac app; this export is a considered response to the practical reality of working with an iPad on set or in prep — not a native app, but a layout designed to be genuinely useful on large-screen tablets.
+	•	Format: A4, US Letter, iPad / Tablet — the same layout with larger text. In iPad / Tablet mode, a labeled "NOTES" box with a fine dot grid is added after each shot — space to write directly on the PDF with an Apple Pencil. This export remains useful even now that CINEside runs natively on iPad — it's the right format when you want a fixed PDF to annotate with Apple Pencil, or to hand to someone who doesn't use CINEside.
 <br><br>
 
 Under Include, select what gets added to the export: Scene Photos, Shot Photos, Floorplan, Location, Lighting, Script Notes, My Notes, Tags, and Links. All are off by default — click individual toggles to turn them on, or use Full to enable all and None to reset.<br><br>
@@ -510,7 +542,7 @@ Although technically possible, it is not recommended for two people to both work
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_575 solid   ">   </div> 
  <h5 class='       '   >File formats</h5> 
-<div id='stacks_out_627' class='stacks_out'><div id='stacks_in_627' class='stacks_in html_stack'><p>CINEside uses three file types:</p>
+<div id='stacks_out_627' class='stacks_out'><div id='stacks_in_627' class='stacks_in html_stack'><p>CINEside uses four file types:</p>
 
 <div style="display:flex; align-items:flex-start; gap:14px; margin:18px 0;">
   <img src="https://cineside.app/resources/cnsd.png" style="width:30px; height:30px; flex-shrink:0; margin-top:2px;">
@@ -549,7 +581,7 @@ Although technically possible, it is not recommended for two people to both work
 	•	Undo — the ↩ Undo button undoes your last change (up to 40 steps)<br>
 	•	Edit Screenplay Text — Select text in the script — the Attach bar appears below. Click ✎ Edit to place the cursor and correct OCR errors or typos directly.<br>
 	•	Keyboard shortcuts — Cmd+S (save), Cmd+O (open), Cmd+N (new), Cmd+Z (undo), ← → arrows (navigate scenes), Cmd+F (focus script search)<br>
-	•	On set with iPad — Use the iPad / Tablet pdf export for the best on-set experience: larger text and a wider margin on script pages leave room for Apple Pencil annotations.</p> 
+	•	On set with iPad — Use the iPad / Tablet pdf export for the best on-set experience</p> 
 <br> 
  </div> </div> 
   </div>   </div>   

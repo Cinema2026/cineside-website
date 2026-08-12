@@ -22,6 +22,8 @@
 <!-- ========================================================================
      CINEside &mdash; cineside.app
      Production <head> with SEO, OpenGraph, Twitter Card, JSON-LD
+     iPad-READY VERSION &mdash; publish only after App Store approval.
+     TODO before publish: replace APP_STORE_LINK_HIER_EINSETZEN (2&times;).
      ======================================================================== -->
 
 <meta charset="utf-8">
@@ -29,36 +31,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
-<title>CINEside &mdash; Film prep for cinematographers &amp; directors | Mac app</title>
-<meta name="description" content="CINEside is a Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
-<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, offline, CINEside, CINEside CONNECT">
+<!-- <title> wird pro Seite in RapidWeaver gesetzt (Seiteninspektor &rarr; Browser-Titel),
+     NICHT hier &mdash; sonst doppelte Title-Tags. Startseite am Freigabetag:
+     "CINEside &mdash; Shot planning for cinematographers & directors | Mac & iPad".
+     Meta description sitzt im seitenspezifischen Head-Code jeder Seite. -->
+<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, iPad app, iPad shot list, offline, CINEside, CINEside CONNECT">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <!-- ── Favicon & App icons ───────────────────────────────────────────────── -->
 <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
-<meta name="theme-color" content="#c27118">
+<meta name="theme-color" content="#b87c1a">
 
 <!-- ── Open Graph (Facebook, LinkedIn, Slack, Messaging apps) ────────────── -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta property="og:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta property="og:title" content="CINEside &mdash; Find the film on paper">
+<meta property="og:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta property="og:image" content="https://cineside.app/resources/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta property="og:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CINEside">
 
 <!-- ── Twitter / X Card ──────────────────────────────────────────────────── -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta name="twitter:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta name="twitter:title" content="CINEside &mdash; Find the film on paper">
+<meta name="twitter:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
-<meta name="twitter:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta name="twitter:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 
-<!-- ── Structured data: CINEside as a SoftwareApplication ────────────────── -->
+<!-- ── Structured data: CINEside for Mac ─────────────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,13 +78,13 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
-  "softwareVersion": "1.7",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
   "inLanguage": "en",
   "featureList": [
     "Import screenplays as PDF with automatic scene detection",
     "Build shot lists with size, angle, lens, camera move, POV/OS",
     "Anchor shots to specific passages in the script",
+    "Re-import revised drafts &mdash; shots, notes, and anchors stay attached",
     "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
     "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
     "Flag VFX and SFX shots and export separate shot lists for post production",
@@ -109,6 +113,41 @@
 }
 </script>
 
+<!-- ── Structured data: CINEside for iPad ────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-ipad",
+  "name": "CINEside for iPad",
+  "description": "The native iPad version of CINEside &mdash; the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app. Free to download; the full version is a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "iPadOS 15 or newer",
+  "downloadUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "installUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "inLanguage": "en",
+  "featureList": [
+    "Same project format as CINEside for Mac &mdash; open projects on either device",
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists and anchor shots to script passages",
+    "Place camera, character, light, and grip anchors on floorplans",
+    "Export facing-pages PDF, shot list, schedule, and reference sheets on device",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "149.00",
+    "priceCurrency": "EUR",
+    "description": "Free to download. Full version as a one-time in-app purchase (EU price incl. VAT; local pricing on the App Store), or unlocked at no extra cost with an existing CINEside license.",
+    "availability": "https://schema.org/InStock",
+    "url": "APP_STORE_LINK_HIER_EINSETZEN"
+  }
+}
+</script>
+
 <!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
 <script type="application/ld+json">
 {
@@ -124,7 +163,6 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest",
-  "softwareVersion": "0.3.0",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases",
   "inLanguage": "en",
   "featureList": [
@@ -144,12 +182,9 @@
   "isAccessoryOrSparePartFor": {
     "@id": "https://cineside.app/#cineside"
   }
-},
-
+}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="
-" />
 		<link rel="apple-touch-icon" sizes="167x167" href="https://cineside.app/resources/medium.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://cineside.app/resources/picturep.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="https://cineside.app/resources/small.png" />
@@ -202,7 +237,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 02.08.26 -->
+	<!-- 12.08.26 -->
 </head>
 
 <body class="antialiased">

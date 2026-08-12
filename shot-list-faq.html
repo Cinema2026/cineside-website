@@ -22,6 +22,8 @@
 <!-- ========================================================================
      CINEside &mdash; cineside.app
      Production <head> with SEO, OpenGraph, Twitter Card, JSON-LD
+     iPad-READY VERSION &mdash; publish only after App Store approval.
+     TODO before publish: replace APP_STORE_LINK_HIER_EINSETZEN (2&times;).
      ======================================================================== -->
 
 <meta charset="utf-8">
@@ -29,36 +31,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
-<title>CINEside &mdash; Film prep for cinematographers &amp; directors | Mac app</title>
-<meta name="description" content="CINEside is a Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
-<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, offline, CINEside, CINEside CONNECT">
+<!-- <title> wird pro Seite in RapidWeaver gesetzt (Seiteninspektor &rarr; Browser-Titel),
+     NICHT hier &mdash; sonst doppelte Title-Tags. Startseite am Freigabetag:
+     "CINEside &mdash; Shot planning for cinematographers & directors | Mac & iPad".
+     Meta description sitzt im seitenspezifischen Head-Code jeder Seite. -->
+<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, iPad app, iPad shot list, offline, CINEside, CINEside CONNECT">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <!-- ── Favicon & App icons ───────────────────────────────────────────────── -->
 <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
-<meta name="theme-color" content="#c27118">
+<meta name="theme-color" content="#b87c1a">
 
 <!-- ── Open Graph (Facebook, LinkedIn, Slack, Messaging apps) ────────────── -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta property="og:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta property="og:title" content="CINEside &mdash; Find the film on paper">
+<meta property="og:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta property="og:image" content="https://cineside.app/resources/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta property="og:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CINEside">
 
 <!-- ── Twitter / X Card ──────────────────────────────────────────────────── -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta name="twitter:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta name="twitter:title" content="CINEside &mdash; Find the film on paper">
+<meta name="twitter:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
-<meta name="twitter:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta name="twitter:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 
-<!-- ── Structured data: CINEside as a SoftwareApplication ────────────────── -->
+<!-- ── Structured data: CINEside for Mac ─────────────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,13 +78,13 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
-  "softwareVersion": "1.7",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
   "inLanguage": "en",
   "featureList": [
     "Import screenplays as PDF with automatic scene detection",
     "Build shot lists with size, angle, lens, camera move, POV/OS",
     "Anchor shots to specific passages in the script",
+    "Re-import revised drafts &mdash; shots, notes, and anchors stay attached",
     "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
     "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
     "Flag VFX and SFX shots and export separate shot lists for post production",
@@ -109,6 +113,41 @@
 }
 </script>
 
+<!-- ── Structured data: CINEside for iPad ────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-ipad",
+  "name": "CINEside for iPad",
+  "description": "The native iPad version of CINEside &mdash; the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app. Free to download; the full version is a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "iPadOS 15 or newer",
+  "downloadUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "installUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "inLanguage": "en",
+  "featureList": [
+    "Same project format as CINEside for Mac &mdash; open projects on either device",
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists and anchor shots to script passages",
+    "Place camera, character, light, and grip anchors on floorplans",
+    "Export facing-pages PDF, shot list, schedule, and reference sheets on device",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "149.00",
+    "priceCurrency": "EUR",
+    "description": "Free to download. Full version as a one-time in-app purchase (EU price incl. VAT; local pricing on the App Store), or unlocked at no extra cost with an existing CINEside license.",
+    "availability": "https://schema.org/InStock",
+    "url": "APP_STORE_LINK_HIER_EINSETZEN"
+  }
+}
+</script>
+
 <!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
 <script type="application/ld+json">
 {
@@ -124,7 +163,6 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest",
-  "softwareVersion": "0.3.0",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases",
   "inLanguage": "en",
   "featureList": [
@@ -144,13 +182,9 @@
   "isAccessoryOrSparePartFor": {
     "@id": "https://cineside.app/#cineside"
   }
-},
-
+}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="
-
-" />
 		<link rel="apple-touch-icon" sizes="167x167" href="https://cineside.app/resources/medium.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://cineside.app/resources/picturep.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="https://cineside.app/resources/small.png" />
@@ -175,7 +209,7 @@
       "name": "How do I collaborate on the shot list with my director?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The shot list is rarely something the cinematographer builds alone — at least not without input from the director, and not the version that ends up on set. It develops in conversation: ideas about the emotions a scene wants to transport, perspective, blocking, pacing, what the scene is really about visually. The tool you use should support that conversation, not get in the way of it. There are three common approaches: PDF export. You build the shot list, export as PDF, email it. Simple and universal, but the director can't comment back in context. Cloud platforms. Several tools let the director join your project online. Works for team-heavy productions, but the director needs an account, sometimes a paid seat, and your screenplay lives on someone else's server. Share package. If your director is also building or editing the shot list — or if you want to hand off a fully editable project — CINEside lets you export a .cnsf share package. It contains the project and all reference images in a single file. The other person opens it in CINEside, chooses a name and location, and continues working on it as a normal project. Private notes are stripped before sending — you control what the other person sees. Companion app. CINEside CONNECT takes a different route for annotation. You export a .cnct package, your director opens it in CINEside CONNECT — a free companion app — adds notes to shots, script passages, and reference images, and sends their notes back as a separate file. The director doesn't pay anything, doesn't sign up for anything, and your script never goes through a cloud. CONNECT is read-only — it's designed for reviewing and annotating, not for editing the project itself. Whichever approach you choose, the deeper question is the same: how do you keep the conversation alive when the director and cinematographer aren't in the same room? Especially in early prep — when ideas are still moving and the script is still changing — that question shapes the whole process."
+        "text": "The shot list is rarely something the cinematographer builds alone — at least not without input from the director, and not the version that ends up on set. It develops in conversation: ideas about the emotions a scene wants to transport, perspective, blocking, pacing, what the scene is really about visually. The tool you use should support that conversation, not get in the way of it. There are a few common approaches: PDF export. You build the shot list, export as PDF, email it. Simple and universal, but the director can't comment back in context. Cloud platforms. Several tools let the director join your project online. Works for team-heavy productions, but the director needs an account, sometimes a paid seat, and your screenplay lives on someone else's server. Share package. If your director is also building or editing the shot list — or if you want to hand off a fully editable project — CINEside lets you export a .cnsf share package. It contains the project and all reference images in a single file. The other person opens it in CINEside, chooses a name and location, and continues working on it as a normal project. Private notes are stripped before sending — you control what the other person sees. Companion app. CINEside CONNECT takes a different route for annotation. You export a .cnct package, your director opens it in CINEside CONNECT — a free companion app — adds notes to shots, script passages, and reference images, and sends their notes back as a separate file. The director doesn't pay anything, doesn't sign up for anything, and your script never goes through a cloud. CONNECT is read-only — it's designed for reviewing and annotating, not for editing the project itself. Whichever approach you choose, the deeper question is the same: how do you keep the conversation alive when the director and cinematographer aren't in the same room? Especially in early prep — when ideas are still moving and the script is still changing — that question shapes the whole process."
       }
     },
     {
@@ -215,7 +249,7 @@
       "name": "Can I work with a director who's in another country or time zone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — and increasingly, this is just how prep happens. A lot of my recent work begins long before anyone is in the same room. The director might be in Los Angeles, in New York, in Vienna, while I'm in Munich. We talk over video calls, we share script ideas and references, we build the shot list across time zones. What used to be a face-to-face process happens now, weeks before any flights are booked, often months before principal photography. What makes that work — or not — is how easily ideas can be shared and built on without losing context. A reference image without the scene it belongs to is just an image. A note about a shot without the script passage it relates to is hard to act on later. Whatever tools you use, the goal is to keep everything connected: the script, the shots, the visuals, the notes from the conversation — all in one place that both of you can see. I took this remote process further than ever on There There, a film about emotional distance between people. With director Andrew Bujalski, we made a deliberate choice to mirror the story's themes in how the film was shot: actors never met their counterparts on screen, each one isolated in a different location, sometimes thousands of miles apart. Andrew and I were never on set with them. Every location in the script was actually two different real places. Scenes were shot weeks or months apart, edited together later. The whole prep process was remote by design — and it surfaced exactly the kind of organizational challenge that prompted me to start building CINEside. CINEside is built for this kind of work. The director gets a package file, opens it in CINEside CONNECT, and adds notes directly to shots, script passages, and reference images. You import the notes back, see them all highlighted in context, and respond. No accounts, no shared servers, no syncing problems. The screenplay and everything around it stay between the two of you."
+        "text": "Yes — and increasingly, this is just how prep happens. A lot of my recent work begins long before anyone is in the same room. The director might be in Los Angeles, in New York, in Vienna, while I'm in Munich. We talk over video calls, we share script ideas and references, we build the shot list across time zones. What used to be a face-to-face process happens now, weeks before any flights are booked, often months before principal photography. What makes that work — or not — is how easily ideas can be shared and built on without losing context. A reference image without the scene it belongs to is just an image. A note about a shot without the script passage it relates to is hard to act on later. Whatever tools you use, the goal is to keep everything connected: the script, the shots, the visuals, the notes from the conversation — all in one place that both of you can see. I took this remote process further than ever on There There, a film about emotional distance between people. With director Andrew Bujalski, we made a deliberate choice to mirror the story's themes in how the film was shot: actors never met their counterparts on screen, each one isolated in a different location, sometimes thousands of miles apart. Andrew and I were never on set with them. Every location in the script was actually two different real places. Scenes were shot weeks or months apart, edited together later. The whole prep process was remote by design. CINEside is built for this kind of work. The director gets a package file, opens it in CINEside CONNECT, and adds notes directly to shots, script passages, and reference images. You import the notes back, see them all highlighted in context, and respond. No accounts, no shared servers, no syncing problems. The screenplay and everything around it stay between the two of you."
       }
     },
     {
@@ -223,10 +257,7 @@
       "name": "Does CINEside replace tools like Helios, Lighting Designer, or Artemis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No — and it's not meant to.
-Cinematographers already use specialized tools for specific tasks, for example: Helios or PhotoPills for sun position, Artemis for framing and lens previews, Lighting Designer or Vectorworks Spotlight for lighting floorplans. Each of these does its one thing very well, and replacing them isn't the goal.
-CINEside is built around the screenplay — a place to bring everything together. Research the sun position in Helios, take a screenshot, drop it into the Sun Position field. You export a lighting plan from Vectorworks and drop it into the lighting floorplan field. Reference images from anywhere — paintings, photos — go into scenes or individual shots. The shot list, the script, and the visual material from your other tools sit side by side, ready to share with your director, your gaffer, your AD.
-That's how I work myself, and it's part of why CINEside is built the way it is — not as a replacement for the tools I already trust, but as the place where their outputs come together with the script."
+        "text": "No — and it's not meant to. Cinematographers already use specialized tools for specific tasks, for example: Helios or PhotoPills for sun position, Artemis for framing and lens previews, Lighting Designer or Vectorworks Spotlight for lighting floorplans. Each of these does its one thing very well, and replacing them isn't the goal. CINEside is built around the screenplay — a place to bring everything together. Research the sun position in Helios, take a screenshot, drop it into the Sun Position field. You export a lighting plan from Vectorworks and drop it into the lighting floorplan field. Reference images from anywhere — paintings, photos — go into scenes or individual shots. The shot list, the script, and the visual material from your other tools sit side by side, ready to share with your director, your gaffer, your AD. That's how I work myself, and it's part of why CINEside is built the way it is — not as a replacement for the tools I already trust, but as the place where their outputs come together with the script."
       }
     },
     {
@@ -253,12 +284,12 @@ That's how I work myself, and it's part of why CINEside is built the way it is �
         "text": "Not yet. CINEside is currently a Mac-only application. In my experience, almost everyone working in film uses a Mac — it seems to have been the standard in production and post-production for a long time. That's why I focused on macOS first. A Windows version isn't ruled out for the future. If demand is there and the technical path makes sense, it's something I'd consider. For now, CINEside runs only on Mac (macOS 10.13 or newer, Intel and Apple Silicon). If you're a Windows user and CINEside is something you'd want — drop me a line at info@cineside.app. It helps to know."
       }
     },
-{
+    {
       "@type": "Question",
       "name": "Does CINEside work on iPad or iPhone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "CINEside started as a desktop application for Mac, and for good reason. Building a shot list is detailed, layered work. Importing screenplays, anchoring shots to specific passages, dragging in references and floorplans, writing department notes — it's the kind of thinking that benefits from a real screen, a keyboard, and the focus a desktop or laptop gives you. That reasoning hasn't changed for the deep planning work itself — and on iPhone, it still holds: the tool has too many panels and too much information packed in to work well on a screen that size. But I've heard from enough of you working primarily on iPad on set that I've started building a dedicated iPad version of CINEside — not a cut-down mobile view, but the same depth of tool, adapted for the device. It's in active development now. Until it's ready, what works well on iPad and iPhone today is viewing. Once your shot list is built, you can export it as a PDF — facing pages with script and shots, just the shot list, or a notes sheet — and send that PDF to your device for reference on set. There's also a dedicated iPad / Tablet PDF format with larger text and a wider margin on script pages, designed for Apple Pencil annotations. Want to know when the iPad version is ready? Send me an email at info@cineside.app and I'll let you know."
+        "text": "CINEside started as a desktop application for Mac, and for good reason. Building a shot list is detailed, layered work — the kind of thinking that benefits from a real screen and focus. On iPhone, that reasoning still holds: the tool has too many panels and too much information packed in to work well on a screen that size. On iPad, it no longer does — because CINEside is now a native iPad app. Not a cut-down mobile view, but the same depth of tool, adapted for the device: import screenplays, build your shot list, place anchors on floorplans, write department notes, export PDFs — the full workflow, sharing the same project format as the Mac version. Open a project started on your Mac right on your iPad, or vice versa. Take the entire preparation with you — on location, at the tech scout, wherever the film takes shape. The iPad app is a free download from the App Store and starts in demo mode. Unlock the full version with a one-time in-app purchase — or, if you already own CINEside for Mac, sign in with your existing account at no extra cost. The iPad / Tablet PDF export remains available too — useful when you want a fixed PDF to mark up with Apple Pencil, or to hand to someone who doesn't use CINEside."
       }
     }
   ]
@@ -305,7 +336,7 @@ That's how I work myself, and it's part of why CINEside is built the way it is �
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 02.08.26 -->
+	<!-- 12.08.26 -->
 </head>
 
 <body class="antialiased">
@@ -339,10 +370,10 @@ That's how I work myself, and it's part of why CINEside is built the way it is �
  <h5 class='       '   >1. How do I collaborate on the shot list with my director?</h5> 
  <p class='       '   >The shot list is rarely something the cinematographer builds alone — at least not without input from the director, and not the version that ends up on set. It develops in conversation: ideas about the emotions a scene wants to transport, perspective, blocking, pacing, what the scene is really about visually. The tool you use should support that conversation, not get in the way of it.<br><br>
 
-There are three common approaches:<br><br>
+There are a few common approaches:<br><br>
 
 PDF export. You build the shot list, export as PDF, email it. Simple and universal.<br><br>
-Cloud platforms. Several tools let the director join your project online. Works for team-heavy productions, but the director needs an account, sometimes a paid seat, and your screenplay lives on someone else's server..<br><br>
+Cloud platforms. Several tools let the director join your project online. Works for team-heavy productions, but the director needs an account, sometimes a paid seat, and your screenplay lives on someone else's server.<br><br>
 Share package. If your director is also building or editing the shot list — or if you want to hand off a fully editable project — CINEside lets you export a .cnsf share package. It contains the project and all reference images in a single file. The other person opens it in CINEside, chooses a name and location, and continues working on it as a normal project. Private notes are stripped before sending.<br><br>
 Companion app. CINEside CONNECT takes a different route for annotation. You export a .cnct package, your director opens it in CINEside CONNECT — a free companion app — adds notes to shots, script passages, and reference images, and sends their notes back as a separate file. The director doesn't pay or sign up for anything and your script never goes through a cloud. CONNECT is read-only — it's designed for reviewing and annotating, not for editing the project itself.<br><br>
 
@@ -355,7 +386,7 @@ Whichever approach you choose, the deeper question is the same: how do you keep 
  <h5 class='       '   >2. Is there a good offline shot list app for Mac?</h5> 
  <p class='       '   >Yes. Most modern shot-list tools are cloud-based. They sync across devices and let teams collaborate from anywhere. Your screenplay lives on their servers, and you need a stable internet connection to work.<br><br>
 For some productions, that's fine. For others, it's not an option at all. Sometimes it's the legal side — franchises, studio projects under NDA, unreleased material where the producer rules out cloud tools on day one. Other times it's simply where you're shooting. Remote locations where connectivity is bad or non-existent. Even when there's signal, a laptop in sand, rain, or snow is its own problem. Electronics and the elements don't mix. Some filmmakers also simply prefer a printed script once shooting begins — and offline prep fits naturally into that workflow.<br><br>
-The offline options on Mac are narrower. CINEside is built specifically around this — your script, shots, references, and notes all stay on your machine. Works the same way at your desk, on a mountain, or on a plane. Other offline-capable apps focus on specific aspects of prep, like camera diagrams or blocking. Spreadsheets and paper remain valid choices, especially for smaller productions — just harder to keep in sync across revisions.<br><br>
+The offline options on Mac and iPad are narrower. CINEside is built specifically around this — your script, shots, references, and notes all stay on your machine. Works the same way at your desk, on a mountain, or on a plane. Other offline-capable apps focus on specific aspects of prep, like camera diagrams or blocking. Spreadsheets and paper remain valid choices, especially for smaller productions — just harder to keep in sync across revisions.<br><br>
 
 If you mostly work where cloud is fine and you always have a connection, web tools have their advantages. If you regularly handle NDA-protected scripts, work in remote locations, or shoot in rough conditions, offline isn't just a preference — it becomes a requirement.
 </p> 
@@ -409,7 +440,7 @@ Much of my recent work begins long before anyone is in the same room. The direct
 
 What makes it work — or not — is how easily ideas can be shared and built on without losing context. A reference image without the scene it belongs to is just an image. A note about a shot without the script passage it relates to is hard to act on later. Whatever tools you use, the goal is to keep everything connected: the script, the shots, the visuals, the notes from the conversation — all in one place that both of you can see.<br><br>
 
-I took this remote process further than ever on There There, a film about emotional distance between people. With director Andrew Bujalski, we made a deliberate choice to mirror the story's themes in how the film was shot: actors never met their counterparts on screen, each one isolated in a different location, sometimes thousands of miles apart. Andrew and I were never on set with them. Every "location" in the script was actually two different real places. Scenes were shot weeks or months apart, edited together later. The whole prep process was remote by design — and it surfaced exactly the kind of organizational challenge that prompted me to start building CINEside.<br><br>
+I took this remote process further than ever on There There, a film about emotional distance between people. With director Andrew Bujalski, we made a deliberate choice to mirror the story's themes in how the film was shot: actors never met their counterparts on screen, each one isolated in a different location, sometimes thousands of miles apart. Andrew and I were never on set with them. Every "location" in the script was actually two different real places. Scenes were shot weeks or months apart, edited together later. The whole prep process was remote by design.<br><br>
 
 There There was an extreme case — but it surfaced exactly the kind of challenge that CINEside is built for. The director gets a package file, opens it in CINEside CONNECT, and adds notes directly to shots, script passages, and reference images. You import the notes back, see them all highlighted in context, and respond. No accounts, no shared servers, no syncing problems. The screenplay and everything around it stay between the two of you.
 </p> 
@@ -432,7 +463,7 @@ That's how I work myself, and it's part of why CINEside is built the way it is �
  <h5 class='       '   >8. Do I need a subscription for shot list software?</h5> 
  <p class='       '   >No — it depends on the tool.<br><br>
 Subscription-based tools charge monthly or yearly. Most web-based tools are subscriptions by default. The model makes sense if you're a production company with parallel shoots and teams that need to collaborate, or if you want every feature update as it ships. The tradeoff is continuity — your access to the tool, and often to your files inside it, depends on keeping the subscription active.<br><br>
-One-time purchase tools let you pay once and keep the software. CINEside is €129— a one-time purchase, with free updates and no subscription. Older desktop tools sometimes work this way too. This model makes sense for individual cinematographers who prep a project, wrap it, and may not touch the tool for months between jobs. Your projects stay openable as long as the app still runs on your Mac.<br><br>
+One-time purchase tools let you pay once and keep the software. CINEside is €129 — one license, Mac and iPad, with free updates and no subscription. Older desktop tools sometimes work this way too. This model makes sense for individual cinematographers who prep a project, wrap it, and may not touch the tool for months between jobs. Your projects stay openable as long as the app still runs on your Mac.<br><br>
 Free and freemium tiers exist on some platforms — usually limited to a single project, a single scene, or a basic feature set. These work well for trying things out, for short-form work, or for commercials and music videos where the scope fits within the limits. For longer, more complex productions, the paid tiers usually become necessary.<br><br>
 The right answer depends on how you work. A working cinematographer who preps a handful of projects a year often gets more value from a one-time purchase — the cost is small and the project files stay openable years later. A production company with parallel shoots and teams that need to collaborate may find the recurring features of a subscription worth the cost. Different workflows, different tools.
 </p> 
@@ -462,12 +493,10 @@ If you're a Windows user and CINEside is something you'd want —  <a href="mail
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_667 solid   ">   </div> 
  <h5 class='       '   >11. Does CINEside work on iPad or iPhone?</h5> 
- <p class='       '   >CINEside started as a desktop application for Mac, and for good reason. Building a shot list is detailed, layered work. Importing screenplays, anchoring shots to specific passages, dragging in references and floorplans, writing department notes — it's the kind of thinking that benefits from a real screen, a keyboard, and the focus a desktop or laptop gives you.<br><br>
-That reasoning hasn't changed for the deep planning work itself — and on iPhone, it still holds: the tool has too many panels and too much information packed in to work well on a screen that size. But I've heard from enough of you working primarily on iPad that I've started building a dedicated iPad version of CINEside — not a cut-down mobile view, but the same depth of tool, adapted for the device. It's in active development now.<br><br>
-Until it's ready, what works well on iPad today is viewing. Once your shot list is built, you can export it as a PDF — facing pages with script and shots, just the shot list, or a notes sheet — and send that PDF to your device for reference on set. There's also a dedicated iPad / Tablet PDF format with larger text and a wider margin on script pages, designed for Apple Pencil annotations.<br><br>
-
-Want to know when the iPad version is ready? <a href="mailto:info@cineside.app?subject=iPad%20Version">Send me an email</a> and I'll let you know.
-</p> 
+ <p class='       '   >CINEside started as a desktop application for Mac, and for good reason. Building a shot list is detailed, layered work — the kind of thinking that benefits from a real screen and focus. On iPhone, that reasoning still holds: the tool has too many panels and too much information packed in to work well on a screen that size.<br><br>
+On iPad, it no longer does — because CINEside is now a native iPad app. Not a cut-down mobile view, but the same depth of tool, adapted for the device: import screenplays, build your shot list, place anchors on floorplans, write department notes, export PDFs — the full workflow, sharing the same project format as the Mac version. Open a project started on your Mac right on your iPad, or vice versa. Take the entire preparation with you — on location, at the tech scout, wherever the film takes shape.<br><br>
+The iPad app is a free download from the App Store and starts in demo mode. Unlock the full version with a one-time in-app purchase — or, if you already own CINEside for Mac, sign in with your existing account at no extra cost.<br><br>
+The iPad / Tablet PDF export remains available too — useful when you want a fixed PDF to mark up with Apple Pencil, or to hand to someone who doesn't use CINEside.</p> 
  </div> </div> 
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div id='stacks_out_733' class='stacks_out'><div id='stacks_in_733' class='stacks_in html_stack'><p style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #e0e0e0; font-size: 14px; color: #555;">

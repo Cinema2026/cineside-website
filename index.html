@@ -22,6 +22,8 @@
 <!-- ========================================================================
      CINEside &mdash; cineside.app
      Production <head> with SEO, OpenGraph, Twitter Card, JSON-LD
+     iPad-READY VERSION &mdash; publish only after App Store approval.
+     TODO before publish: replace APP_STORE_LINK_HIER_EINSETZEN (2&times;).
      ======================================================================== -->
 
 <meta charset="utf-8">
@@ -29,36 +31,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
-<title>CINEside &mdash; Film prep for cinematographers &amp; directors | Mac app</title>
-<meta name="description" content="CINEside is a Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
-<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, offline, CINEside, CINEside CONNECT">
+<!-- <title> wird pro Seite in RapidWeaver gesetzt (Seiteninspektor &rarr; Browser-Titel),
+     NICHT hier &mdash; sonst doppelte Title-Tags. Startseite am Freigabetag:
+     "CINEside &mdash; Shot planning for cinematographers & directors | Mac & iPad".
+     Meta description sitzt im seitenspezifischen Head-Code jeder Seite. -->
+<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, iPad app, iPad shot list, offline, CINEside, CINEside CONNECT">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
 <!-- ── Favicon & App icons ───────────────────────────────────────────────── -->
 <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/resources/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
-<meta name="theme-color" content="#c27118">
+<meta name="theme-color" content="#b87c1a">
 
 <!-- ── Open Graph (Facebook, LinkedIn, Slack, Messaging apps) ────────────── -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta property="og:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta property="og:title" content="CINEside &mdash; Find the film on paper">
+<meta property="og:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta property="og:image" content="https://cineside.app/resources/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta property="og:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="CINEside">
 
 <!-- ── Twitter / X Card ──────────────────────────────────────────────────── -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
-<meta name="twitter:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. &euro;129.">
+<meta name="twitter:title" content="CINEside &mdash; Find the film on paper">
+<meta name="twitter:description" content="Shot planning for cinematographers and directors &mdash; now on Mac and iPad. Script, shots, references, and department notes in one place. Offline. One-time purchase.">
 <meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
-<meta name="twitter:image:alt" content="CINEside &mdash; Film prep for cinematographers &amp; directors">
+<meta name="twitter:image:alt" content="CINEside &mdash; Shot planning for cinematographers &amp; directors, for Mac and iPad">
 
-<!-- ── Structured data: CINEside as a SoftwareApplication ────────────────── -->
+<!-- ── Structured data: CINEside for Mac ─────────────────────────────────── -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,13 +78,13 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-Releases/releases/latest",
-  "softwareVersion": "1.7",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-Releases/releases",
   "inLanguage": "en",
   "featureList": [
     "Import screenplays as PDF with automatic scene detection",
     "Build shot lists with size, angle, lens, camera move, POV/OS",
     "Anchor shots to specific passages in the script",
+    "Re-import revised drafts &mdash; shots, notes, and anchors stay attached",
     "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
     "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
     "Flag VFX and SFX shots and export separate shot lists for post production",
@@ -109,6 +113,41 @@
 }
 </script>
 
+<!-- ── Structured data: CINEside for iPad ────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-ipad",
+  "name": "CINEside for iPad",
+  "description": "The native iPad version of CINEside &mdash; the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app. Free to download; the full version is a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "iPadOS 15 or newer",
+  "downloadUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "installUrl": "APP_STORE_LINK_HIER_EINSETZEN",
+  "inLanguage": "en",
+  "featureList": [
+    "Same project format as CINEside for Mac &mdash; open projects on either device",
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists and anchor shots to script passages",
+    "Place camera, character, light, and grip anchors on floorplans",
+    "Export facing-pages PDF, shot list, schedule, and reference sheets on device",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "149.00",
+    "priceCurrency": "EUR",
+    "description": "Free to download. Full version as a one-time in-app purchase (EU price incl. VAT; local pricing on the App Store), or unlocked at no extra cost with an existing CINEside license.",
+    "availability": "https://schema.org/InStock",
+    "url": "APP_STORE_LINK_HIER_EINSETZEN"
+  }
+}
+</script>
+
 <!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
 <script type="application/ld+json">
 {
@@ -124,7 +163,6 @@
   "operatingSystem": "macOS 10.13 or newer",
   "processorRequirements": "Intel or Apple Silicon (Universal)",
   "downloadUrl": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest",
-  "softwareVersion": "0.3.0",
   "releaseNotes": "https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases",
   "inLanguage": "en",
   "featureList": [
@@ -144,13 +182,9 @@
   "isAccessoryOrSparePartFor": {
     "@id": "https://cineside.app/#cineside"
   }
-},
-
+}
 </script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="description" content="
-
-" />
 		<link rel="apple-touch-icon" sizes="167x167" href="https://cineside.app/resources/medium.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://cineside.app/resources/picturep.png" />
 <link rel="apple-touch-icon" sizes="152x152" href="https://cineside.app/resources/small.png" />
@@ -159,10 +193,8 @@
 <link rel="icon" type="image/png" href="https://cineside.app/resources/favicon_large.png" sizes="64x64" />
 
 
-	<link rel="canonical" href="https://cineside.app/">
-<meta property="og:url" content="https://cineside.app/">
-<meta property="og:title" content="CINEside — Film prep for cinematographers &amp; directors">
-<meta property="og:description" content="A Mac app for cinematographers and directors preparing narrative work. Shot list, script, references, and department notes in one place. Offline. €129.">
+	<meta name="description" content="Find the film on paper. CINEside keeps the script, shots, references, and department notes together — for cinematographers and directors preparing narrative work. Offline, one-time purchase.">
+<link rel="canonical" href="https://cineside.app/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -218,7 +250,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 04.08.26 -->
+	<!-- 12.08.26 -->
 </head>
 
 <body class="antialiased">
@@ -241,11 +273,12 @@
 <a href="https://cineside.app/#download" style="color:#444;text-decoration:none;margin:0 16px;">BUY/DOWNLOAD</a>
 </div> 
 <div class='grid-x position-relative   grid-margin-x grid-margin-y grid-padding-x grid-padding-y   align-bottom   text-left  '> <div class="cell small-4 medium-3 ">    <picture class=" stacks_in_16"  oncontextmenu="return false;"> <div class='slice empty out'><div class='slice empty in'></div></div>  <img class=" float-center w:full  " loading="auto" srcset='index_files/image-16.png' src="index_files/image-16.png" alt="" draggable="false" />       </picture>    
- </div> <div class="cell small-10 medium-9 ">  <h5 class='     title  '   >Shot planning for cinematographers and directors.</h5> 
+ </div> <div class="cell small-10 medium-9 ">  <h5 class='     title  '   >Find the film on paper.<br>
+Prepare it in detail — and stay ready for what the work discovers.</h5> 
  </div> </div> 
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_431 solid   ">   </div> 
-CINEside is built to help find the film on paper — staying in the background, supporting the translation of emotional intention into the technical notes you eventually need to prep and shoot. And to make sure the decisions stay creative ones, not ones made by a schedule or a budget.<br><br><p>CINEside is a Mac app that brings your shot list, script, references, and department notes together in one place — built for cinematographers and directors preparing narrative work. The script stays connected to the visual ideas — so what's practical never loses sight of what's emotional.<br></p>
+CINEside is where the film's visual language takes shape - inside the screenplay, scene by scene. It stays in the background, translating emotional intention into the technical notes you need to prep and shoot, and giving every department exactly its part. So the decisions stay creative ones - not ones made by a schedule or a budget.<br><br><p>CINEside brings your shot list, script, references, and department notes together in one place - built for cinematographers and directors preparing narrative work. The script stays connected to the visual ideas - so what's practical never loses sight of what's emotional.<br></p>
 
 <p><strong>Your director sketches the shot on a napkin at dinner. You photograph it. It's anchored to scene 12 in the blink of an eye.</strong></p>
 
@@ -268,18 +301,26 @@ CINEside is built to help find the film on paper — staying in the background, 
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_347 solid   ">   </div> 
  <h5 class='       '   >What it does</h5> 
 <p>CINEside is built around the screenplay. Your script sits on the right, your shots and notes on the left, and everything stays anchored to the scenes it belongs to.</p>
+<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85em; margin: 1.8em 0 0.2em;">Develop the visual language</p>
 <ul style="list-style: none; padding: 0; line-height: 2;">
   <li><i class="fas fa-file-pdf"></i> Import screenplays as PDF and let CINEside detect your scenes automatically</li>
-  <li><i class="fas fa-video"></i> Build your shot list with size, angle, lens, camera move, POV/OS, multi-camera setup, unit assignment</li>
+  <li><i class="fas fa-sync-alt"></i> When a revised draft arrives, import the new version — CINEside matches the scenes and keeps your shots, notes, photos, and anchors attached. Anything that can't be matched is flagged, and you re-anchor it in seconds.</li>
   <li><i class="fas fa-crosshairs"></i> Anchor shots to specific passages in the script — or assign any script block to an existing shot</li>
   <li><i class="fas fa-image"></i> Attach reference photos, location images, sun position diagrams, floorplans, and storyboards — per scene and per shot</li>
-<li><i class="fas fa-map-pin"></i> Place camera, character, light, and grip anchors directly on floorplans and lighting plans — mark positions, rotation, and coverage right where they happen</li>
+  <li><i class="fas fa-map-pin"></i> Place camera, character, light, and grip anchors directly on floorplans and lighting plans — mark positions, rotation, and coverage right where they happen</li>
   <li><i class="fas fa-th-large"></i> Open the Scene Board — a dedicated second window showing all visual references for the current scene. Works on a second monitor or iPad via Sidecar.</li>
   <li><i class="fas fa-folder-open"></i> Keep everything together — each project saves as a self-contained folder with all references and backups included.</li>
+</ul>
+<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85em; margin: 1.8em 0 0.2em;">Turn it into a plan</p>
+<ul style="list-style: none; padding: 0; line-height: 2;">
+  <li><i class="fas fa-video"></i> Build your shot list with size, angle, lens, camera move, POV/OS, multi-camera setup, unit assignment</li>
   <li><i class="fas fa-tags"></i> Color-tag scenes across the whole project — visual groupings for locations, blocks, shooting days, or anything else</li>
-  <li><i class="fas fa-comment-dots"></i> Add notes for specific departments: Director, Gaffer, Art Department, Costume, Make Up, Key Grip, and more</li>
   <li><i class="fas fa-magic"></i> Flag VFX and SFX shots and export separate shot lists for post production</li>
   <li><i class="fas fa-calendar-alt"></i> Build a multi-day shooting schedule — assign scenes to shoot days, drag and drop shots into order, and export a complete schedule per day or across all shoot days</li>
+</ul>
+<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.85em; margin: 1.8em 0 0.2em;">Get it to the right people</p>
+<ul style="list-style: none; padding: 0; line-height: 2;">
+  <li><i class="fas fa-comment-dots"></i> Add notes for specific departments: Director, Gaffer, Art Department, Costume, Make Up, Key Grip, and more</li>
   <li><i class="fas fa-map-marker-alt"></i> Generate a Location Dossier for tech scouts — notes, photos, floorplan, and all scenes per location in one document</li>
   <li><i class="fas fa-tablet-alt"></i> Export your shot list optimised for iPad — larger text, and a labeled write-in notes box with a dot grid after each shot for Apple Pencil annotations</li>
   <li><i class="fas fa-file-export"></i> Export your complete shooting script as a facing-pages PDF, shot list only, or notes sheet</li>
@@ -289,8 +330,14 @@ CINEside is built to help find the film on paper — staying in the background, 
 <div class="lines-wrapper "> <hr class="lines stacks_in_264 solid   ">   </div> 
  </div> </div> 
   </div>   </div>   
-  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto ">  <h5 class='       '   >Deliberately understated</h5> 
- <h6 class='       '   >CINEside is not a visual presentation tool. It doesn't try to create a mood — your images do that. <br>The interface is the paper: white, neutral, out of the way.</h6> 
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto ">  <h5 class='       '   >One preparation, many recipients.</h5> 
+ <h6 class='       '   >The same prep work feeds everyone: the art department gets the location photos, the AD gets the shot order and the day's schedule, the gaffer gets lighting plans and additional equipment, production gets the additional crew needs. Each department receives exactly its part — as a clean PDF, ready for the next meeting.</h6> 
+<br> 
+<div class="lines-wrapper "> <hr class="lines stacks_in_564 solid   ">   </div> 
+ </div> </div> 
+  </div>   </div>   
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto ">  <h5 class='       '   >The interface is the paper.</h5> 
+ <h6 class='       '   >White, neutral, out of the way. CINEside doesn't try to create a mood — your images do that. It's built to hold your work, not to present itself.</h6> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -301,10 +348,8 @@ CINEside is built to help find the film on paper — staying in the background, 
  </div> </div> 
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_515 solid   ">   </div> 
- <h5 class='       '   >No AI. No magic. Just your work.</h5> 
- <h6 class='       '   >CINEside doesn't generate ideas, suggest shots, or have an opinion about your visual language — that's entirely yours.
-What it does: keeps your preparation organized. Collect everything you need to discuss with your director and every department. Track decisions, open questions, technical requirements — shot by shot, scene by scene. When you work on the schedule or talk through the next shooting day with your AD, select the scenes, drag and drop the shots into order, and export as PDF.
-All the prep work in one place — the script, the shots, the notes, the references. Nothing more, nothing less.</h6> 
+ <h5 class='       '   >Just your work.</h5> 
+ <h6 class='       '   >CINEside keeps your preparation organized — nothing more. Collect everything you need to discuss with your director and every department. Track decisions, open questions, technical requirements, shot by shot, scene by scene. Work through the schedule, drag the shots into order for the next shooting day, export as PDF. The script, the shots, the notes, the references — all in one place. It doesn't generate ideas, suggest shots, or have an opinion about your visual language. That's entirely yours.</h6> 
 <br> 
 <div class="lines-wrapper "> <hr class="lines stacks_in_525 solid   ">   </div> 
  </div> </div> 
@@ -330,6 +375,13 @@ the Schedule feature. PDF exports work, but are watermarked.</h6>
 <div class="lines-wrapper "> <hr class="lines stacks_in_266 solid   ">   </div> 
  </div> </div> 
   </div>   </div>   
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto ">  <h5 class='       '   >Now on iPad.</h5> 
+ <h6 class='       '   >Take the entire preparation with you — and keep working on it. On location, at the tech scout, at dinner when the napkin comes out.
+CINEside for iPad is free to download — the full version is a one-time purchase on the App Store. Already own CINEside for Mac? Sign in with your account and it unlocks at no extra cost.</h6> 
+<br> 
+<div class="lines-wrapper "> <hr class="lines stacks_in_579 solid   ">   </div> 
+ </div> </div> 
+  </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto ">  <section id="download" data-magellan-target="download" data-smoothScroll-target="download" class="internal-anchor"></section> 
  <h5 class='       '   >Get CINEside</h5> 
  </div> </div> 
@@ -340,52 +392,90 @@ the Schedule feature. PDF exports work, but are watermarked.</h6>
          alt="CINEside"
          style="width: 88px; height: 88px; object-fit: contain; border-radius: 12px; flex-shrink: 0;">
     <div style="flex: 1; min-width: 0;">
-      <h3 style="margin: 0 0 4px 0; font-size: 22px; color: #111; font-weight: 600;">CINEside for Mac</h3>
+      <h3 style="margin: 0 0 4px 0; font-size: 22px; color: #111; font-weight: 600;">CINEside for Mac &amp; iPad</h3>
       <p style="margin: 0 0 12px 0; font-size: 14px; color: #333; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;">
-       €129 <span style="text-transform: none; letter-spacing: 0;">excl. VAT</span>
-        <span style="color: #999; font-weight: 400; text-transform: none; letter-spacing: 0; margin-left: 8px;"></span>
+        &euro;129 <span style="text-transform: none; letter-spacing: 0;">excl. VAT &mdash; one license for Mac &amp; iPad</span>
       </p>
       <p style="margin: 0 0 12px 0; color: #555; font-size: 15px; line-height: 1.5;">
-        One-time purchase. Free updates, no subscription. Universal app — runs natively on Intel and Apple Silicon. macOS 10.13 (2017) or newer.
+        One-time purchase. One license, up to three devices &mdash; Mac and iPad. Free updates, no subscription. Universal app &mdash; runs natively on Intel and Apple Silicon. macOS 10.13 (2017) or newer &middot; iPadOS 15 or newer.
+      </p>
       <p style="margin: 0 0 20px 0; color: #777; font-size: 13px; line-height: 1.5; font-style: italic;">
-  Download to try with your own screenplay — saving, sharing, Schedule, and unwatermarked PDF unlock with your license key.
-</p>      <a href="https://cineside.gumroad.com/l/nvasfa"
-         style="display: inline-block; background: #111; color: white; padding: 13px 26px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; margin-right: 8px; margin-bottom: 8px; font-family: 'Inter', sans-serif;">
-        Buy CINEside — €129 excl. VAT
-      </a>
-      <div style="display: inline-block; vertical-align: top; margin-bottom: 8px;">
-        <a href="https://github.com/Cinema2026/CINEside-Releases/releases/latest/download/CINEside.dmg"
-           style="display: inline-block; background: transparent; color: #111; padding: 11px 24px; border: 2px solid #111; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; font-family: 'Inter', sans-serif;">
-          Download
+        Both apps are free to try with your own screenplay &mdash; saving, sharing, and unwatermarked PDF unlock with your license.
+      </p>
+
+      <!-- Row 1: Buy button -->
+      <div style="margin-bottom: 16px;">
+        <a href="https://cineside.gumroad.com/l/nvasfa"
+           style="display: inline-block; background: #111; color: white; padding: 13px 26px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; font-family: 'Inter', sans-serif;">
+          Buy CINEside &mdash; &euro;129 excl. VAT
         </a>
-        <div style="font-size: 12px; color: #888; margin-top: 5px; padding-left: 2px;">Try free, no signup.  </div>
+        <div style="font-size: 12px; color: #888; margin-top: 5px; padding-left: 2px;">One license &mdash; unlocks Mac &amp; iPad. On iPad, just sign in.</div>
       </div>
-      <a href="https://cineside.app/getting-started.html"
-         style="display: inline-block; color: #555; padding: 11px 24px; text-decoration: none; font-weight: 500; font-size: 14px; font-family: 'Inter', sans-serif;">
-        Getting Started →
-      </a>
-      <a href="https://cineside.app/downloads/CINEside_User_Manual.pdf"
-         style="display: inline-block; color: #555; padding: 11px 24px; text-decoration: none; font-weight: 500; font-size: 14px; font-family: 'Inter', sans-serif;">
-        User Manual ↗
-      </a>
+
+      <!-- Row 2: Mac + iPad downloads side by side -->
+      <div style="display: flex; align-items: flex-start; gap: 12px; flex-wrap: wrap;">
+
+        <!-- Mac download + label -->
+        <div>
+          <a href="https://github.com/Cinema2026/CINEside-Releases/releases/latest/download/CINEside.dmg"
+             style="display: inline-block; background: transparent; color: #111; padding: 11px 24px; border: 2px solid #111; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; font-family: 'Inter', sans-serif;">
+            Download for Mac
+          </a>
+          <div style="font-size: 12px; color: #888; margin-top: 5px; padding-left: 2px;">Try free, no signup.</div>
+        </div>
+
+        <!-- App Store badge + label -->
+        <div>
+          <a href="https://apps.apple.com/app/cineside/id6791491272"
+             style="display: inline-block;">
+            <img src="https://CINEside.app/resources/app_store_badge.svg"
+                 alt="Download CINEside for iPad on the App Store"
+                 style="height: 46px; width: auto; display: block;">
+          </a>
+          <div style="font-size: 12px; color: #888; margin-top: 5px; padding-left: 2px;">Try free, no signup. Working on iPad only? Unlock the full version right in the app &mdash; one-time in-app purchase (&euro;149 EU / local pricing).</div>
+        </div>
+
+      </div>
+
+      <!-- Pricing footnote -->
+      <p style="font-size: 12px; color: #999; line-height: 1.5; margin: 14px 0 0 0; padding-left: 2px;">
+        The &euro;129 license is billed in euros, with VAT added only where it applies. The App Store shows final pricing in your local currency; &euro;149 is the EU price incl. VAT. Depending on your region, both routes come to a similar amount. The in-app purchase unlocks the iPad app only.
+      </p>
+
+      <!-- Doc links on their own row -->
+      <div style="margin-top: 20px;">
+        <a href="https://cineside.app/getting-started.html"
+           style="display: inline-block; color: #555; padding: 11px 24px 11px 0; text-decoration: none; font-weight: 500; font-size: 14px; font-family: 'Inter', sans-serif;">
+          Getting Started &rarr;
+        </a>
+        <a href="https://cineside.app/downloads/CINEside_User_Manual.pdf"
+           style="display: inline-block; color: #555; padding: 11px 24px; text-decoration: none; font-weight: 500; font-size: 14px; font-family: 'Inter', sans-serif;">
+          User Manual &#8599;
+        </a>
+      </div>
     </div>
   </div>
+
   <!-- CONNECT Block -->
   <div style="padding: 28px; border: 1px solid #e0e0e0; border-radius: 10px; background: #fafafa; display: flex; align-items: flex-start; gap: 24px;">
     <img src="https://CINEside.app/resources/CINEside_CONNECT_logo_text.png"
          alt="CINEside CONNECT"
          style="width: 88px; height: 88px; object-fit: contain; border-radius: 12px; flex-shrink: 0;">
     <div style="flex: 1; min-width: 0;">
-      <h3 style="margin: 0 0 8px 0; font-size: 22px; color: #111; font-weight: 600;">CINEside CONNECT for Mac — Free</h3>
+      <h3 style="margin: 0 0 4px 0; font-size: 22px; color: #111; font-weight: 600;">CINEside CONNECT for Mac</h3>
+      <p style="margin: 0 0 12px 0; font-size: 14px; color: #333; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase;">
+        Free
+      </p>
       <p style="margin: 0 0 20px 0; color: #555; font-size: 15px; line-height: 1.5;">
-        For directors, cinematographers, and collaborators. Read-only. Works completely offline — your script never has to visit a cloud. Universal app, macOS 10.13 (2017) or newer.
+        For directors, cinematographers, and collaborators. Read-only. Universal app, macOS 10.13 (2017) or newer.
       </p>
       <a href="https://github.com/Cinema2026/CINEside-CONNECT-Releases/releases/latest/download/CINEsideCONNECT.dmg"
-         style="display: inline-block; background: #111; color: white; padding: 13px 26px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; font-family: 'Inter', sans-serif;">
+         style="display: inline-block; background: transparent; color: #111; padding: 11px 24px; border: 2px solid #111; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px; font-family: 'Inter', sans-serif;">
         Download CONNECT
-      </a><a href="https://cineside.app/downloads/CINEside_CONNECT_User_Manual.pdf"
+      </a>
+      <a href="https://cineside.app/downloads/CINEside_CONNECT_User_Manual.pdf"
          style="display: inline-block; color: #555; padding: 11px 24px; text-decoration: none; font-weight: 500; font-size: 14px; font-family: 'Inter', sans-serif;">
-        User Manual ↗
+        User Manual &#8599;
       </a>
     </div>
   </div>
@@ -418,7 +508,18 @@ the Schedule feature. PDF exports work, but are watermarked.</h6>
   color: #333;
   background: #fafafa;
 ">
-<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | August 2026</p><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.4</h4>
+<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | August 2026</p><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: On rotated lighting plans, light symbols in PDF exports (Shots &amp; Script, Location Dossier) no longer appear rotated — they now match the app view. Camera and floorplan anchors were unaffected.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: In the Scene List PDF, long slug lines no longer overrun into the Location column — they are now truncated to fit.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: Export dialog now offers "Save as…" and "Email to…" for the CONNECT file and every PDF export (Schedule, Shot List, Location Dossier, Notes, Discuss, Prep Checklist, Equipment, Additional Crew, VFX/SFX, Scene List).</li>
+  <li>New: Save a list of e-mail recipients per project — the people you send to during a shoot are remembered, so you don't retype them for each export.</li>
+  <li>New: "Email to…" opens a new Mail message with the file attached and the recipients filled in; you write the text and send it yourself.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.4</h4>
 <ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: the rotate/zoom view now always reflects the rotation actually saved in your project, even when the same image is used on more than one floorplan.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.3</h4>
 <ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: notes placed directly on a scene floorplan ("Notes on this Plan") are now included when you export to CINEside CONNECT.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.2</h4>
 <ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: opening the Schedule on a project without shoot days no longer marks the project as changed, so closing right afterwards won't ask you to save. Assigning a scene, or renaming or adding a day, still counts as a real change.</li><li>Fixed: the floating "Next Note" button now steps aside while a full-screen panel (Schedule, Preferences, and similar) is open, so it no longer sits over content it can't refer to. It reappears as soon as you close the panel.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.1</h4>
