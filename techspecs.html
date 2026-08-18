@@ -490,7 +490,7 @@
       <div class="format-card">
         <div class="format-ext">.cnsf</div>
         <div class="format-name">Share Package</div>
-        <div class="format-desc">Role-based export for collaborators. Export for Director or Export for Cinematographer — strips fields not relevant to the recipient. Fully editable by the receiver.</div>
+        <div class="format-desc">Project export for collaborators or your own devices. <strong>&rarr; Export Project</strong> offers three modes: Full &mdash; a complete 1:1 copy for moving a project between your own devices (e.g. Mac &rarr; iPad); For Director and For Cinematographer, which strip fields not relevant to the recipient. Fully editable by the receiver.</div>
         <span class="format-tag">CINEside</span>
       </div>
 
@@ -536,6 +536,10 @@
       <span class="import-desc">Shots without script pages. A4 or US Letter. Same include options as above.</span>
     </div>
     <div class="import-row">
+      <span class="import-ext">PDF / CSV — Scene List</span>
+      <span class="import-desc">A one-line-per-scene overview of the whole script — scene number, INT/EXT, slug line, and time of day. Landscape PDF or CSV, with INT/EXT and time-of-day filters and a live match counter. Useful as a quick production reference, a stripping starting point, or a hand-off to other scheduling tools.</span>
+    </div>
+    <div class="import-row">
       <span class="import-ext">PDF — iPad / Tablet</span>
       <span class="import-desc">Same facing-pages layout as Shots &amp; Script, with larger text and a wider margin on script pages for Apple Pencil annotations. Useful alongside the native iPad app — when you want a fixed PDF to mark up, or to hand to someone who doesn't use CINEside.</span>
     </div>
@@ -549,7 +553,7 @@
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Schedule</span>
-      <span class="import-desc">Multi-day shoot planning — assign scenes to shooting days, then arrange shots within each day by drag and drop. Export a PDF for one day or all days at once, with a clear day header. Optionally includes a scene overview with flags, crew, equipment, photos, floorplan, and lighting.</span>
+      <span class="import-desc">Multi-day shoot planning — assign scenes to shooting days, then arrange shots within each day by drag and drop, with optional Prep, Break, Company Move, and Wrap-out blocks between them. Export a PDF for one day or all days at once, with a clear day header. Optionally includes a scene overview with flags, crew, equipment, photos, floorplan, and lighting.</span>
     </div>
     <div class="import-row">
       <span class="import-ext">PDF — Location Dossier</span>
@@ -569,7 +573,7 @@
     </div>
     <div class="import-row">
       <span class="import-ext">CSV</span>
-      <span class="import-desc">Shot List and Schedule export as comma-separated spreadsheets — importable into Excel, Numbers, Google Sheets, or any scheduling software. The Shot List CSV covers all shot data: scene, size, angle, movement, anchor, VFX/SFX flags, and notes. The Schedule CSV adds the day-by-day shooting order with estimated time per shot — designed for the AD.</span>
+      <span class="import-desc">Shot List, Scene List, and Schedule export as comma-separated spreadsheets — importable into Excel, Numbers, Google Sheets, or any scheduling software. The Shot List CSV covers all shot data: scene, size, angle, movement, anchor, VFX/SFX flags, and notes. The Schedule CSV adds the day-by-day shooting order with estimated time per shot — designed for the AD.</span>
     </div>
   </section>
 
@@ -642,7 +646,7 @@
       <tr>
         <td>Backups</td>
         <td>
-          Project files are written atomically — a crash or power loss during a save can never leave a half-written file. CINEside also keeps automatic rolling backups in a hidden <code style="font-size:12px;">.backups/</code> folder inside each project folder: the 3 most recent saves, one daily anchor per day worked (kept 14 days), and one copy taken before every script re-import. CINEside opens the most recent good backup automatically if a project file is ever unreadable.
+          Project files are written atomically — a crash or power loss during a save can never leave a half-written file. CINEside also keeps automatic rolling backups in a hidden <code style="font-size:12px;">.backups/</code> folder inside each project folder: the 3 most recent saves, hourly anchors (kept for the last 12 hours worked), one daily anchor per day worked (kept 14 days), and one copy taken before every script re-import. CINEside opens the most recent good backup automatically if a project file is ever unreadable.
         </td>
       </tr>
       <tr>
