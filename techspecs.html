@@ -32,16 +32,11 @@
   "storageRequirements": "25 MB",
   "offers": {
     "@type": "Offer",
-    "price": "129",
-    "priceCurrency": "EUR",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "129",
-      "priceCurrency": "EUR",
-      "valueAddedTaxIncluded": false
-    }
+    "category": "OneTimePurchase",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272"
   },
-  "description": "CINEside is a Mac app for shot planning built around the screenplay. Import your script as PDF, plan shots scene by scene, attach reference photos, and export a complete shooting script as a facing-pages PDF.",
+  "description": "CINEside is a Mac and iPad app for shot planning built around the screenplay. Import your script as PDF, plan shots scene by scene, attach reference photos, and export a complete shooting script as a facing-pages PDF. One purchase unlocks both Mac and iPad.",
   "releaseNotes": "https://cineside.app/getting-started.html",
   "screenshot": "https://cineside.app/resources/picturep.png",
   "author": {
@@ -77,15 +72,10 @@
   "operatingSystem": "iPadOS 15 or newer",
   "offers": {
     "@type": "Offer",
-    "price": "149",
-    "priceCurrency": "EUR",
-    "description": "Free to download. Full version as a one-time in-app purchase, or unlocked at no extra cost with an existing CINEside license.",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "149",
-      "priceCurrency": "EUR",
-      "valueAddedTaxIncluded": true
-    }
+    "category": "OneTimePurchase",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272",
+    "description": "Free to download. Full version unlocks as a one-time purchase that covers both Mac and iPad."
   },
   "description": "CINEside for iPad is the native iPad version of CINEside — the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app.",
   "author": {
@@ -354,6 +344,27 @@
     line-height: 1.5;
   }
 
+  .legacy-block {
+    border: 0.5px dashed var(--border);
+    border-radius: 8px;
+    padding: 18px 22px;
+    background: transparent;
+    margin-top: 16px;
+  }
+  .legacy-block h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text2);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .legacy-block p {
+    font-size: 12px;
+    color: var(--text3);
+    line-height: 1.5;
+  }
+
   .connect-block {
     border: 0.5px solid #b0d9c6;
     border-radius: 8px;
@@ -450,7 +461,7 @@
       <tr>
         <td>iPad</td>
         <td>
-          iPadOS 15 or newer — native iPad app, free on the App Store
+          iPadOS 15 or newer — native iPad app
           <p class="note">Same project format as the Mac version. Open a project started on your Mac right on your iPad, or vice versa.</p>
         </td>
       </tr>
@@ -465,7 +476,7 @@
         <td>Internet</td>
         <td>
           Not required — CINEside is fully offline
-          <p class="note">Internet is only used for software download, license activation, and software updates. All data stays on your device.</p>
+          <p class="note">Internet is only used for the initial download and purchase, and for software updates. All data stays on your device.</p>
         </td>
       </tr>
       <tr>
@@ -582,40 +593,26 @@
     <h2 class="section-label">Licensing &amp; Purchase</h2>
 
     <div class="license-block">
-      <h3>CINEside for Mac &amp; iPad — one license</h3>
-      <div class="price">€129 <span style="font-size:16px;font-weight:400;color:var(--text3);">excl. VAT</span></div>
-      <p class="price-note">Sold via Gumroad · Covers Mac and iPad · On iPad, sign in with your account</p>
+      <h3>CINEside for Mac &amp; iPad — one purchase</h3>
+      <div class="price">One-time purchase</div>
+      <p class="price-note">On the App Store · See the App Store for pricing in your region</p>
       <ul class="feature-list">
-        <li>One-time purchase</li>
+        <li>One purchase unlocks Mac &amp; iPad</li>
         <li>Free updates — no subscription</li>
         <li>Full offline use</li>
         <li>Atomic saving &amp; rolling backups</li>
         <li>Unlimited PDF exports</li>
         <li>CONNECT export enabled</li>
         <li>No watermarks</li>
-        <li>Up to 3 device activations — Mac and iPad</li>
+        <li>Buy on either device, restore on the other</li>
       </ul>
-      <p class="demo-note">Without a license, CINEside runs in demo mode: the app is fully functional for evaluation — including the Schedule — but saving, sharing (.cnsf), and CONNECT export are disabled. PDF exports work, but are watermarked. On the Mac, enter your license key once — a brief internet connection is required for activation, after which the app runs fully offline. On the iPad, sign in once with the account from your purchase. One license can be active on up to 3 devices at once. Replacing a device? Preferences → Deactivate This Device frees up a slot instantly.</p>
+      <p class="demo-note">CINEside is a free download from the App Store and starts in demo mode: the app is fully functional for evaluation — including the Schedule — but saving, sharing (.cnsf), and CONNECT export are disabled, and PDF exports are watermarked. Unlock the full version with a one-time purchase. The purchase covers both Mac and iPad — buy on one, then tap Restore Purchases on the other to unlock it there at no extra cost. Once unlocked, the app runs fully offline.</p>
     </div>
 
-    <div class="license-block">
-      <h3>CINEside for iPad — App Store purchase</h3>
-      <div class="price">€149 <span style="font-size:16px;font-weight:400;color:var(--text3);">incl. VAT (EU price)</span></div>
-      <p class="price-note">One-time in-app purchase · Unlocks the iPad app only</p>
-      <ul class="feature-list">
-        <li>One-time purchase</li>
-        <li>Free updates — no subscription</li>
-        <li>Full offline use</li>
-        <li>Atomic saving &amp; rolling backups</li>
-        <li>Unlimited PDF exports</li>
-        <li>CONNECT export enabled</li>
-        <li>No watermarks</li>
-        <li>Restore anytime via your Apple ID</li>
-      </ul>
-      <p class="demo-note">The iPad app is a free download from the App Store and starts in the same demo mode as the Mac version. If you work on iPad only, unlock the full version directly in the app with a one-time in-app purchase. Already own CINEside for Mac? Sign in with your existing account instead — no extra cost.</p>
+    <div class="legacy-block">
+      <h3>Existing Gumroad customers</h3>
+      <p>If you purchased a CINEside license through Gumroad in the past, it remains fully valid — nothing changes for you. On the Mac, enter your license key as before (a brief internet connection is required to activate it, after which the app runs fully offline); one license covers up to 3 devices. Replacing a device? Preferences → Deactivate This Device frees up a slot instantly. New purchases are now handled through the App Store — Gumroad is no longer used for buying CINEside.</p>
     </div>
-
-    <p class="note" style="margin-top:14px;">The €129 license is billed in euros, with VAT added only where it applies. The App Store shows final pricing in your local currency; €149 is the EU price incl. VAT. Depending on your region, both routes come to a similar amount.</p>
   </section>
 
   <!-- CONNECT -->
@@ -623,7 +620,7 @@
     <h2 class="section-label">CINEside CONNECT</h2>
     <div class="connect-block">
       <h3>Free companion app for collaborators</h3>
-      <p>Collaborators — directors, script supervisors, or anyone reviewing the shot plan — use CINEside CONNECT to receive a read-only view, leave annotations and notes, and send them back. No CINEside license required. CONNECT is currently available for Mac.</p>
+      <p>Collaborators — directors, script supervisors, or anyone reviewing the shot plan — use CINEside CONNECT to receive a read-only view, leave annotations and notes, and send them back. No CINEside license required. CONNECT is a free download on the App Store for Mac and iPad.</p>
       <span class="free-badge">Free — no license required</span>
     </div>
   </section>
@@ -650,8 +647,8 @@
         </td>
       </tr>
       <tr>
-        <td>License activation</td>
-        <td>Mac: a one-time internet connection to validate the license key. iPad: sign in once with the account from your purchase, or buy the full version in the app via the App Store.</td>
+        <td>Purchase &amp; unlock</td>
+        <td>App Store: a one-time purchase unlocks the full version and covers both Mac and iPad; use Restore Purchases to unlock a second device. Existing Gumroad customers: enter your license key once on the Mac (a brief internet connection validates it, then the app runs offline).</td>
       </tr>
       <tr>
         <td>Analytics / Telemetry</td>
