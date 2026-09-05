@@ -1,0 +1,843 @@
+<!doctype html>
+<html class="no-js no-touch"  lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>CINEside | What's New</title>
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+	<meta name="theme-version" content="6.25.0" />
+	<meta name="foundation-version" content="6.9.0" />
+
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ========================================================================
+     CINEside &mdash; cineside.app
+     Global head: SEO, OpenGraph, Twitter Card, JSON-LD
+     charset/viewport/title kommen vom Theme bzw. RapidWeaver &mdash; hier NICHT setzen.
+     Meta description + canonical sitzen im seitenspezifischen Head jeder Seite.
+     ======================================================================== -->
+
+<!-- ── Primary SEO ───────────────────────────────────────────────────────── -->
+<meta name="keywords" content="cinematographer, director, DP, director of photography, shot list, shooting script, shot planning, film prep, screenplay planning, shooting order, cinematography software, film preparation, Mac app, iPad app, iPad shot list, offline, CINEside, CINEside CONNECT">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#b87c1a">
+
+<!-- ── Open Graph (Facebook, LinkedIn, Slack, Messaging apps) ────────────── -->
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cineside.app/resources/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CINEside &mdash; shot planning for cinematographers and directors, on Mac and iPad">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CINEside">
+
+<!-- ── Twitter / X Card ──────────────────────────────────────────────────── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cineside.app/resources/og-image.png">
+<meta name="twitter:image:alt" content="CINEside &mdash; shot planning for cinematographers and directors, on Mac and iPad">
+
+<!-- ── Structured data: CINEside for Mac ─────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside",
+  "name": "CINEside",
+  "alternateName": "CINEside for Mac",
+  "description": "A Mac app for cinematographers and directors preparing narrative work. Keeps your shot list, script, references, and department notes in one place. Imports Final Draft PDFs, detects scenes automatically, and lets you anchor shots to specific script passages. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "macOS 10.13 or newer",
+  "processorRequirements": "Intel or Apple Silicon (Universal)",
+  "downloadUrl": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272",
+  "installUrl": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272",
+  "releaseNotes": "https://cineside.app/getting-started.html",
+  "inLanguage": "en",
+  "featureList": [
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists with size, angle, lens, camera move, POV/OS",
+    "Anchor shots to specific passages in the script",
+    "Re-import revised drafts &mdash; shots, notes, and anchors stay attached",
+    "Attach reference photos, sun position diagrams, sketches, and storyboards per scene and per shot",
+    "Add notes per department (Director, Gaffer, Art Department, Costume, Make Up, Key Grip)",
+    "Flag VFX and SFX shots and export separate shot lists for post production",
+    "Drag and drop into Shooting Order for daily schedules",
+    "Export facing-pages PDF, shot list only, or notes sheet",
+    "Collaborate with your director or cinematographer via CINEside CONNECT",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "OneTimePurchase",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272"
+  },
+  "mentions": {
+    "@type": "Article",
+    "name": "Grunsky Releases Cineside",
+    "url": "https://theasc.com/article/grunsky-releases-cineside/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "American Cinematographer"
+    },
+    "datePublished": "2026-06-22"
+  }
+}
+</script>
+
+<!-- ── Structured data: CINEside for iPad ────────────────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-ipad",
+  "name": "CINEside for iPad",
+  "description": "The native iPad version of CINEside &mdash; the same shot planning workflow built around the screenplay, sharing the same project format as the Mac app. Free to download; the full version is a one-time purchase that covers both Mac and iPad. Works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "iPadOS 15 or newer",
+  "downloadUrl": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272",
+  "installUrl": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272",
+  "inLanguage": "en",
+  "featureList": [
+    "Same project format as CINEside for Mac &mdash; open projects on either device",
+    "Import screenplays as PDF with automatic scene detection",
+    "Build shot lists and anchor shots to script passages",
+    "Place camera, character, light, and grip anchors on floorplans",
+    "Export facing-pages PDF, shot list, schedule, and reference sheets on device",
+    "Works completely offline &mdash; no cloud, no AI"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "OneTimePurchase",
+    "description": "Free to download. Full version as a one-time purchase that covers both Mac and iPad; local pricing on the App Store.",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/cineside-shot-list-script/id6791491272"
+  }
+}
+</script>
+
+<!-- ── Structured data: CINEside CONNECT as a companion SoftwareApplication ─ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://cineside.app/#cineside-connect",
+  "name": "CINEside CONNECT",
+  "description": "A free companion app for directors and collaborators, on Mac and iPad. Opens shooting scripts sent from CINEside, lets directors add notes to shots, script passages, and reference images, and export the notes back. Read-only, works completely offline.",
+  "url": "https://cineside.app/",
+  "image": "https://cineside.app/resources/CINEside_CONNECT_logo_text.png",
+  "applicationCategory": "MultimediaApplication",
+  "applicationSubCategory": "Cinematography",
+  "operatingSystem": "macOS 10.13 or newer, iPadOS 15 or newer",
+  "processorRequirements": "Intel or Apple Silicon (Universal)",
+  "downloadUrl": "https://apps.apple.com/app/cineside-connect/id6793694166",
+  "installUrl": "https://apps.apple.com/app/cineside-connect/id6793694166",
+  "inLanguage": "en",
+  "featureList": [
+    "Opens shooting scripts sent from CINEside",
+    "Add notes to shots, script passages, and images",
+    "Export notes as .cnsn for re-import into CINEside",
+    "Read-only &mdash; cannot modify the shooting script itself",
+    "Works completely offline"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://apps.apple.com/app/cineside-connect/id6793694166"
+  },
+  "isAccessoryOrSparePartFor": {
+    "@id": "https://cineside.app/#cineside"
+  }
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="apple-touch-icon" sizes="167x167" href="https://cineside.app/resources/medium.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://cineside.app/resources/picturep.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://cineside.app/resources/small.png" />
+<link rel="mask-icon" href="https://cineside.app/resources/CINEside-Logo.svg" color="rgba(255,255,255,1.00)" /><link rel="icon" type="image/png" href="https://cineside.app/resources/favicon_medium.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://cineside.app/resources/favicon_small.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://cineside.app/resources/favicon_large.png" sizes="64x64" />
+
+
+	<meta name="description" content="Release notes for CINEside and CINEside CONNECT — every update for the Mac and iPad shot planning apps, from the current version back to the first release.">
+<link rel="canonical" href="https://cineside.app/whats-new.hmtl">
+<meta property="og:url" content="https://cineside.app/whats-new.html">
+<meta property="og:title" content="CINEside — What's New">
+<meta property="og:description" content="Release notes for CINEside and CINEside CONNECT — every update for the Mac and iPad shot planning apps.">
+<meta name="twitter:title" content="CINEside — What's New">
+<meta name="twitter:description" content="Release notes for CINEside and CINEside CONNECT — every update for the Mac and iPad shot planning apps.">
+
+	<link rel="stylesheet" href="rw_common/themes/foundation6/foundation.css" />
+
+	<template id="plugin-header">
+        		<link rel='stylesheet' type='text/css' media='all' href='rw_common/plugins/stacks/stacks.css' />
+<link rel="stylesheet" type="text/css" media="all" href="rw_common/plugins/stacks/fa5pro.css" />		<link rel='stylesheet' type='text/css' media='all' href='whats-new_files/stacks_page_page7.css' />
+        <script type='text/javascript' charset='utf-8' src='rw_common/plugins/stacks/jquery-2.2.4.min.js'></script>
+        
+        
+        
+		
+<link rel="dns-prefetch" href="//fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+		<script type='text/javascript' charset='utf-8' src='whats-new_files/stacks_page_page7.js'></script>
+        <meta name="formatter" content="Stacks v5.3.2 (6389)" >
+		<meta class="stacks 5 stack version" id="ws.foundation.container" name=" Container" content="6.25.0">
+		<meta class="stacks 5 stack version" id="com.nickcatesdesign.stacks.scrollpage" name="Scroll Page" content="1.1.1">
+		<meta class="stacks 5 stack version" id="ws.foundation.2col" name="2 Columns" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.1col" name="1 Column" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.header" name="Header" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.styles" name=" Site Styles" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.html" name="HTML" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.fontstyle3" name="Font Style" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.styles.fontcolor2" name="Font Color" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.picture" name="Picture" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.lines" name="Lines" content="2.2.1">
+		<meta class="stacks 5 stack version" id="ws.foundation.googlefont" name="Google Font" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.fa5.css" name="Font Awesome 5 CSS + Fonts" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.link.container" name="Link Container" content="6.25.0">
+		<meta class="stacks 5 stack version" id="ws.foundation.styles.textcolors" name="Text Colors" content="6.25.0">
+		
+
+	</template>
+
+	<script integrity="sha384-L6Plmo9wRdbut7vf9+1Uod3iRjzt/Q3BvxIIr3SGZQlQh47LOxwfUSL/APINqgi7">const pluginHeader=document.getElementById("plugin-header").content.cloneNode(!0),pluginScripts=Array.from(pluginHeader.querySelectorAll("script")).filter((e=>!e.outerHTML.match(/jquery-\d\.\d\.\d\.min\.js/))),pluginStyles=Array.from(pluginHeader.querySelectorAll("link"));!function(){const e="127.0.0.1"===location.hostname,t=e=>e+"?v="+Math.random().toString(36).substring(2,15);pluginScripts.map((r=>(e&&r.hasAttribute("src")&&(r.src=t(r.src)),r)));let r=!1;const n=r=>{if("stylesheet"!==r.rel)return void document.head.appendChild(r);const n=["stacks_page_page"];for(const e of n)if(r.href.match(e))return void document.write(r.outerHTML);e&&(r.href=t(r.href)),r.media="print",r.addEventListener("load",(e=>e.target.media="all"),{once:!0}),document.head.appendChild(r)};for(const e of pluginStyles)"preload"!==e.rel&&(e.href.match("stacks.css")||(e.href.match("fa5pro.css")&&(r=!0),e.href.match("js-fa5pro.css")||!0===r&&e.href.match("font-awesome.min.css")||n(e)));const o=e=>{const t=document.createElement("link");t.rel="preload",t.as="script",t.href=e.src,document.head.appendChild(t)},c=pluginScripts.filter((e=>e.hasAttribute("src")));for(const e of c)o(e)}();</script>
+
+    <link rel="preload" as="script" href="rw_common/themes/foundation6/foundation.js" />
+    <link rel="preload" as="script" href="rw_common/themes/foundation6/jquery.min.js" />
+    <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
+
+	
+	<!-- 05.09.26 -->
+</head>
+
+<body class="antialiased">
+
+
+
+<div id='stacks_out_1' class='stacks_top'><div id='stacks_in_1' class=''>  <link type="text/css" rel="stylesheet" media="all" href="rw_common/plugins/stacks/utility.css" />   <link type="text/css" rel="stylesheet" media="print" onload="this.media='all'" href="rw_common/plugins/stacks/utility-extra.css" />         
+     <link rel="preload" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Inter:400&display=swap" media="all" >   
+ 
+ 
+ 
+ 
+  <div class='slice empty out'><div class='slice empty in'></div></div>  <div class='slice empty out'><div class='slice empty in'></div></div>   
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div style="background:#f5f5f3;border-bottom:1px solid #e0e0dc;padding:10px 0;text-align:center;font-size:13px;">
+  <a href="https://cineside.app/getting-started.html" style="color:#444;text-decoration:none;margin:0 16px;">Getting Started</a><a href="https://cineside.app/shot-list-faq.html" style="color:#444;text-decoration:none;margin:0 16px;">FAQ</a>
+  <a href="https://cineside.app/downloads/CINEside_User_Manual.pdf" style="color:#444;text-decoration:none;margin:0 16px;">User Manual</a>
+  <a href="https://cineside.app/techspecs.html" style="color:#444;text-decoration:none;margin:0 16px;">Tech Specs</a>
+  <a href="mailto:info@cineside.app" style="color:#444;text-decoration:none;margin:0 16px;">Contact</a>
+<a href="https://cineside.app/#download" style="color:#444;text-decoration:none;margin:0 16px;">BUY/DOWNLOAD</a>
+
+</div> 
+<div class='grid-x    grid-margin-x grid-margin-y grid-padding-x grid-padding-y   align-bottom    '> <div class="cell small-3  ">  <a href="./" target="_self" class="link-container   "          >     <picture class=" stacks_in_16"  oncontextmenu="return false;"> <div class='slice empty out'><div class='slice empty in'></div></div>  <img class="    " loading="auto" srcset='whats-new_files/image-16.png' src="whats-new_files/image-16.png" alt="" draggable="false" />       </picture>    
+  </a>  
+ </div> <div class="cell small-9  ">  <h5 class='     title  '   >WHAT'S NEW</h5> 
+ </div> </div> 
+  </div>   </div>   
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_725 solid   ">   </div> 
+<div id='stacks_out_727' class='stacks_out'><div id='stacks_in_727' class='stacks_in html_stack'><div style="
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 20px 24px;
+  font-family: -apple-system, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+">
+<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | September 2026</p>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.8</h4>
+<ul>
+  <li>The default projects folder you choose in Preferences is now reliably remembered after restarting the app.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad 1.1.35</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Size (S/L) and Overhead can now be changed on lights that are already placed on a plan — matching the Mac version.</li>
+<li>Importing a project now asks before replacing an existing project with the same name — for both AirDrop packages and files opened from the Files app.</li>
+<li>Save errors are now shown in a clear dialog instead of only appearing briefly in the status bar.</li>
+<li>Improved: internal safeguard prevents photo cleanup from ever running with an empty reference list.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad 1.1.34</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Fixes a crash when taking photos directly with the iPad camera.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.7</h4><ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: importing a shared project now asks before replacing an existing project at the same location.</li><li>Fixed: preferences, license data and newly saved projects are now written atomically — a crash or full disk can no longer leave half-written files.</li><li>Improved: internal safeguard prevents photo cleanup from ever running with an empty reference list.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad 1.1.33</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Saving under the name of an existing project now asks before replacing it — previously the other project could be overwritten without warning.</li>
+<li>Save As now copies all project photos into the new project — previously only the project file was written.</li>
+<li>Lighting symbols in PDF exports now match their orientation in the app.</li>
+<li>Tube lights on lighting plans are now drawn at their correct size, matching the Mac version.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad 1.1.32</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Shot layout in PDF exports is now guaranteed: shots always stay on the left page of the spread, never spilling onto the script page.</li>
+<li>Sun position photos now use a tighter three-column grid.</li>
+<li>Fixed the scene menu showing a placeholder instead of the current scene after switching projects or when the first scene was marked deleted.</li>
+<li>Note: iPad version numbering is now unified with the Mac-style scheme — 1.1.32 follows 1.0.3.</li>
+</ul><br>
+<h4 style="margin:0 0 6px;font-size:14px;font-weight:600;">CINEside v1.8.6</h4>
+<ul style="margin:0 0 18px;padding-left:20px;line-height:1.6;">
+  <li>Save As now asks before overwriting a different project that already exists at the chosen location, instead of replacing it without warning.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Fixed a critical saving issue in the Mac App Store version: saving a new project to the suggested default location could fail silently while reporting success. The app now verifies write permission and asks you to choose a folder when needed.</li>
+<li>Save As now copies all project photos to the new location — previously only the project file was written.</li>
+<li>When a save cannot complete, a clear error dialog appears instead of a brief status message — no more misleading "saved" confirmations.</li>
+<li>Closing a project or quitting the app can no longer discard unsaved work if saving fails or is cancelled.</li>
+<li>Save As now refuses to save into a folder that is already a CINEside project, preventing accidental nesting.</li>
+</ul>
+<p style="margin:16px 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | August 2026</p>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;color:#d97706;">CINEside for Mac — now on the Mac App Store</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>CINEside for Mac is now also available on the Mac App Store, alongside the direct download.</li>
+<li>One purchase covers both platforms: buying on Mac or iPad unlocks the other via Restore Purchases.</li>
+<li>Existing customers: your license already covers the App Store version — log in with your e-mail and license key, no second purchase.</li>
+<li>Free to download and work through a real scene in Demo Mode; updates arrive automatically through the App Store.</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Shots &amp; Script export: in some scenes a shot could spill onto the right-hand script page — page fitting is now strictly enforced.</li>
+<li>The scene dropdown and the visible scene could disagree on the first scene jump after starting the app.</li>
+<li>Adding a location photo no longer makes the view jump.</li>
+<li>Entering or leaving full screen now keeps your position in the script.</li>
+<li>Sun position photos now use a more compact three-column layout.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.0.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Scene Filter: new Location and Sub-location criteria — narrow the script to one location, optionally to one sub-location or to scenes without one.</li>
+<li>Location Dossier: sub-locations are listed indented under their location and can be exported individually.</li>
+<li>Locations differing only in capitalisation are merged in the Dossier list, the filter and the exported PDF.</li>
+<li>The current scene now follows the filter — after changing filter criteria the scene indicator and navigation no longer point to a hidden scene.</li>
+<li>Inactive option toggles in the Dossier dialog and the Scene Filter are now clearly readable.</li>
+<li>Clearer guidance when a .cnsd file is opened directly from the Files app: projects are opened from inside CINEside via Open or the project list.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;color:#d97706;">CINEside CONNECT for iPad 1.0</h4><ul>
+<li>First release on the App Store — free, iPad only</li>
+<li>Open .cnct project files, review shot list, script and photos scene by scene</li>
+<li>Add notes to shots, script lines and reference photos</li>
+<li>Export notes as .cnsn — save to Files or share via Mail / AirDrop</li>
+<li>PDF export of the full project</li>
+<li>Works completely offline, no account needed</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;color:#d97706;">CINEside for iPad 1.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>First release on the App Store — the full CINEside workflow, built for iPad.</li>
+<li>Import your screenplay and plan shots directly on the script — facing pages, shots anchored to the lines they come from.</li>
+<li>Floorplans, lighting plans, reference and location photos, schedule and all PDF exports included.</li>
+<li>Free to download and work through a real scene in Demo Mode; one purchase unlocks the full version.</li>
+<li>Existing CINEside customers unlock the iPad with their license — log in with e-mail and license key, no second purchase.</li>
+<li>Works completely offline, no account needed.</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Inactive option toggles in the export dialogs and the Scene Filter are now clearly readable.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Scene Filter: new Location and Sub-location criteria — narrow the script to one location, optionally to one sub-location or to scenes without one.</li>
+<li>Location Dossier: sub-locations are listed indented under their location and can be exported individually.</li>
+<li>Locations differing only in capitalisation are merged in the Dossier list, the filter and the exported PDF.</li>
+
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: A clear warning dialog now appears when a project file cannot be found on opening — for example after the project folder was moved, renamed, or is on a drive that is not connected. A "Locate…" button lets you reopen the project from its new location; the file link is kept so CINEside will try again on the next launch.</li><li>Fixed: The description field of schedule blocks (Prep, Break, Company Move, Wrap-out) did not accept clicks and could not be filled in.</li><li>Fixed: Photos in the reference, sun position, and location photo grids now keep their own aspect ratio — portrait photos are no longer squeezed into a fixed landscape box.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.18</h4>
+<ul>
+  <li><strong>The Scene Board can now also show all written scene info, not just the visuals.</strong> Alongside the floorplan, location, lighting and reference tabs, there's a new <em>Scene Info</em> tab that gathers everything you've written into the scene header — location, additional crew and equipment, prep to-dos still open, day-for-night, atmosphere, mood and season, and your lighting notes — laid out as one clean list. Empty fields stay out of the way, so you only see what's actually there. A quick, uncluttered read of where a scene stands while you're looking at its reference material.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.17</h4>
+<ul>
+  <li><strong>Shot cards lead with the idea.</strong> Title and Description now sit at the top of each shot — right under the shot header and floorplan anchor — with the technical setup (size, angle, camera support and the rest) below a divider. The heart of the shot comes first.</li>
+  <li><strong>Schedule blocks for the real shooting day.</strong> In the shot-ordering step you can now drag in Prep, Break, Company Move and Wrap-out blocks between your shots — each with its own note and minutes. The minutes count toward the day's total, and the blocks appear in your Schedule PDF and CSV, so the plan reflects rigging, moves and breaks, not just the shots.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.16</h4><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">Hourly backups</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>A new hourly backup layer now sits between the fast rolling saves and the daily anchors, so you can step back hour by hour across a full working day — not just the last few minutes.</li>
+<li>The Backups panel and the per-scene Restore dialog both show these hourly points, labelled by date and hour.</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">Expanded scene filter</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>The scene filter now covers Support (Steadicam, Camera Car, Drone), VFX/SFX, Unit (2nd, Splinter, Pre-Shoot), Additional Equipment, Day for Night, and Additional Crew — all combinable with the existing INT/EXT and Day/Night filters.</li>
+
+<li>With a filter active, the scene navigation — both the dropdown and the up/down arrows — follows the filter and jumps only between matching scenes.</li>
+</ul>
+
+
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.15</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: <strong>Restore a single scene</strong> from a backup — right from the scene header, without touching the rest of your project. Each available backup shows a short summary (shots, notes, floorplan) so you can pick the right version at a glance. Nothing is written to disk until you save, and a single Undo takes it straight back.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.14</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: A <strong>Filter</strong> panel in the header narrows the scene list to what you need right now — Interior or Exterior, Day or Night. It's a small floating window you can drag wherever it suits you; clear the filter and every scene is back. Nothing is changed or removed.</li>
+  <li>New: The same filtering now lives in the <strong>Export</strong> dialog. Choose Interior/Exterior and Day/Night, and every document — Shots &amp; Script, Shot List, Reference Sheets, Prep Checklist, Location Dossier — exports just those scenes, with no unchecking by hand.</li>
+  <li>Detail: Day and Night read the way a shoot does — <em>Night</em> means night, and everything else (dawn, dusk, magic hour, or your own time-of-day notes) counts as Day, so nothing quietly falls through.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.13</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: A single <strong>Export Project</strong> button now replaces the separate Director and Cinematographer share buttons. It opens one dialog where you choose what to send — a full 1:1 copy for another Mac or iPad, a Director version, or a Cinematographer version.</li>
+  <li>Improved: <strong>Collapse</strong> (reading mode) now hides empty section headings too. When a whole section — Notes, Visual References, Lighting, Floorplan, or an empty Location block — has nothing in it, the heading disappears with it, so you only see what's actually filled in.</li>
+ 
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.12</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: the Day/Night field is now a dropdown that always shows every option — pick a standard time, or choose "Other…" to type anything ("Blue Hour", "3 AM"). </li>
+  <li>New: a Collapse button in the header hides all empty fields, leaving only what a scene actually contains — a clean reading mode. The scene you're looking at stays in place when you toggle it.</li>
+  <li>Improved: screenplay import now recognises "Afternoon" and "Moments Later" as times of day.</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.10</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: when you open a project, CINEside checks that all referenced photos are still in the project folder and tells you right away — with the exact count — if any are missing.</li>
+  </ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: scenes divided into parts no longer produce blank pages in the Shots &amp; Script PDF.</li>
+  <li>Fixed: script pages of continued parts showed a duplicate page reference and cramped spacing.</li>
+  <li>Improved: the colored scene tag banner now runs across every page of a scene, including part continuation and facing pages.</li>
+  <li>Improved: scene endings now close with a full-width line, part boundaries with a full-width dashed line — matching the Shot List Only layout.</li>
+  <li>New: if a photo cannot be found in the project folder, PDF exports now show a note with the file name instead of a silent empty space.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: the scene navigation bar could occasionally disappear after an update. It now restores itself automatically.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;color:#d97706;">CINEside for iPad 1.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: CINEside is now available for iPad. The full prep workflow — shot lists, script, floorplans, lighting plans, scheduling and PDF export — on a device you can carry onto the set.</li>
+  <li>Built natively for iPad, with the same project files as the Mac version.</li>
+  <li>One-time purchase on the App Store. Offline, no account required.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.3.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: Exporting notes now opens a share window with two options — <strong>Save as…</strong> to write the file to disk, or <strong>Email to…</strong> to open a new Mail message with the notes file already attached.</li>
+  <li>New: Email recipients can be saved per project. Everyone ticked in the share window is added to the message automatically.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: On rotated lighting plans, light symbols in PDF exports (Shots &amp; Script, Location Dossier) no longer appear rotated — they now match the app view. Camera and floorplan anchors were unaffected.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: In the Scene List PDF, long slug lines no longer overrun into the Location column — they are now truncated to fit.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: Export dialog now offers "Save as…" and "Email to…" for the CONNECT file and every PDF export (Schedule, Shot List, Location Dossier, Notes, Discuss, Prep Checklist, Equipment, Additional Crew, VFX/SFX, Scene List).</li>
+  <li>New: Save a list of e-mail recipients per project — the people you send to during a shoot are remembered, so you don't retype them for each export.</li>
+  <li>New: "Email to…" opens a new Mail message with the file attached and the recipients filled in; you write the text and send it yourself.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: the rotate/zoom view now always reflects the rotation actually saved in your project, even when the same image is used on more than one floorplan.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: notes placed directly on a scene floorplan ("Notes on this Plan") are now included when you export to CINEside CONNECT.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: opening the Schedule on a project without shoot days no longer marks the project as changed, so closing right afterwards won't ask you to save. Assigning a scene, or renaming or adding a day, still counts as a real change.</li><li>Fixed: the floating "Next Note" button now steps aside while a full-screen panel (Schedule, Preferences, and similar) is open, so it no longer sits over content it can't refer to. It reappears as soon as you close the panel.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: the scene navigation bar (scene dropdown, Scene Manager and Scene Board) could disappear while scrolling and only return after a restart. It now stays visible whenever your project has scenes.</li></ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.7.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: shoot days created in the Schedule could disappear after closing and reopening a project. The schedule is now written into every save, so your shoot days are always kept.</li><li>Fixed: CINEside now asks whether to save when you close the app with unsaved schedule changes.</li><li>Fixed: the "Could not reopen last project" message that could appear on every launch or save. The app now keeps its link to your project file instead of dropping it after a single failed read.</li>
+<br><p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">July 2026</p></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: Redesigned scene tags — a coloured title underline with a chip and all-caps label in the tag's own colour, applied across the Shot List, Schedule and Location Dossier.</li><li>Improved: Clearer boundary hierarchy in the Shot List — full-bleed scene separators, dashed full-bleed part separators, and in-margin shot separators.</li><li>Fixed: Scene headers and Part headings are no longer left stranded at the bottom of a page.</li><li>Fixed: Removed the double line under tag-less scene titles.</li><li>Fixed: Location Dossier — shots no longer split across pages, and scene notes now carry a label.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Curved movement lines on floorplans (character and camera paths) rendered incorrectly in PDF exports — curves bowed too far and were attached to the wrong segment. PDFs now match the app exactly.</li><li>Improved: Anchor overlays now align precisely with the rendered plan image, including tall plans that are height-limited on the page.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: shot photos on part-split scenes are now embedded correctly in CONNECT exports (no more "?" placeholders).</li><li>Fixed: long Day for Night / Atmosphere / Mood notes now wrap in PDF exports instead of overflowing the page.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: page content could overlap the export footer in several PDFs (Location Dossier, Notes, VFX/SFX, Equipment, Crew).</li><li>Fixed: a stuck "Generating PDF…" status line after cancelling a VFX/SFX export.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Changed: Page format (A4 / US Letter) is now an app-wide setting in Preferences (⚙) instead of a per-export choice — set it once and it applies to all projects and every PDF export.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: Scene List export — every scene in one row, filterable by INT/EXT and time of day, as CSV or landscape PDF.</li><li>Fixed: Shot List CSV now includes scenes without shots.</li><li>Fixed: Editing a shot's anchor moves it to the correct part automatically.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Note color swatches in the Notes block now change the note's color, matching the behavior of the Discuss with block.</li></ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.6.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Shared location notes and location photo captions now update live across every open scene at that location, matching the shared photos and floorplan.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Improved: The shoot-day type control in the Schedule is now a clearly labelled "Day type" button with a grouped menu (Unit: Main Unit, 2nd Unit, Splinter Unit — Phase: Pre-Shoot, Post-Shoot), replacing the small dot that was easy to miss.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Changed: Renamed the Scene Manager's "Cancel" button to "Close". Edits in the Scene Manager are saved automatically, so the button never discarded anything — the new label makes that clear.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: empty slug on scene-boundary insert is now visibly flagged in the field.</li><li>Fixed: undo after the first edit on a loaded project no longer clears the script.</li><li>Removed: the unused "Create first scene" button in the empty Scene Manager.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Removing a part divider no longer discards shots placed in the removed part — they now fold into the preceding part.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Splitting a scene now carries shot, cam move, annotation and part-divider anchors along — shots whose text moves into the new scene move with it, instead of pointing at the wrong line.</li><li>Fixed: After re-importing a script, out-of-sync anchors are now detected in every part of a scene, not just the first.</li><li>The import button now reads "Import new version" once a screenplay is loaded, making the merge clearer.</li><li>Clearer wording on the sync notice when only a single issue remains.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Scene boundary moves (buttons or drag) now keep shots, annotations and part dividers anchored to their script lines</li><li>Fixed: Anchors separated from their script line show a warning immediately</li><li>New: Orphaned anchors re-attach automatically when their script line returns to the scene</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Merging a scene in the Scene Manager no longer deletes its heading line.</li><li>Fixed: "Merge into previous" now carries over the whole scene — plans, anchors, crew, equipment, tags, notes — and keeps every anchor and part divider pointing at the right line.</li><li>Fixed: Deleting a single floorplan or photo no longer leaves rotation and CONNECT notes on the wrong image.</li><li>Improved: Scenes missing from the latest script version are marked in the Scene Manager's script column and shown as "OLD SC. x".</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Reference links with an uppercase scheme (HTTPS://) were silently dropped from PDF exports</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: The Location Dossier can now include reference links, with a 🔗 Links toggle in the export dialog. Same clickable URLs as in the shot list.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.5.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: Reference links are clickable in exported PDFs. Click the URL to open it in your browser .</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: The Prep Checklist PDF now opens automatically after export.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>The scene jump dropdown in the toolbar now updates live when INT/EXT or Day/Night is changed in the main view, completing the header consistency work from v1.4.3.</li>
+
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Scene header bar now updates instantly when INT/EXT or Day/Night is changed — no more mismatch between the header and the fields below it.</li>
+<li>The original scene heading from the screenplay stays untouched in the script column.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.2</h4><ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>License keys now allow activation on up to 3 devices (was 2)</li><li>New "Deactivate This Device" option in Preferences — frees up a license slot before selling or replacing a computer</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Fixed unreadable character-name autocomplete suggestions (native dropdown replaced with a custom one)</li>
+<li>Fixed missing confirmation warning when deleting a floorplan that only has character positions (no camera anchors) placed on it</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.3.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Script column no longer gets cut off or leaves unused blank space depending on scene length</li>
+<li>Script column now stays properly pinned in view while scrolling through shots and floorplan</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.4.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Backups panel in Preferences now also lists pre-script-import safety copies alongside recent saves and daily anchors</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>New Backups panel in Preferences — browse and restore any recent backup directly in the app</li><li>Daily backups now automatically pruned to the last 14 working days</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.8</h4><ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed unreadable light-name autocomplete suggestions</li><li>Demo Mode now offers sample screenplay + floorplan downloads when no project is loaded</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Removed the redundant "Arrange Scenes" button — Scene Manager covers the same function.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Lighting Plan PDF export now matches the app view: light symbols scale with plan width, numbers appear inside the symbol with the name below, overhead rings are dashed.</li>
+<li>Legend column next to Floorplan and Lighting Plan now stays pinned below the header and scene bar while scrolling — the panel titles remain visible as long as the plan is in view.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Floorplan and Lighting Plan legends now sit in a column beside the plan instead of below it — place characters, lights, grip and notes without scrolling back and forth</li>
+<li>Place buttons highlight while the app waits for a click on the plan</li>
+<li>Camera anchors are easier to select — clicking inside the viewing angle now works</li>
+<li>Fixed: light and grip symbols appeared horizontally stretched on tall plans</li>
+<li>Fixed: floorplan jumped or flickered after Undo</li>
+<li>Fixed: adding a note to a plan moved the plan and kept the rotation cursor active</li>
+<li>"Export" is now called "Documents"</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed empty scene boxes on app start — scene content now loads reliably at the restored scroll position.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Click a shot badge in the script to jump to the matching shot card</li>
+<li>Shot cards no longer pull the scroll back like a magnet</li>
+<li>Shot cards are focused by clicking, not by hovering</li>
+<li>Clicking outside a shot card clears the focus ring</li>
+<li>Rotation cursor no longer shown on plans that already carry anchors</li>
+<li>Adding or deleting floorplans and plan images no longer jumps the scroll</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Slimmer header — 42px more working space</li><li>Fixed: scene header could slip underneath the app header in Demo Mode</li></ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Location floorplans can now be rotated during import — a preview dialog offers 90° steps before the image is written, so the plan appears correctly oriented in every scene at that location.</li>
+
+<li>Fixed: importing a location floorplan no longer jumps the scroll position to a different scene, or further down inside the current one.</li>
+<li>The location block now shows which name the scenes are grouped by, with a warning when the match comes from the scene heading because no Location field is set.</li>
+<li>Fixed: the rotate cursor no longer appears on the location floorplan, which is not click-rotatable.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.3.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: placing a camera position in a scene without a floorplan no longer jumps to another scene. The "Place on floorplan" button is now disabled when the scene has no floorplan image.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Re-anchoring a shot or camera move now shows the anchored script text as a read-only preview instead of an editable box — select the new script range to cover.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Photos and floorplans occasionally showing as black fields when the last project was reopened automatically on launch.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Maintenance: under-the-hood improvements to license handling and PDF export.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: Free-text note boxes on floorplans and lighting plans — place, drag, and edit notes directly on your plans, kept separate per plan and included in all PDF exports.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Character anchor rotation handle now aligns with the nose (facing direction) on rotated floorplans.</li><li>Fixed: Rotation cursor no longer appears on lighting plans after placing a light or grip element.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.4</h4>
+<ul style="margin:4px 0 0 16px;">
+<li>Shot List export: shot-less scenes now also appear when they only carry notes or other info — lighting, sun and floorplan notes, additional crew, equipment, links, location details, or my notes (when that toggle is on) — not just when they contain images.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.3</h4>
+<ul style="margin:4px 0 0 16px;">
+<li>Shot List export now also includes scenes that have no shots yet, as long as they contain material for an active toggle (floorplans, reference photos, sun/lighting, or location info) — useful during prep before shots are added.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.2</h4>
+<ul style="margin:4px 0 0 16px;">
+<li>PDF exports are now grouped consistently — Location, Scene Level and Lighting each form a clear block, separated by divider lines, across every export.</li>
+<li>Sun Position now appears in the Schedule and Location Dossier exports (when Lighting is on), with its note printed below.</li>
+<li>Every plan and photo caption is now included in all exports — nothing entered in CINEside is left out of the PDF.</li>
+<li>Lighting legends now stay on the same page as their plan, with a divider between consecutive floorplans and lighting plans.</li>
+<li>Section titles (Floorplan, Lighting Plan, Reference Photos, Sun Position) never get stranded alone at the bottom of a page.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.2.1</h4>
+<ul style="margin:4px 0 0 16px;">
+<li>Camera positions can now be placed on any floorplan of a scene, not just the first — each shot's anchor shows which floorplan it sits on.</li>
+<li>Fixed: rotated floorplans and lighting plans no longer jump when a scene renders (on first open, after undo, or after rotating).</li>
+<li>Fixed: the view no longer scrolls away when deleting a floorplan or lighting plan.</li>
+
+<li>Clearer buttons: "add lighting plan" and "add scene reference photo".</li>
+</ul>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;color:#d97706;">CINEside v1.2.0</h4>
+<ul style="margin:4px 0 0 16px;">
+<li><strong>Anchors on floorplans &amp; lighting plans</strong> — place camera, person, light and grip anchors directly onto your scene floorplans and lighting plans. Position, rotate and annotate them — they carry through to your PDF dossiers.</li>
+<li><strong>Lighting types with symbols</strong> — the lighting-type picker now shows each fixture's symbol next to its name. Categories: Spot / Par, Fresnel, Soft Source, Tube, Spacelight / Lantern, Practical. Specific information about each light goes in the free-text field.</li>
+<li><strong>Scene Board shows anchors, live</strong> — your second-screen Scene Board renders all anchors (camera, person, light and grip) and updates automatically after every change.</li>
+<li><strong>CONNECT export</strong> — camera and person anchors are now baked into the floorplan images sent to CONNECT.</li>
+<li>Fixed: SO Dossier (Scene Overview) now shows every floorplan and lighting image per scene, not just the first.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.3.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: Portrait floorplans are now shown in full — no longer cropped at the top and bottom in the scene view.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.16</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Improved: PDF exports with many images are significantly faster — each image file is now read from disk only once per export run.</li>
+<li>Improved: Location Dossier export no longer stalls on projects with rotated photos before showing the progress indicator.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.15</h4>
+<ul style="margin:4px 0 0 16px;">
+<li>Visible progress indicator for all PDF exports (Location Dossier, Prep Checklist, Notes, Equipment, VFX/SFX, Crew, Schedule, Discuss-With)</li>
+<li>Location Dossier: fixed a performance issue where large exports could freeze the interface</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.14</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Fixed: Part boundaries (splitting a scene into parts) could silently drift out of place after a script re-import. They're now automatically re-anchored where possible, or clearly flagged with a one-click fix if the surrounding text changed too much.</li>
+<li>Improved: Shot anchors, camera moves, notes, and part boundaries left "out of sync" by a re-import are now tracked together, with a single clear way to jump to and fix each one in turn.</li>
+<li>Added: Two new automatic safety backups — one per day, and one right before every script re-import — independent of the existing rotating backups.</li>
+<li>Fixed: Manual corrections to a scene's heading (location, INT/EXT, DAY/NIGHT) made in Scene Manager could be silently overwritten by the next re-import. They're now protected.</li>
+<li>Added: Scenes can now be deleted completely from within Scene Manager, not just merged into the previous scene.</li>
+<li>Fixed: Undo (Cmd+Z) now works correctly while Scene Manager is open, with a visible Undo button there too.</li>
+<li>Improved: The "scenes changed by last import" navigation now also works from inside Scene Manager, showing the actual script diff instead of just the plain scene text.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.13</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Added: Scene-import review now shows uncertain candidates one at a time, with instant feedback and the ability to revisit and change any decision afterward.</li>
+<li>Added: Side-by-side PDF page comparison for duplicate scene checks, with independent page navigation and automatic highlighting of the relevant line.</li>
+<li>Fixed: Intercut scenes (cutting back and forth between the same two locations) could be incorrectly flagged as duplicate scenes during import.</li>
+<li>Added: Progress indicator during script import, so longer scripts no longer appear to hang.</li>
+<li>Added: Support for an additional scene-heading format used in some French scripts.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.12</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: In the Shot List Only export, a tagged scene starting mid-page could overlap with the previous scene's content. Tags now always appear as a compact square badge next to the scene heading in this export.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.11</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: CONNECT export could fail silently in rare cases without producing a file or an error message. Failures are now always shown with a clear explanation.</li><li>Fixed: A corrupted or missing shot entry in a scene could crash export functions that read all shots. Such gaps are now safely skipped.</li><li>Improved: If CINEside can't find your last project at startup — for example because the project folder was moved or renamed — it now shows a clear message instead of failing silently.</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.10</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+<li>Redesigned scene-panel typography hierarchy (group headers, location vs. scene distinction)</li>
+<li>Renamed "Scene Details" to "Tags & References" for accuracy</li>
+<li>Fixed a layout bug causing inconsistent label/button styling in parts of the scene panel</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Autocomplete suggestions added to Sub-location, Addt'l Crew, and Addt'l Equipment fields — same idea as the Location field, to help avoid accidental near-duplicates</li><li>Fixed: autocomplete suggestions no longer show the same name twice when it only differs by capitalization (e.g. "Main Floor" vs. "MAIN FLOOR")</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Renamed "Sketches" to "Floorplan" throughout the app and PDF exports, for consistency with the location-level Floorplan feature — same idea, just scoped to one scene instead of all scenes at that location</li><li>New: typing a new location name now suggests existing location names as you type, to help avoid accidental near-duplicates from typos</li><li>The location-rename safety check now also applies when other scenes share a location name, even before any photos or notes have been added there</li><li>Minor spacing improvements in the scene panel's Location section</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>New: if you change a scene's Location field and the previous location had notes, photos or a floorplan attached, you're now asked whether to carry those over to the new name — nothing gets silently left behind</li><li>Fixed: renaming a location could cause the page to jump while scrolling</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: floorplan/location photos could fail to export if the scene's Location field included an INT./EXT. prefix, or relied on the scene heading as a fallback</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Fixed: floorplan images were not included in PDF exports even when the Location toggle was enabled</li><li>Fixed: location notes and photos could be missing from the Full export depending on which other toggles were active</li></ul><br><p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">June 2026</p></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;"><li>Search expanded: now also searches shot and scene data, not just the script text</li><li>Search hits are now highlighted persistently instead of briefly flashing</li></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Added: Export date footer on all PDF pages</li>
+  <li>Fixed: Addt'l Equipment export button no longer visible when other reference sheets are selected</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Scene headers no longer appear as script text in the preceding scene</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Revision header lines (e.g. "Blue Rev. (Juni 2026)") no longer appear in script text</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.1.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Bold text in Final Draft PDFs no longer renders as doubled characters</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Design improvements in shot list PDF</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Repeated scene headers on page breaks no longer appear as action text</li>
+  <li>Fixed: Revision marks (*) at end of lines are now stripped on import</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Revision marks (*) in imported PDFs no longer cause garbled text</li>
+  <li>New: ✎ Edit button in script anchor dialog for direct text editing</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Actor name field now appears correctly in Discuss with notes (Director mode)</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: Shot navigation dropdown in scene header — shows shot count, jump directly to any shot</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: CONNECT note navigation scrolls reliably to the correct note on first click</li>
+  <li>Fixed: Scene dropdown jumps accurately to the target scene on first use</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  
+  <li>Fixed: Shot photos in CONNECT export and Share could be missed when shots are stored in scene parts</li>
+  <li>Fixed: Duplicate internal escape function removed</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Schedule view covered by Demo Mode banner</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Improved: Scene dropdown shows the currently visible scene while scrolling</li>
+  <li>Fixed: Jumping to a scene now scrolls to the top of that scene</li>
+  <li>Improved: Project title bar stays visible while scrolling</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: File icons for <strong>.cnsd</strong>, <strong>.cnsn</strong>, and <strong>.cnsf</strong> now display correctly in Finder.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Improved: <strong>Discuss with</strong> now uses a clean recipient picker instead of a dropdown — faster and more reliable.</li>
+  <li>Fixed: Scroll position is now stable when adding or editing <strong>Discuss with</strong> notes.</li>
+ </ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Script page search (e.g. <strong>p42</strong>) now correctly finds scenes even when the page falls within a manually created scene's page range.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Improved: <strong>Pages</strong> are now shown directly in the scene header bar.</li>
+  <li>Fixed: <strong>Scene number</strong> and <strong>Pages</strong> are no longer accidentally editable in the scene card — use the Scene Manager instead.</li>
+  <li>Improved: Removed redundant <strong>INT/EXT</strong> label from scene card.</li>
+</ul>
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  
+  <li>Added: <strong>Location Photos</strong> now have a Caption field.</li>
+  <li>Improved: <strong>Scene number</strong> and <strong>Pages</strong> are now display-only in the scene card — edit via Scene Manager.</li>
+  <li>Improved: Removed redundant INT/EXT label and duplicate mm placeholder in shot fields.</li>
+  <li>Added: Camera unit buttons now include <strong>E</strong> and <strong>F</strong>.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Cancelling <strong>Use as Scene Header</strong> no longer deletes the selected line.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Scroll position is now stable when using <strong>Mark Deleted</strong>, editing <strong>scene numbers</strong>, and changing <strong>note colors</strong>.</li>
+  <li>Fixed: Removed incorrect separator line above <strong>Sun Position</strong> in the Lighting section.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Scroll position is now stable after adding or removing <strong>location photos, floorplans, tags, anchors</strong> and note colors.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: <strong>Sub-location field</strong> no longer causes the view to jump to a different scene when opening, editing, or closing it.</li>
+  <li>Fixed: <strong>Scene Manager</strong> — the "Use as Scene Header" popup now closes when clicking outside of it.</li>
+  <li>Fixed: Scene headers with a period after the time of day (e.g. <strong>DAY.</strong>) are now correctly recognized.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: <strong>Scene Manager</strong> — select any unrecognized scene header in the script and use it to create a scene boundary. CINEside parses the selected text and pre-fills the form automatically.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Improved: <strong>Sketch and Lighting Plan images</strong> now display at full height (up to 90% of the window) without scrolling.</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.9.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Improved: <strong>Scene header redesign</strong> — unified block dividers and lighter internal separators for a cleaner, more readable layout.</li>
+  <li>Improved: <strong>Day for Night, Atmosphere, and Mood</strong> flags now use fixed pastel colors (blue, green, yellow) — the color picker has been removed for a simpler, more consistent look.</li>
+  <li>Improved: <strong>Lighting section</strong> — redundant "Lighting Notes" label removed; "Lighting" header now appears in a distinct pastel yellow.</li>
+  <li>Fixed: Duplicate "Sketches" label removed from the Floorplan section.</li>
+  <li>Fixed: "from slug" indicator now appears next to the Location / Motif field where it belongs.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.9</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>New: <strong>Prep Checklist</strong> per scene — track everything you need to prepare before the shoot. Check off items as you go; checked items are hidden from PDF export. Export all open prep items as a dedicated PDF via the new "Prep Checklist" tab in the export dialog.</li>
+  <li>New: <strong>To Check at Location</strong> — a shared checklist per location for things to verify on site (check angles, ceiling heights, take specific stills…). Items are visible across all scenes at that location and can be included in the Location Dossier PDF.</li>
+  <li>Improved: Location / Motif and sub-location are now grouped inside the blue Location block — clearer visual hierarchy in the scene editor.</li>
+  <li>Improved: Consistent label sizing across all sections of the Location block.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: Opening a .cnct file no longer corrupts it — notes are now saved to a local session folder instead of overwriting the original file.</li>
+  <li>Fixed: PDF export now correctly saves as .pdf (macOS no longer silently appends .json to the filename).</li>
+  <li>Fixed: Loading files with sun position, sketch, or lighting plan images no longer causes a JSON error.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: CONNECT export now reliably includes all reference photos. A file permission issue could previously cause exports to silently omit photos depending on system state.</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>CONNECT export now verifies the exported file is a valid package. If something goes wrong, a clear error message appears instead of a silent failure.</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed: opening a .cnct file now reliably shows all reference photos. A file permission issue could previously cause photos to be missing depending on system state.</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.6 </h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Notes can now be deleted — a Delete button appears on every note, including script passage notes.</li>
+  <li>User Manual added to the Help menu.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>The update check on startup no longer shows an error when no network connection is available yet — for example right after starting the Mac with CINEside open. </li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Older .cnct files now open correctly again — both via the Open dialog and by double-clicking in Finder. Photos are only included in files exported from the current CINEside version.</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Scene tags now appear in the Schedule PDF — shown as a coloured line under each scene in the per-day Scene Overview</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed a stray coloured line that could briefly appear at the left edge of the window after editing a tag colour</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.2</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Project files are now written atomically, so a crash, power loss, or full disk during a save can no longer leave a half-written file</li>
+  <li>If a project file is ever missing or unreadable, CINEside now opens the most recent good backup automatically</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.1</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Scene tags now print as a full-width colour bar across the top of both the Shots and Script pages in the PDF export, with the tag name auto-set to black or white for legibility</li>
+  <li>Tags can be renamed and recoloured after creation — changes apply to every scene using that tag — and deleted from the tag manager</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>CONNECT now opens maximized by default</li>
+  <li>The open file's name now appears in the window title bar</li>
+  <li>New "Check for Updates…" item in the CINEside CONNECT menu</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.8.0</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>The open project's filename now appears in the window title bar</li>
+  <li>The editor stays exactly in place when adding shots or variants, editing fields, or undoing</li>
+  <li>New "Check for Updates…" menu item under the CINEside menu</li>
+</ul>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.8</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fixed Tablet Edition export: shots and script now stay correctly paired in the left/right spread, even for scenes split into multiple parts</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.7</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+ 
+  <li>Each shoot day now has its own Scene Overview, listing only that day's scenes</li>
+  <li>Schedule PDF shows Part numbers for scenes split into multiple parts</li>
+  <li>Cleaner PDF layout: lighter separators between shots, unified header lines across all exports</li>
+  <li>Export date shown as a consistent footer on all reference sheets</li>
+  
+  <li>Save dialog now opens for every PDF export, so you choose where each file is saved</li>
+</ul>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.6</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>CINEside now opens maximized by default</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.5</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fix: jumping to CONNECT notes now lands correctly on the note instead of the scene top</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.4</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fix: CONNECT export now includes all reference photos, sketches and lighting images</li>
+</ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.3</h4>
+<ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+  <li>Fix: scene navigator now jumps to the correct scene on first tap</li>
+  <li>Fix: undo restores scroll position to the edited scene</li>
+  <li>New: Script Notes and Lighting Notes appear inline in the script at the marked position</li>
+  <li>New: Script Notes and Lighting Notes are exported to PDF</li>
+  <li>New: Lighting Notes automatically populate the Lighting Notes field of the scene</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.2</h4>
+  <p style="margin:4px 0 8px;color:#555;">Bug fix release.</p>
+  <ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+    <li>Fix: shot photos are now correctly preserved on save</li>
+    <li>Fix: imported CONNECT notes now navigate correctly in large projects</li>
+  </ul>
+ 
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT v0.2.3</h4>
+  <ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+    <li>Fix: scene sketches and floorplans now display correctly</li>
+    <li>Fix: Jump to scene navigation is now sticky</li>
+    <li>Fix: notes navigation arrows now work for all scenes</li>
+  </ul>
+
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.7.0 — iPad / Tablet Edition</h4>
+  <p style="margin:4px 0 8px;color:#555;">True iPad formatting for Shot List and Schedule PDFs. All text scales to 1.35× for comfortable reading, and every shot card includes a dotted write-in notes box for Apple Pencil.</p>
+  <ul style="margin:4px 0 0 16px;padding:0;color:#555;">
+    <li>Shots &amp; Script and Shots Only: full typography scaling in iPad mode</li>
+    <li>Shooting Order: new iPad / Tablet toggle with scaling and write-in boxes per shot</li>
+    <li>All iPad exports labelled "Tablet Edition" on cover and in filename</li>
+    <li>Fix: stray vertical lines in Location Dossier across page breaks</li>
+  </ul>
+
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.6.9 </h4>
+  <p style="margin:4px 0 0;color:#555;">Script annotations (notes, lighting, camera moves) now appear inline in the script and can be edited and deleted directly. Location references export as a dedicated toggle. Scroll position is now stable across all edits, window resizes, and fullscreen transitions.</p>
+
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.6.0 </h4>
+  <p style="margin:4px 0 0;color:#555;">Scene Board — a second window for visual reference during prep. Open floorplans, location photos, lighting plans, sketches, and reference images side by side with your shot list. Works on a second monitor or iPad via Sidecar.</p>
+
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.5.6</h4>
+  <p style="margin:4px 0 0;color:#555;">Performance update for large projects. Scenes now render progressively — the app stays responsive with 100+ scenes. Edits update instantly without reloading the entire project.</p>
+
+  <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.5.5</h4>
+  <p style="margin:4px 0 0;color:#555;">Multi-part scenes fully synchronised in PDF export — each part on its own spread. Anchor colors match between shot list and script. Shot variants A/B/C. Location floorplans. Schedule part-split.</p>
+
+  <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;"><br>May 2026</p></ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v0.5.4</h4>
+  <p style="margin:4px 0 0;color:#555;">Inline note, lighting, and camera move fields directly in the attach bar.</p>
+
+</div></div></div><div class="lines-wrapper "> <hr class="lines stacks_in_729 solid   ">   </div> 
+ </div> </div> 
+  </div>   </div>   
+  <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div style="text-align:center; padding:20px 0; font-family:'Inter', -apple-system, sans-serif;">
+  <nav style="font-size:15px; color:#888;">
+    <a href="/" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Home</a><span style="color:#ccc;">|</span>
+    <a href="/getting-started.html" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Getting Started</a><span style="color:#ccc;">|</span><a href="https://cineside.app/downloads/CINEside_User_Manual.pdf" style="color:#444;text-decoration:none;margin:0 16px;">User Manual</a>
+    <span style="color:#ccc;">|</span>
+    <a href="/shot-list-faq.html" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">FAQ</a>
+    <span style="color:#ccc;">|</span>
+    <a href="/techspecs.html" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Tech Specs</a>
+    <span style="color:#ccc;">|</span>
+    <a href="mailto:info@cineside.app" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Contact</a>
+    <span style="color:#ccc;">|</span>
+    <a href="/imprint.html" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Imprint</a><span style="color:#ccc;">|</span><a href="/privacy.html" style="color:#888; text-decoration:none; padding:0 10px; transition:color 0.15s;" onmouseover="this.style.color='#c27118'" onmouseout="this.style.color='#888'">Privacy</a>
+  </nav>
+  <p style="font-size:11px; color:#bbb; margin-top:12px;">© 2026 Matthias Grunsky · CINEside</p>
+</div> 
+ <div id="ncd-scroll-page"> <div id="ncd-sp-arrow" class="none up br" data-trans="750" data-pause="3000" data-amount-down="500" data-container-offset="100" data-down-trigger="450"><div class="rotateThis"><i class="sp-icon-round-2"></i></div></div>  </div> 
+  </div>   </div>   
+</div></div>
+
+
+
+<script async src="rw_common/themes/foundation6/what-input.min.js"></script>
+<script src="rw_common/themes/foundation6/jquery.min.js"></script>
+<script integrity="sha384-LhLG2dDsbyGi75OY57kTvI/WowYrKuxeYai9iS1yqYwOPQX7qD1lOw0qMBa2Xh/J">for(const o of pluginScripts)document.write(o.outerHTML);</script>
+<script integrity="sha384-BFzxG6ij/HP+1InLX57rEA5TpDIb8xIeQFChGPYQ0eoQgHLpXwuEuBi0+G6uxBt+">if("object"==typeof stacks&&"function"==typeof stacks.jQuery)var jQuery=stacks.jQuery,$=jQuery;</script>
+<script src="rw_common/themes/foundation6/foundation.js"></script>
+
+<script integrity="sha384-qRDjLKBnurzIEk3LoUNl2PqqiI2LI+34U5RuRRHWvJeEw8XGQWNOea741DzP0/YB">$(document).foundation();</script>
+</body>
+</html>
