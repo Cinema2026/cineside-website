@@ -277,7 +277,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 23.09.26 -->
+	<!-- 07.10.26 -->
 </head>
 
 <body class="antialiased">
@@ -359,7 +359,8 @@ light positions.
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_609 solid   ">   </div> 
  <h5 class='       '   >2. Re-importing a revised screenplay</h5> 
- <p class='       '   >When a new draft arrives, click Import new version — the Import PDF button changes its label once a script is loaded. CINEside offers two modes: Use Full Script when you receive a new draft — CINEside updates the script text throughout while keeping your shots, notes, and anchors intact. Use Revisions Only for partial updates, when you only receive specific revised pages. In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches go through the same review step described above before anything is changed. If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "out of sync." badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored. After confirming matches, the Scene Manager opens once more so you can review the merged result before continuing.</p> 
+ <p class='       '   >When a new draft arrives, click Import new version — the Import PDF button changes its label once a script is loaded. CINEside offers two modes: Use Full Script when you receive a new draft — CINEside updates the script text throughout while keeping your shots, notes, and anchors intact. Use Revisions Only for partial updates, when you only receive specific revised pages. In both modes, CINEside matches new scenes against existing ones by number, slug line, and text content. When the match is confident, your shots, notes, photos, and anchors stay attached. Less certain matches go through the same review step described above before anything is changed. If a shot's anchor can't be matched — because the passage it was linked to no longer exists — the shot gets a red "out of sync." badge, and its Edit anchor button switches to Re-anchor. Click it, select new text in the script, and the link is restored. After confirming matches, the Scene Manager opens once more so you can review the merged result before continuing.<br>
+Scenes marked as deleted keep their shots and notes, CONNECT notes stay with their script line (or move to the scene's notes if the line changed), and a manual shot order is preserved.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -368,6 +369,7 @@ light positions.
  <p class='       '   >Use the ↑ ↓ arrows in the toolbar to move between scenes, or use the scene dropdown to jump directly to any scene. Click the target symbol to scroll the current scene back into view.<br>
 Keyboard shortcuts: ← → arrow keys (when not typing in a field).<br><br>
 Click Filter in the toolbar to narrow the visible scene list — a small floating panel filters by INT/EXT, Day/Night, and by shot content such as camera support (Steadicam, Camera Car, Drone), VFX/SFX, unit, additional equipment, Day for Night, and additional crew. A counter shows how many scenes match, and the button stays highlighted while a filter is active. While filtering, the scene dropdown and the ↑ ↓ arrows step only between matching scenes. Clear filter shows all scenes again.<br><br>
+Dog-ears — click the corner of a scene header to mark the scene as shot. The Status filter (All / Remaining / Wrapped) shows what's still left to shoot.<br><br>
 
 The Collapse button hides every empty field, showing only what you've filled in — a clean reading view of your scenes. Click again to show all fields.
 </p> 
@@ -480,10 +482,9 @@ DEFAULT PROJECTS FOLDER: Change where CINEside saves new projects.</p>
  <h5 class='       '   >11. Schedule</h5> 
  <p class='       '   >Click Schedule in the toolbar. The workflow has two phases.<br>
 Phase 1 — Assign scenes to shoot days. A full-screen kanban view opens with all your scenes in a pool on the left. Enter the number of shoot days and click Create Days — or add individual days with + Day. Drag scenes from the pool onto any day box. A scene can be assigned to multiple days (it will appear in each box marked as a split). To move a scene between days, drag its chip directly from one box to another. You can rename a day by clicking its label, reorder days by dragging the box header, and swap adjacent days using the ← → arrows. Each day box shows the total number of scenes and shots at a glance. Days can be marked as Pre-Shoot, Splinter Unit, 2nd Unit, or Post-Shoot using the badge on the left of each column header — these are numbered independently from regular shoot days.<br><br>
-Phase 2 — Order the shots. Click Shot Ordering → to continue. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence — a line indicator shows exactly where the shot will land. Enter an estimated time in minutes per shot; the running total for that day updates live in the tab header. If a scene is split across days, use the day selector on any shot card to assign individual shots to their specific day.<br>
+Phase 2 — Order the shots. Click Shot Ordering → to continue. Each shoot day has its own tab. Within a tab, drag and drop shots into your planned production sequence — a line indicator shows exactly where the shot will land. Enter an estimated time in minutes per shot; the running total for that day updates live in the tab header. If a scene is split across days, use the day selector on any shot card to assign individual shots to their specific day.<br><br>
 
-You can also drop non-shot blocks into a day — Prep, Break, Company Move, and Wrap-out — using the Add block buttons above the shot list. Each block takes free text and a duration in minutes that counts toward the day's total, and you drag it into position between your shots. Blocks appear as coloured bars in the Schedule PDF and as their own rows in the CSV.<br><br>
-Export. Use PDF — This Day for a single day's shooting order, or PDF — All Days for the complete schedule — each day opens with a header showing the shot count and estimated total time for that day. The CSV export covers all days and is designed for the AD — importable into Excel, Numbers, or a scheduling software. Enable the Scene and Shot toggles in the export panel to include additional crew & equipment, scene photos, floorplan, lighting, shot photos, notes, and reference links alongside the shot sequence.<br>
+Export. Choose All Days (default) or This Day, then click Export PDF ↗. Each day opens with a header showing the shot count and estimated total time.The CSV export covers all days and is designed for the AD — importable into Excel, Numbers, or a scheduling software. Enable the Scene and Shot toggles in the export panel to include additional crew & equipment, scene photos, floorplan, lighting, shot photos, notes, and reference links alongside the shot sequence.<br>
 The schedule is saved with the project and restored when you reopen the modal.
 </p> 
 <div id='stacks_out_678' class='stacks_out'><div id='stacks_in_678' class='stacks_in html_stack'><div style="max-width: 900px; margin: 0 auto;">
@@ -500,7 +501,7 @@ The schedule is saved with the project and restored when you reopen the modal.
   </div>   </div>   
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_446 solid   ">   </div> 
  <h5 class='       '   >12. Export PDF</h5> 
- <p class='       '   >Click Export ↗ in the toolbar on top<br><br>
+ <p class='       '   >Click → Documents in the toolbar on top<br><br>
 Choose your layout:<br>
 
 	•	Shots & Script: facing pages, shots on the left, script on the right.<br>
@@ -513,6 +514,7 @@ Under Include, select what gets added to the export: Scene Photos, Shot Photos, 
 Under Scenes, choose which scenes to include — use All / None to select or clear every scene at once, all are selected by default, but you can deselect individual scenes for a partial export.<br><br>
 Add an optional Note that appears on the title page — useful for version notes or a message to collaborators.<br><br>
 A quick Filter — INT/EXT and Day/Night — sits above the scene selection and narrows which scenes are included. Because it drives the scene selection, it applies across the exports that use it (Shots & Script, Shot List, Reference Sheets, Prep Checklist, Location Dossier). You can still tick or untick individual scenes afterwards.<br><br>
+Tabs and tiles only select what you want to export — every PDF starts with the same Export PDF ↗ button. Discuss with shows its department list directly in the panel.<br><br>
 
 From the export panel you can also generate Reference Sheets:<br>
 
@@ -522,7 +524,7 @@ From the export panel you can also generate Reference Sheets:<br>
 	•	Additional Equipment — all additional equipment entries across all scenes, filterable by category: Camera, Cam Support / Dolly, Lighting, and Grip. Useful for sending category-specific lists to individual departments.<br>
 	•	Additional Crew<br>	
 	•	Discuss with<br>
-	•	Location Dossier — a dedicated PDF for one or more shooting locations. Click Location Dossier ↗ in the toolbar. Select which locations to include, then export. Each dossier opens with the location's notes and reference photos, followed by all scenes at that location — with crew, equipment, scene photos, floorplan, and shots. Script text is omitted to keep the document focused. Useful for location walkthroughs and as a brief for the crew at that location.<br><br>
+	•	Location Dossier — a dedicated PDF for one or more shooting locations. Open the Location Dossier tab in the export window, select the locations directly in the panel, then click Export PDF ↗. The Dossier ↗ button in a scene's location panel opens this tab with that location already selected. Select which locations to include, then export. Each dossier opens with the location's notes and reference photos, followed by all scenes at that location — with crew, equipment, scene photos, floorplan, and shots. Script text is omitted to keep the document focused. Useful for location walkthroughs and as a brief for the crew at that location.<br><br>
 
 In Shot List only mode, the panel also offers a CSV export — the full shot list as a spreadsheet, ready to open in Excel, Numbers, or Google Sheets.</p> 
 <br> 
@@ -534,12 +536,14 @@ In Shot List only mode, the panel also offers a CSV export — the full shot lis
 MyFilm/<br>
 	•	 MyFilm.cnsd — your project file<br>
 	•	photos/ — all reference images<br>
+	•	photos/.unused/ — photos no longer used anywhere in the project or its backups are moved here instead of being deleted. Undo and Restore bring them back automatically.
 	• .backups/ — automatic backups (hidden)<br><br>
 By default, CINEside saves all projects into ~/Movies/CINEside Projects. You can change this location in the Save dialog by clicking Change… — CINEside remembers your choice for future projects.<br><br>
 
 Saving is atomic — a crash or power loss mid-save can never corrupt your project. Alongside the three most recent rotating backups, CINEside keeps hourly anchors (last 12 work hours), daily anchors (last 14 work days), and a safety copy before every script re-import — all in the hidden .backups/ folder. If a project file is ever unreadable, it opens the most recent backup automatically. To see the backups in Finder, press Cmd+Shift+. to show hidden files.<br><br>
 
-After the first save, Cmd+S saves directly without any dialog. Double-click the .cnsd file inside your project folder to reopen the project.</p> 
+After the first save, Cmd+S saves directly without any dialog. Double-click the .cnsd file inside your project folder to reopen the project.<br><br>
+To go back to an earlier state, open Preferences → Backups and click Restore… next to any version. CINEside first saves your current state as "Before restore", and nothing is written to your file until you save. Replacing a project on import or Save As keeps a "Before replace" copy. These safety copies are listed at the top.</p> 
 <br> 
  </div> </div> 
   </div>   </div>   
@@ -571,7 +575,8 @@ Full → send to iPad / Mac — a complete 1:1 copy with all notes and photos, n
 
 For Director — a .cnsf package with the full project and all reference photos, stripped of your private DP notes (lighting plans, sun position, crew, equipment).<br>
 
-For Cinematographer — a .cnsf package stripped of your private director notes (screenwriter, casting, actor, editor, composer discussions).
+For Cinematographer — a .cnsf package stripped of your private director notes (screenwriter, casting, actor, editor, composer discussions).<br>
+Both include locations and the full schedule; My Notes and dog-ears are not included.<br><br>
 The recipient opens the .cnsf file in CINEside. A dialog asks for a project name and save location — after that, it becomes a normal editable CINEside project, with all reference photos included and working immediately.<br><br>
 Although technically possible, it is not recommended for two people to both work in CINEside individually and send .cnsf packages back and forth — each export is a full project snapshot with no merge capability. The app works best if one person is the author of the file and the other collaborates via CONNECT.</p> 
 <br> 
@@ -614,10 +619,10 @@ Although technically possible, it is not recommended for two people to both work
  <h5 class='       '   >Tips</h5> 
  <p class='       '   >	•	Scene Manager — merge scenes that were incorrectly split, or remove false positives from the PDF import<br>
 	•	Part Divide — split a long scene into parts without creating separate scenes. Select text in the script and click ✂ Divide<br>
-	• 	Search — type in the search field to find any line of dialogue or action, or search across your shot and scene data — matches stay highlighted as you navigate. Use p42 to jump directly to script page 42. Press Enter to step through multiple results.<br>
-	•	Undo — the ↩ Undo button undoes your last change (up to 40 steps)<br>
+	• 	Search — matches in fields are framed, the cursor stays in the search box, and Enter steps to the next result. With an active filter, hidden scenes are skipped and counted ("+ 3 hidden by filter"). Use p42 to jump to script page 42..<br>
+	•	Undo — the ↩ Undo button undoes your last change (up to 40 steps), including location notes, photos and floorplans<br>
 	•	Edit Screenplay Text — Select text in the script — the Attach bar appears below. Click ✎ Edit to place the cursor and correct OCR errors or typos directly.<br>
-	•	Keyboard shortcuts — Cmd+S (save), Cmd+O (open), Cmd+N (new), Cmd+Z (undo), ← → arrows (navigate scenes), Cmd+F (focus script search)<br>
+	•	Keyboard shortcuts — Cmd+S (save), Cmd+Z (undo), ← → arrows (navigate scenes)<br>
 	•	On set with iPad — Use the iPad / Tablet pdf export for the best on-set experience<br>
 • 		Reading mode — the Collapse button hides empty fields so a scene shows only what you've filled in.
 </p> 
@@ -659,9 +664,5 @@ info@cineside.app
 <script src="rw_common/themes/foundation6/foundation.js"></script>
 
 <script integrity="sha384-qRDjLKBnurzIEk3LoUNl2PqqiI2LI+34U5RuRRHWvJeEw8XGQWNOea741DzP0/YB">$(document).foundation();</script>
-<!-- cineside-counter -->
-<script>
-(function(){try{var i=new Image();i.src='https://matthias-grunsky.com/px/cineside.gif?p='+encodeURIComponent(location.pathname)+'&r='+encodeURIComponent(document.referrer||'-');}catch(e){}})();
-</script>
 </body>
 </html>
