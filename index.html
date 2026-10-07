@@ -277,7 +277,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 05.10.26 -->
+	<!-- 07.10.26 -->
 </head>
 
 <body class="antialiased">
@@ -518,65 +518,27 @@ CINEside for iPad is free to download — the full version is a one-time purchas
   <div       class='container position-relative  overflow-hidden     '>   <div class="grid-container">  <div class='grid-x    grid-margin-x  grid-padding-x        '> <div class="cell small-12 medium-auto "> <div class="lines-wrapper "> <hr class="lines stacks_in_496 solid   ">   </div> 
 <div id='stacks_out_506' class='stacks_out'><div id='stacks_in_506' class='stacks_in html_stack'><p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | October 2026</p>
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.20</h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.4</h4>
 <ul>
-  <li><b>New script versions:</b> shots, camera moves and script notes now stay on their lines and in the correct part when you import a new script version – also when a line is added before a part divider or the divider's own line is removed.</li>
-  <li>Shots in older projects that are matched by their text are now placed in the correct part.</li>
+  <li><b>Search:</b> while you type, the screen stays still and only the counter updates; the search key closes the keyboard and jumps to the result. Results follow the scene order and respect the scene filter – also right after launch.</li>
+  <li>The search key can no longer overwrite text in a field.</li>
+  <li><b>Pages:</b> scenes that end partway down a page now show the correct last page; existing projects are corrected when opened.</li>
+  <li><b>Photo cleanup:</b> photos no longer used anywhere – including in backups – are moved to photos/.unused inside the project instead of being deleted. Undo and restoring a backup bring them back automatically.</li>
+  <li><b>Undo</b> now also covers location notes, photos, floorplans and sub-locations.</li>
+  <li>Director and Cinematographer exports no longer include the dog-ear “shot” marks.</li>
+  <li>If a PDF export fails, a clear message appears.</li>
+  <li>Larger touch targets for the search arrows; the clear button now sits inside the search field.</li>
 </ul>
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.18</h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.21</h4>
 <ul>
-  <li><b>Safer backups:</b> restoring a backup first saves your current state, and nothing is written to your file until you save. Replacing a project keeps a backup of the old version. These safety copies appear at the top of the backup list.</li>
-  <li>The automatic backups now rotate reliably and only when something has changed; hourly and daily backups always contain the current state.</li>
-  <li><b>New script versions:</b> CONNECT notes on script lines are kept, and a manual shot order stays as it is.</li>
-  <li><b>Project packages:</b> sub-location photos are now included in .cnsf exports.</li>
-  <li>Merging locations keeps all sub-locations and addresses.</li>
-  <li>Photos can no longer be stored in the wrong project folder, and a shooting schedule recovered at launch now counts as unsaved.</li>
-  <li>Preferences now shows the app version.</li>
+  <li><b>Search:</b> results stay in view instead of jumping back to the top of the scene, follow the scene order, respect the scene filter (“+ n hidden by filter”), and pressing Enter can no longer overwrite text in a field.</li>
+  <li><b>Pages:</b> scenes that end partway down a page now show the correct last page; existing projects are corrected when opened.</li>
+  <li><b>Photo cleanup:</b> photos no longer used anywhere – including in backups – are moved to photos/.unused inside the project instead of being deleted. Undo and restoring a backup bring them back automatically.</li>
+  <li><b>Undo</b> now also covers location notes, photos, floorplans and sub-locations.</li>
+  <li>Director and Cinematographer exports no longer include the dog-ear “shot” marks.</li>
+  <li>If creating a PDF fails, a clear message appears instead of a print dialog.</li>
 </ul>
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.17</h4>
-<ul>
-  <li><b>Complete project packages:</b> Full exports (.cnsf) now include locations and the full shooting schedule. Importing a package no longer mixes in locations or shooting days from the previously open project. Director and Cinematographer exports now include locations and the schedule as well.</li>
-  <li><b>Unsaved changes:</b> every way of opening a project – Open, Open Recent, the Finder, imports – now asks before discarding unsaved changes and names the file that would be saved. If saving fails, the other project is not opened.</li>
-  <li><b>New script versions:</b> scenes marked as deleted now keep their shots and notes when you import a new script version.</li>
-  <li><b>Safer imports:</b> packages from very old CINEside versions are rejected before anything is written, so an existing project can no longer be overwritten. Import errors now appear in a clear message window.</li>
-  <li>Closing a project now clears everything from it, and the autosave now includes locations.</li>
-  <li>Save As suggests the current file name and folder.</li>
-  <li>Suggestion lists no longer cover dialogs.</li>
-</ul>
-
-
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.3</h4>
-<ul>
-  <li><b>Locations:</b> location notes, photos and floorplans are now reliably kept when the app moves to the background or saves automatically.</li>
-  <li>Changes to a location now count as unsaved changes – CINEside asks before closing.</li>
-  <li><b>Safer saving:</b> after a restart, a project can no longer be saved with the content of another project.</li>
-  <li>Undo right after reopening a project can no longer clear it.</li>
-  <li><b>Complete project packages:</b> Full exports (.cnsf) now include locations and the full shooting schedule. Importing a package no longer mixes in locations or shooting days from the previously open project. Director and Cinematographer exports now include locations and the schedule as well.</li>
-  <li><b>Unsaved changes:</b> every way of opening a project – the project list, the Files app, imports – now asks before discarding unsaved changes and names the file that would be saved. If saving fails, the other project is not opened.</li>
-  <li><b>Import:</b> shared projects (.cnsf) always import the file you chose. Packages from very old CINEside versions are rejected before anything is written, so an existing project can no longer be overwritten, and no empty project folder is left behind. Import errors now appear in a clear message window.</li>
-  <li>Closing a project now clears everything from it and keeps your paper size setting.</li>
-  <li>The keyboard and suggestion lists no longer cover dialogs.</li>
-</ul>
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.15</h4>
-<ul>
-  <li><b>Locations:</b> location notes, photos and floorplans are now reliably kept when the project is saved automatically or via “Save and close”.</li>
-  <li>Changes to a location now count as unsaved changes – CINEside asks before closing.</li>
-  <li>No more false “Unsaved changes” prompts in projects whose scene order differs from the scene numbering.</li>
-</ul>
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.14</h4>
-<ul>
-  <li><b>Dog-ears:</b> click the corner of a scene header to mark the scene as shot.</li>
-  <li>New <b>Status filter</b> (All / Remaining / Wrapped) shows what's still left to shoot.</li>
-  <li><b>Shots &amp; Script PDF:</b> shots now always stay on the left page, even next to tall floorplans.</li>
-  <li>A failed license login no longer uses up a device activation.</li>
-</ul>
-
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.2</h4>
-<ul>
-  <li><b>Dog-ears:</b> tap the corner of a scene header to mark the scene as shot – also in Lock mode.</li>
-  <li>New <b>Status filter</b> (All / Remaining / Wrapped) shows what's still left to shoot.</li>
-  <li><b>Shots &amp; Script PDF:</b> shots stay on the left page even more reliably next to tall floorplans.</li>
-</ul></div></div><div id='stacks_out_593' class='stacks_out'><div id='stacks_in_593' class='stacks_in html_stack'> </ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;"><a href="https://cineside.app/whats-new.html" style="color:#444;text-decoration:none;margin:0 16px;">All Updates →</a></div></div><div class="lines-wrapper "> <hr class="lines stacks_in_493 solid   ">   </div> 
+</div></div><div id='stacks_out_593' class='stacks_out'><div id='stacks_in_593' class='stacks_in html_stack'> </ul><h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;"><a href="https://cineside.app/whats-new.html" style="color:#444;text-decoration:none;margin:0 16px;">All Updates →</a></div></div><div class="lines-wrapper "> <hr class="lines stacks_in_493 solid   ">   </div> 
  </div> </div> 
   </div>   </div>   
 <div style="text-align:center; padding:20px 0; font-family:'Inter', -apple-system, sans-serif;">
