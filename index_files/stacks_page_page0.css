@@ -10,9 +10,9 @@ html,body, p,.p,  h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6, blockquote, .menu li, 
             .quote{font-size:calc(16rem/16) ;font-style:italic ;}@media only screen and (min-width:40em) {            .quote{font-size:calc(16rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {            .quote{font-size:calc(16rem/16) ;line-height:1.50 }}
 .title{color:rgba(36, 36, 36, 1.00) ;}
             .imprint{font-size:calc(9rem/16) ;}@media only screen and (min-width:40em) {            .imprint{font-size:calc(10rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {            .imprint{font-size:calc(10rem/16) ;line-height:1.50 }}
-  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(16rem/16) ;}@media only screen and (min-width:40em) {  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(17rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(18rem/16) ;line-height:1.50 }}
+  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(17rem/16) ;}@media only screen and (min-width:40em) {  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(18rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {  h1,.h1, h2,.h2,   h5,.h5,      .myclass{font-size:calc(18rem/16) ;line-height:1.50 }}
   h1,.h1,          .myclass{font-family:"Courier Prime",sans-serif }
-  h1,.h1,          .myclass{font-size:calc(16rem/16) ;}@media only screen and (min-width:40em) {  h1,.h1,          .myclass{font-size:calc(22rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {  h1,.h1,          .myclass{font-size:calc(23rem/16) ;line-height:1.50 }}
+  h1,.h1,          .myclass{font-size:calc(21rem/16) ;}@media only screen and (min-width:40em) {  h1,.h1,          .myclass{font-size:calc(22rem/16) ;line-height:1.50 }}@media only screen and (min-width:64em) {  h1,.h1,          .myclass{font-size:calc(23rem/16) ;line-height:1.50 }}
 .sub-header{color:rgba(102, 102, 102, 1.00) ;}
 .shot-tile{border-color:rgba(179, 179, 179, 1.00) ;border-width:1px ;border-style:solid ;border-radius:6px ;}
 
