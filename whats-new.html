@@ -307,6 +307,15 @@
 ">
 <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | October 2026</p>
 
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside v1.8.31 <span class="date"></span></h4>
+<ul>
+  <li>Script import recognises many more heading styles: INT.KITCHEN, INT./EXT., time of day after a full stop, headings without a scene number or standard time of day, French (INT/JOUR, FIN DE JOURNÉE), German slash format (01 WOHNUNG / INNEN / TAG:), INT/EXT after the location, and numbered headings without INT/EXT (17 MONTAGE).</li>
+  <li>Omitted scenes (31 OMITTED) keep their number and are imported as deleted, so the numbering has no gaps.</li>
+  <li>Scene numbers split into pieces by the PDF, short numbered scenes, page numbers in the footer and revision marks (*) in the margin are now handled correctly.</li>
+  <li>Scenes keep the order of the script; the Scene Manager flags repeated scene numbers. Numbers such as 1-2 / 1-10 sort correctly.</li>
+  <li>Re-importing the same PDF no longer marks unchanged scenes as changed, and part dividers stay on their line, so shots no longer move to the wrong part. An omitted scene that returns is matched by number; a scene that becomes omitted keeps its shots.</li>
+  <li>Scenes without INT/EXT show without a stray full stop; the shot list and PDF exports no longer add “INT.” where the script has none.</li>
+</ul>
 <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.10 <span class="date"></span></h3>
 <ul>
   <li>Smoother scrolling throughout: Lock and Collapse keep your reading position, the keyboard no longer pushes fields out of view, and shot and script columns stay in sync.</li>
