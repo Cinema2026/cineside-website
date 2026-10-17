@@ -1,3 +1,75 @@
+# =========================================================
+#  robots.txt  —  cineside.app  (GitHub Pages, statisch)
+#  Reihenfolge wichtig: spezifische Bots ZUERST, dann * .
+# =========================================================
+
+# --- SEO-Datensammler (bringen nichts, kosten nur Traffic) ---
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+User-agent: dataforseo
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# --- KI-TRAINING: gesperrt (schuetzt dein Material) ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# --- KI-SUCHE: erlaubt (CINEside bleibt in ChatGPT/Perplexity auffindbar) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# =========================================================
+#  Alle uebrigen (Google, Bing, Apple/Siri, DuckDuckGo ...)
+# =========================================================
 User-agent: *
 Allow: /
+
 Sitemap: https://cineside.app/sitemap.xml
