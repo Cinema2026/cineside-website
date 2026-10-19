@@ -18,16 +18,6 @@ stacks.stacks_in_20 = {};
 stacks.stacks_in_20 = (function(stack) {
 
 return stack;})(stacks.stacks_in_20);
-stacks.stacks_in_21 = {};
-stacks.stacks_in_21 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;
-
-return stack;})(stacks.stacks_in_21);
-stacks.stacks_in_696 = {};
-stacks.stacks_in_696 = (function(stack) {
-var jQuery = stacks.jQuery;var $ = jQuery;
-
-return stack;})(stacks.stacks_in_696);
 stacks.stacks_in_537 = {};
 stacks.stacks_in_537 = (function(stack) {
 var jQuery = stacks.jQuery;var $ = jQuery;
