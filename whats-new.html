@@ -308,6 +308,24 @@ h1,.h1,.myclass{font-family:"Courier Prime",sans-serif;}
 ">
 <p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">November 2026</p>
 
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.23 <span class="date"></span></h4>
+<ul>
+<li>Fixed: Scenes now always appear in screenplay order — in the scene list, scene menu, Scene Manager, exports and Shooting Order. Scenes with a letter before the number (A16) are no longer listed at the end, and renumbering a scene no longer moves it.</li>
+<li>Fixed: Screenplay import cut off very long scenes — a scene longer than about ten pages ended early and the rest of its text was missing.</li>
+<li>Fixed: Screenplay import could lose the heading and lines of very short scenes. Merged lines now stay in the scene before; a kept short scene appears in its place with its own text.</li>
+<li>Fixed: When the same scene heading appeared twice on one page, one scene could stay empty while another showed duplicated text.</li>
+<li>Fixed: Headings with a letter before the number are found reliably, so no lines from the previous scene end up in them.</li>
+<li>Fixed: Importing a new screenplay version no longer adds an empty extra scene after merging a repeated heading at a page break.</li>
+<li>New: When the scene filter hides scenes, the Filter button, the scene menu and a line above the scene list show how many are hidden, with a one-click Clear.</li>
+<li>To repair a project imported with an earlier version, choose Import new version with the same screenplay PDF. Shots and notes are kept.</li>
+<li>Changed: Importing a new script version always uses the complete screenplay. The "Revisions Only" option has been removed because it could replace scenes with the wrong text.</li>
+<li>Fixed: Changes could be lost when iPadOS reloaded the app in the background — up to the last few minutes of work. The project is now saved a few seconds after every change, and after a reload you return to the scene you were working on.</li>
+<li>Fixed: Rotating the iPad could jump to a different scene, often the last one.</li>
+<li>Fixed: Rotating a floor plan or lighting plan moved the light symbols and swapped some of them for other lamp types. Lights, labels and symbols now stay where they were placed, on screen and in the PDF.</li>
+<li>Fixed: The lighting plan in the PDF export used different colours than on screen.</li>
+<li>Fixed: Dragging a plan into a narrow frame no longer shifts the anchor points.</li>
+</ul>
+
 <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for Mac v1.8.48 <span class="date"></span></h4>
 <ul>
 <li>Fixed: Scenes now always appear in screenplay order — in the scene list, scene menu, Scene Manager, exports and Shooting Order. Scenes with a letter before the number (A16) are no longer listed at the end, and renumbering a scene no longer moves it.</li>
