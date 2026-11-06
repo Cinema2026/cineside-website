@@ -267,7 +267,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 05.11.26 -->
+	<!-- 06.11.26 -->
 </head>
 
 <body class="antialiased">
@@ -532,18 +532,16 @@ When you're ready to share, export a share package with one click. The other per
 <div id='stacks_out_506' class='stacks_out'><div id='stacks_in_506' class='stacks_in html_stack'><p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | November 2026</p>
 
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for Mac v1.8.44 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for Mac v1.8.47 <span class="date"></span></h4>
 <ul>
-<li>New: Symbol size per plan — a slider at the top of the floor plan and lighting plan legend (×0.5 to ×3.0) scales all symbols on that plan. Works in the app, in PDFs, in CONNECT packages and on the Scene Board; existing projects look exactly as before.</li>
-<li>New: Dual dialogue — two-column dialogue in the screenplay is recognised and split into the two speakers' lines.</li>
-<li>New: Time of day is read as the phrase after the last separator in the scene heading, including NOON, MIDNIGHT, LATER THAT NIGHT and German forms such as MORGENGRAUEN or ABENDDÄMMERUNG, and shown as written in the script.</li>
-<li>Improved: Importing a new screenplay version — known short scenes are restored without a prompt, and location matches are pre-filled.</li>
-<li>Improved: Import prompts now say what a heading is and what will happen; dashes and dots appear only where a time of day or INT/EXT was actually recognised.</li>
-<li>Fixed: The Scene Board no longer jumps back to plan 1 after a change in the app.</li>
-<li>Fixed: Rotated floor plans and lighting plans could be cut off and their anchors misplaced after resizing the window or clearing a scene filter.</li>
-<li>Fixed: Shooting Order PDF — long shot cards no longer run past the bottom of the page.</li>
-<li>Fixed: "for Director" packages no longer carry lighting data.</li>
-<li>Fixed: Plan numbering is now consistent across app, PDF and delete.</li>
+<li>Fixed: Scenes now always appear in screenplay order — in the scene list, scene menu, Scene Manager, exports and Shooting Order. Scenes with a letter before the number (A16) are no longer listed at the end, and renumbering a scene no longer moves it.</li>
+<li>Fixed: Screenplay import cut off very long scenes — a scene longer than about ten pages ended early and the rest of its text was missing.</li>
+<li>Fixed: Screenplay import could lose the heading and lines of very short scenes (since 1.8.31). Merged lines now stay in the scene before; a kept short scene appears in its place with its own text.</li>
+<li>Fixed: When the same scene heading appeared twice on one page, one scene could stay empty while another showed duplicated text.</li>
+<li>Fixed: Headings with a letter before the number are found reliably, so no lines from the previous scene end up in them.</li>
+<li>Fixed: Importing a new screenplay version no longer adds an empty extra scene after merging a repeated heading at a page break.</li>
+<li>New: When the scene filter hides scenes, the Filter button, the scene menu and a line above the scene list show how many are hidden, with a one-click Clear.</li>
+<li>To repair a project imported with an earlier version, choose Import new version with the same screenplay PDF. Shots and notes are kept.</li>
 </ul>
 
 <h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.22 <span class="date"></span></h4>
@@ -554,18 +552,15 @@ When you're ready to share, export a share package with one click. The other per
 <li>Fixed: Re-import no longer asks again about short scenes you already kept; very short scenes are pre-matched by location and keep their shots.</li>
 </ul>
 
-<p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">October 2026</p>
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for Mac v1.0.6 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for Mac v1.0.7 <span class="date"></span></h4>
 <ul>
-<li>Improved: PDF exports are about a third of their previous size — photos at 150 dpi, floor plans at 200 dpi, no visible difference.</li>
-<li>Fixed (direct download v0.3.8): "Check for Updates…" no longer shows the update prompt twice when used right after launch; downloads always show the progress bar.</li>
+<li>New (direct download v0.3.9): Shot cards show their shot color — a thin stripe on the left edge of each card matches the shot's line and start box in the script column, so cards and lines are easy to match at a glance.</li>
 </ul>
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for iPad v1.0.7 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for iPad v1.0.8 <span class="date"></span></h4>
 <ul>
-<li>Improved: PDF exports are about a third of their previous size — photos at 150 dpi, floor plans at 200 dpi, no visible difference. Large exports with many photos open smoothly in Books.</li>
-<li>Fixed: The reading position stays put when reopening a package or rotating the iPad while images are still loading.</li>
+<li>New: Shot cards show their shot color — a slim stripe on each card matches the shot's line in the script, so cards and script are easy to match at a glance.</li>
 </ul>
 
 
