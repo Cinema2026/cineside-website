@@ -267,7 +267,7 @@
     <link rel="preload" as="script" href="rw_common/themes/foundation6/what-input.min.js" />
 
 	
-	<!-- 06.11.26 -->
+	<!-- 08.11.26 -->
 </head>
 
 <body class="antialiased">
@@ -532,50 +532,45 @@ When you're ready to share, export a share package with one click. The other per
 <div id='stacks_out_506' class='stacks_out'><div id='stacks_in_506' class='stacks_in html_stack'><p style="margin:0 0 4px;font-size:11px;font-weight:700;letter-spacing:0.08em;color:#999;text-transform:uppercase;">Latest Updates | November 2026</p>
 
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for Mac v1.8.48 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for Mac v1.8.49 <span class="date"></span></h4>
 <ul>
-<li>Fixed: Scenes now always appear in screenplay order — in the scene list, scene menu, Scene Manager, exports and Shooting Order. Scenes with a letter before the number (A16) are no longer listed at the end, and renumbering a scene no longer moves it.</li>
-<li>Fixed: Screenplay import cut off very long scenes — a scene longer than about ten pages ended early and the rest of its text was missing.</li>
-<li>Fixed: Screenplay import could lose the heading and lines of very short scenes (since 1.8.31). Merged lines now stay in the scene before; a kept short scene appears in its place with its own text.</li>
-<li>Fixed: When the same scene heading appeared twice on one page, one scene could stay empty while another showed duplicated text.</li>
-<li>Fixed: Headings with a letter before the number are found reliably, so no lines from the previous scene end up in them.</li>
-<li>Fixed: Importing a new screenplay version no longer adds an empty extra scene after merging a repeated heading at a page break.</li>
-<li>New: When the scene filter hides scenes, the Filter button, the scene menu and a line above the scene list show how many are hidden, with a one-click Clear.</li>
-<li>To repair a project imported with an earlier version, choose Import new version with the same screenplay PDF. Shots and notes are kept.</li>
-<li>Fixed: Scene order after a "Revisions Only" re-import — in 1.8.47 scenes from revised pages could appear at the top of the list.</li>
-<li>Changed: Importing a new script version always uses the complete screenplay. The "Revisions Only" option has been removed because it could replace scenes with the wrong text.</li>
+<li>Improved: In every PDF export, a heading never stands alone at the bottom of a page any more — shooting order, day banners, scene and shot headers, photo and floorplan labels all move to the next page together with their first item.</li>
+<li>Improved: Scenes stay in screenplay order after importing a new script version. Scenes removed in the new version keep their place in the list instead of dropping to the end.</li>
+<li>Improved: Importing a new script version now also takes over changed scene headings, and screenplays that start mid-document keep their printed page numbers.</li>
+<li>Improved: Shot colors are exported for every scene, not only the ones you have scrolled to — CONNECT and the Shots &amp; Script PDF now show them all.</li>
+<li>Improved: The Lined Script trims long character names and parentheticals only where they would overflow, with an ellipsis.</li>
+<li>Improved: When objects lie on a lighting plan or floorplan, the rotation cursor is greyed out and explains why the plan is locked.</li>
+<li>Fixed: A scene heading that appeared at the top of a page as CONTINUED and again further down as a new scene is now imported as two scenes.</li>
+<li>Fixed: The location floorplan in the PDF no longer runs over the bottom edge of the page.</li>
+<li>Fixed: "Part 2" of a split shot could stand alone at the bottom of a page in Shot List Only.</li>
 </ul>
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.23 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside for iPad v1.2.24 <span class="date"></span></h4>
 <ul>
-<li>Fixed: Scenes now always appear in screenplay order — in the scene list, scene menu, Scene Manager, exports and Shooting Order. Scenes with a letter before the number (A16) are no longer listed at the end, and renumbering a scene no longer moves it.</li>
-<li>Fixed: Screenplay import cut off very long scenes — a scene longer than about ten pages ended early and the rest of its text was missing.</li>
-<li>Fixed: Screenplay import could lose the heading and lines of very short scenes. Merged lines now stay in the scene before; a kept short scene appears in its place with its own text.</li>
-<li>Fixed: When the same scene heading appeared twice on one page, one scene could stay empty while another showed duplicated text.</li>
-<li>Fixed: Headings with a letter before the number are found reliably, so no lines from the previous scene end up in them.</li>
-<li>Fixed: Importing a new screenplay version no longer adds an empty extra scene after merging a repeated heading at a page break.</li>
-<li>New: When the scene filter hides scenes, the Filter button, the scene menu and a line above the scene list show how many are hidden, with a one-click Clear.</li>
-<li>To repair a project imported with an earlier version, choose Import new version with the same screenplay PDF. Shots and notes are kept.</li>
-<li>Changed: Importing a new script version always uses the complete screenplay. The "Revisions Only" option has been removed because it could replace scenes with the wrong text.</li>
-<li>Fixed: Changes could be lost when iPadOS reloaded the app in the background — up to the last few minutes of work. The project is now saved a few seconds after every change, and after a reload you return to the scene you were working on.</li>
-<li>Fixed: Rotating the iPad could jump to a different scene, often the last one.</li>
-<li>Fixed: Rotating a floor plan or lighting plan moved the light symbols and swapped some of them for other lamp types. Lights, labels and symbols now stay where they were placed, on screen and in the PDF.</li>
-<li>Fixed: The lighting plan in the PDF export used different colours than on screen.</li>
-<li>Fixed: Dragging a plan into a narrow frame no longer shifts the anchor points.</li>
+<li>New: Jumping to a scene from the scene menu, the arrows or search now loads only the scenes in view. Large projects no longer run out of memory and restart on a jump.</li>
+<li>New: Objects on lighting plans and floorplans need a tap before they can be dragged. Swiping over a lamp, camera or character scrolls the page instead of moving it.</li>
+<li>Improved: In every PDF export, a heading never stands alone at the bottom of a page any more — reference photos, day banners, scene and shot headers move to the next page together with their first item.</li>
+<li>Improved: Scenes stay in screenplay order after importing a new script version. Scenes removed in the new version keep their place in the list.</li>
+<li>Improved: Shot colors are exported for every scene — CONNECT and the Shots &amp; Script PDF now show them all.</li>
+<li>Improved: Screenplays that start mid-document keep their printed page numbers; the Lined Script trims names and parentheticals only where they would overflow.</li>
+<li>Fixed: Returning to your reading position after a background reload no longer rebuilds the whole project and could trigger a second reload.</li>
+<li>Fixed: A scene heading that appeared at the top of a page as CONTINUED and again further down as a new scene is now imported as two scenes.</li>
+<li>Fixed: The location floorplan in the PDF no longer runs over the bottom edge of the page.</li>
 </ul>
 
-
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for Mac v1.0.7 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for Mac v1.0.8 <span class="date"></span></h4>
 <ul>
-<li>New (direct download v0.3.9): Shot cards show their shot color — a thin stripe on the left edge of each card matches the shot's line and start box in the script column, so cards and lines are easy to match at a glance.</li>
+<li>New (direct download v0.3.10): The shot page of the PDF shows each shot's color — a stripe next to the shot header matches the shot's line on the script page.</li>
+<li>Improved: Headings, shot headers and character names never stand alone at the bottom of a PDF page; they move to the next page together with their first line.</li>
+<li>Fixed: CONNECT no longer overwrites the shot color index when saving notes.</li>
 </ul>
 
-<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for iPad v1.0.8 <span class="date"></span></h4>
+<h4 style="margin:16px 0 4px;font-size:14px;font-weight:700;">CINEside CONNECT for iPad v1.0.9 <span class="date"></span></h4>
 <ul>
-<li>New: Shot cards show their shot color — a slim stripe on each card matches the shot's line in the script, so cards and script are easy to match at a glance.</li>
+<li>New: The shot page of the PDF shows each shot's color — a stripe next to the shot header matches the shot's line on the script page.</li>
+<li>Improved: Headings, shot headers and character names never stand alone at the bottom of a PDF page; they move to the next page together with their first line.</li>
+<li>Fixed: CONNECT no longer overwrites the shot color index when saving notes.</li>
 </ul>
-
-
 </div></div><div id='stacks_out_593' class='stacks_out'><div id='stacks_in_593' class='stacks_in html_stack'><p style="margin:16px 0 4px;font-size:14px;font-weight:700;"><a href="https://cineside.app/whats-new.html" style="color:#444;text-decoration:none;margin:0 16px;">All Updates →</a></p></div></div><div class="lines-wrapper "> <hr class="lines stacks_in_493 solid   ">   </div> 
  </div> </div> 
   </div>   </div>   
